@@ -1,10 +1,7 @@
 import datetime
-import random
 
 from flask import Flask, render_template, abort, redirect, url_for
 from jinja2 import TemplateNotFound
-
-from drawing_metadata import metadata
 
 app = Flask(__name__)
 
@@ -18,47 +15,6 @@ def index():
 def subpage(path):
     try:
         return render_template(path + '.html')
-    except TemplateNotFound:
-        abort(404)
-
-
-@app.route('/drawing/<int:num>/')
-def drawing(num):
-    try:
-        firstorlast = None
-        if num == len(metadata):
-            firstorlast = 'last'
-        if num == 1:
-            firstorlast = 'first'
-        metadatum = sorted(metadata, key=lambda k: k['number'])[num-1]
-    except IndexError:
-        abort(404)
-    return render_template('drawing.html',
-                           number=metadatum['number'],
-                           small_src=metadatum['image']['src_small'],
-                           date=metadatum['date'],
-                           caption=metadatum.get('caption', ''),
-                           additionaltext=metadatum.get('wordsinimage', ''),
-                           firstorlast = firstorlast)
-
-
-@app.route('/drawing/')
-@app.route('/drawing/random/')
-def random_drawing():
-    return redirect(url_for('drawing', num=1+random.randrange(len(metadata))))
-
-@app.route('/drawing/last/')
-def last_drawing():
-    return redirect(url_for('drawing', num=len(metadata)))
-
-
-@app.route('/poetry/', defaults={'opus':''})
-@app.route('/poetry/<path:opus>/')
-def poetry(opus):
-    if not opus:
-        return render_template('/poetry/index.html')
-    try:
-        return render_template('/poetry/' + opus + '.html')        
     except TemplateNotFound:
         abort(404)
 

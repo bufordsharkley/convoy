@@ -5,26 +5,24 @@
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
   {% block head %}
   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-  <title>MGM {% block title %}{% endblock %}</title>
+  <title>An Earful of Convoy{% block title %}{% endblock %}</title>
   {% endblock %}
 </head>
 <body>
   <nav>
   <a href="{{url_for('index')}}">
-  <div class=page>
-    <h1>EARFUL OF CONVOY</h1>
-    <h2>the website</h2>
+  <div class=banner>
+    <img src="{{ url_for('static', filename = 'convoy.png')}}" alt="An Earful of Convoy"/>
   </div>
   </a>
   </nav>
 
   <div class=content>
-    
   {% block content %}{% endblock %}
   </div>
   {% block footer %}
   <footer>
-    &copy; 2014 Mark Mollineaux.<br/>
+    &copy; 2014 Alan Joyce & Mark Mollineaux.<br/>
   </footer>
   {% endblock %}
 </body>
