@@ -1,22 +1,36 @@
-body{
+body {
   background: white; 
   font-family: sans-serif;
-}
-
-div.banner{
   text-align: center;
 }
 
-div.banner img{
+div.banner {
+  text-align: center;
+}
+
+div.banner img {
   width: 800px;
 }
 
-div.blurb
-{
+div.blurb {
   width: 350px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+div.subscribe {
+  line-height: 1.5;
+}
+
+div.subscribe h3{
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+div.subscribe img {
+  height: 20px;
+  margin-right: 5px;
 }
 
 div.player {
@@ -36,7 +50,7 @@ marquee {
 }
 
 div.promo {
-  text-align: center
+  text-align: center;
 }
 
 div.promo h3 {
@@ -49,6 +63,7 @@ footer {
   font-size: 12px;
   margin-top: 40px;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 
