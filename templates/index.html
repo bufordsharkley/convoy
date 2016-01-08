@@ -2,13 +2,18 @@
 {% block content %}
 <div class="mainpage">
     <div class="blurb">
-        Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking.
+      Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking.
     </div>
-    <iframe src="https://archive.org/embed/earfulofconvoy&playlist=1&autoplay=1" width="500" height="300" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <div class="player">
+      <h3>LISTEN TO THE EPISODES</h3>
+      <iframe src="https://archive.org/embed/earfulofconvoy&playlist=1&autoplay=1" width="500" height="150" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    </div>  
     <marquee>RUBBER DUCK AND HIS TRUCK ARE ROARING ACROSS THE RADIOS AND PODCASTS OF THE COUNTRY</marquee>
-    <h3>LISTEN TO THE PROMO</h3>
-    <audio controls>
+    <div class="promo">
+      <h3>LISTEN TO THE PROMO</h3>
+      <audio controls>
         <source src="{{ url_for('static', filename = 'promo.mp3')}}">
-    </audio>
+      </audio>
+    </div>
 </div>
 {% endblock %}

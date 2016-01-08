@@ -1,52 +1,54 @@
 body{
-  background: #FFF; 
+  background: white; 
   font-family: sans-serif;
 }
 
 div.banner{
-  width: 50%;
-  margin: 0 auto;
+  text-align: center;
 }
 
 div.banner img{
-  width: 50em;
+  width: 800px;
 }
 
-.blurb
+div.blurb
 {
-  width: 30%;
-  margin: 0 auto;
-  margin-top:1em;
-  text-align:center;
-}
-
-div.content{
-  width: 1220px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
-nav.frontpagenav{
-  width: 320px;
-  margin-left:0;
+div.player {
+  text-align: center;
+  margin-top: 50px;
 }
 
-h2 {
-  font-size: 6em;
+div.player h3 {
+  margin-bottom: 10px;
 }
 
 marquee {
-  font-size: 4.5em;
+  font-size: 80px;
+  color: tomato;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+div.promo {
+  text-align: center
+}
+
+div.promo h3 {
+  margin-bottom: 10px;
 }
 
 footer {
   width:100%;
-  clear: both;
   position: relative;
-  font-size: 0.82em;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
+  font-size: 12px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 
