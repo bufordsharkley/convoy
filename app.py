@@ -1,6 +1,6 @@
 import datetime
 
-from flask import Flask, render_template, abort, redirect, url_for
+from flask import Flask, render_template, abort, redirect, url_for, request
 from jinja2 import TemplateNotFound
 
 app = Flask(__name__)
@@ -9,6 +9,11 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+
+@app.route('/podcast.xml')
+def podcast_feed():
+    return send_from_directory(app.static_folder, 'podcast.xml')
 
 
 @app.route('/<path:path>/')
