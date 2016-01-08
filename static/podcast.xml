@@ -9,9 +9,8 @@
 <itunes:author>Alan and Hervey Okkles</itunes:author>
 <itunes:summary>Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking.</itunes:summary>
 <itunes:image href="http://earfulofconvoy.com/static/convoy_album.png"/>
-<itunes:category text="TV & Film">
-<itunes:category text="Automotive" />
-</itunes:category>
+<itunes:category text="TV &amp; Film" />
+<itunes:explicit>clean</itunes:explicit>
 <image>
     <url>http://earfulofconvoy.com/static/convoy.png</url>
     <title>An Earful of Convoy</title>
@@ -23,7 +22,7 @@
     <description>We do our first live show, and what else is there to discuss than the second five minutes! Rubber Duck gets himself in a bit of a jam, and there may be a Cottonmouth to blame (!) Alan and Hervey check in with the goof squad and give practical advice on dealing with rattlesnakes.</description>
     <itunes:summary>We do our first live show, and what else is there to discuss than the second five minutes! Rubber Duck gets himself in a bit of a jam, and there may be a Cottonmouth to blame (!) Alan and Hervey check in with the goof squad and give practical advice on dealing with rattlesnakes.</itunes:summary>
     <link>http://earfulofconvoy.com</link>
-    <guid>ep2</guid>
+    <guid isPermaLink="false">ep2</guid>
     <pubDate>Sat, 18 Jul 2015 20:00:00 +0000</pubDate>
     <enclosure url="http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_2.mp3" length="58752614" type="audio/mpeg" />
 </item>
@@ -32,7 +31,7 @@
     <description>We continue on to the third five minutes, and Convoy happenings abound! Join us as we run into a Bear in the Air, and discuss the cost of repairing a Jaguar XKE. Rubber Duck and gang are holed up at a diner, but that doesn't mean that you need to be!</description>
     <itunes:summary>We continue on to the third five minutes, and Convoy happenings abound! Join us as we run into a Bear in the Air, and discuss the cost of repairing a Jaguar XKE. Rubber Duck and gang are holed up at a diner, but that doesn't mean that you need to be!</itunes:summary>
     <link>http://earfulofconvoy.com</link>
-    <guid>ep3</guid>
+    <guid isPermaLink="false">ep3</guid>
     <pubDate>Sat, 12 Sep 2015 17:00:00 +0000</pubDate>
     <enclosure url="http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_3.mp3" length="86298912" type="audio/mpeg" />
 </item>
@@ -41,7 +40,7 @@
     <description>Alan and Hervey hit a disagreement: Alan thinks these five minutes are really boring, and Hervey thinks its #totallyonfleek. Birthday boy Rubber Duck has a certain Violet in the back of his cab, and Dirty Lyle is being called bad names over a CB radio (for some reason). We discuss the logic of Love Machine/Pigpen and Spider Mike's decision, and more. Hashtag spoiler alert!</description>
     <itunes:summary>Alan and Hervey hit a disagreement: Alan thinks these five minutes are really boring, and Hervey thinks its #totallyonfleek. Birthday boy Rubber Duck has a certain Violet in the back of his cab, and Dirty Lyle is being called bad names over a CB radio (for some reason). We discuss the logic of Love Machine/Pigpen and Spider Mike's decision, and more. Hashtag spoiler alert!</itunes:summary>
     <link>http://earfulofconvoy.com</link>
-    <guid>ep4</guid>
+    <guid isPermaLink="false">ep4</guid>
     <pubDate>Sat, 17 Oct 2015 19:30:00 +0000</pubDate>
     <enclosure url="http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_4.mp3" length="86259206" type="audio/mpeg" />
   </item>
