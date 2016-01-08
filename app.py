@@ -13,7 +13,9 @@ def index():
 
 @app.route('/feed/')
 def podcast_feed():
-    return send_from_directory(app.static_folder, 'podcast.xml')
+    response = send_from_directory(app.static_folder, 'podcast.xml')
+    response.headers["Content-Type"] = "application/xml"
+    return response
 
 
 @app.route('/<path:path>/')
