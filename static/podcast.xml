@@ -8,7 +8,10 @@
 <itunes:subtitle>Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking.</itunes:subtitle>
 <itunes:author>Alan and Hervey Okkles</itunes:author>
 <itunes:summary>Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking.</itunes:summary>
-<itunes:image href="http://earfulofconvoy.com/static/convoy.png"/>
+<itunes:image href="http://earfulofconvoy.com/static/convoy_album.png"/>
+<itunes:category text="TV & Film">
+<itunes:category text="Automotive" />
+</itunes:category>
 <image>
     <url>http://earfulofconvoy.com/static/convoy.png</url>
     <title>An Earful of Convoy</title>
@@ -41,4 +44,6 @@
     <guid>ep4</guid>
     <pubDate>Sat, 17 Oct 2015 19:30:00 +0000</pubDate>
     <enclosure url="http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_4.mp3" length="86259206" type="audio/mpeg" />
-</item>
+  </item>
+</channel>
+</rss>

@@ -6,6 +6,7 @@
   {% block head %}
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="alternate" type="application/rss+xml" title="Earful of Convoy RSS" href="/feed/" />
   <title>An Earful of Convoy{% block title %}{% endblock %}</title>
   {% endblock %}
 </head>
