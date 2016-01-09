@@ -18,17 +18,9 @@ def podcast_feed():
     return response
 
 
-@app.route('/<path:path>/')
-def subpage(path):
-    try:
-        return render_template(path + '.html')
-    except TemplateNotFound:
-        abort(404)
-
-
-@app.route('/hackers.txt')
-def hackers():
-    return 'site has been hacked at time: {}'.format(datetime.datetime.now())
+@app.route('/humans.txt')
+def humans_txt():
+    return send_from_directory(app.static_folder, 'humans.txt')
 
 
 @app.errorhandler(404)
