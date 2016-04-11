@@ -4,143 +4,138 @@
   <link href="static/jplayer/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="static/jquery.min.js"></script>
   <script type="text/javascript" src="static/jplayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="static/jplayer/jplayer.playlist.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+  $(document).ready(function(){
 
-<script type="text/javascript" src="static/jplayer/jplayer.playlist.min.js"></script>
-<script type="text/javascript">
-//<![CDATA[
-$(document).ready(function(){
-
-new jPlayerPlaylist({
-jPlayer: "#jquery_jplayer_1",
-cssSelectorAncestor: "#jp_container_1"
-}, [
-{
-  title:"Earful of Convoy: Episode 1 (0:00:00 - 0:05:00)",
-  free:true,
-  mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_1.mp3",
-},
-{
-  title:"Earful of Convoy: Episode 2 (0:05:00 - 0:10:00)",
-  free:true,
-  mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_2.mp3",
-},
-{
-  title:"Earful of Convoy: Episode 3 (0:10:00 - 0:15:00)",
-  free:true,
-  mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_3.mp3",
-},
-{
-  title:"Earful of Convoy: Episode 4 (0:15:00 - 0:20:00)",
-  free:true,
-  mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_4.mp3",
-},
-{
-  title:"Earful of Convoy: Episode 5 (0:20:00 - 0:25:00)",
-  free:true,
-  mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_5.mp3",
-},
-{
-  title:"Earful of Convoy: Episode 6 (0:25:00 - 0:30:00)",
-  free:true,
-  mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_6.mp3",
-},
-{
-  title:"Earful of Convoy: Episode 7 (0:30:00 - 0:35:00)",
-  free:true,
-  mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_7.mp3",
-},
-{
-  title:"Earful of Convoy: Episode 8 (0:35:00 - 0:40:00)",
-  free:true,
-  mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_8.mp3",
-}
-
-
-], {
-swfPath: "../../dist/jplayer",
-supplied: "oga, mp3",
-wmode: "window",
-playlistOptions: {
-  autoPlay: true,
-},
-useStateClassSkin: true,
-autoBlur: false,
-smoothPlayBar: true,
-keyEnabled: true
-});
-});
-//]]>
-</script>
-
+    new jPlayerPlaylist({
+      jPlayer: "#jquery_jplayer_1",
+      cssSelectorAncestor: "#jp_container_1"
+      }, [
+        {
+        title:"Earful of Convoy: Episode 1 (0:00:00 - 0:05:00)",
+        free:true,
+        mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_1.mp3",
+        },
+        {
+        title:"Earful of Convoy: Episode 2 (0:05:00 - 0:10:00)",
+        free:true,
+        mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_2.mp3",
+        },
+        {
+        title:"Earful of Convoy: Episode 3 (0:10:00 - 0:15:00)",
+        free:true,
+        mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_3.mp3",
+        },
+        {
+        title:"Earful of Convoy: Episode 4 (0:15:00 - 0:20:00)",
+              free:true,
+              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_4.mp3",
+        },
+        {
+        title:"Earful of Convoy: Episode 5 (0:20:00 - 0:25:00)",
+              free:true,
+              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_5.mp3",
+        },
+        {
+        title:"Earful of Convoy: Episode 6 (0:25:00 - 0:30:00)",
+              free:true,
+              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_6.mp3",
+        },
+        {
+        title:"Earful of Convoy: Episode 7 (0:30:00 - 0:35:00)",
+              free:true,
+              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_7.mp3",
+        },
+        {
+        title:"Earful of Convoy: Episode 8 (0:35:00 - 0:40:00)",
+              free:true,
+              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_8.mp3",
+        }
+      ], {
+        swfPath: "../../dist/jplayer",
+        supplied: "oga, mp3",
+        wmode: "window",
+        playlistOptions: {autoPlay: true,},
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+      });
+  });
+  //]]>
+  </script>
 {% endblock %}
 {% block content %}
 <div class="mainpage">
-    <div class="blurb">
-      Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking.
-    </div>
-    <div class="subscribe">
-      <h3>SUBSCRIBE TO THE SHOW</h3>
-      <a href="/feed/"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
-      <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
-    </div>
-    <div class="player">
-      <h3>LISTEN TO THE EPISODES</h3>
-      <div id="jquery_jplayer_1" class="jp-jplayer"></div>
-      <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-        <div class="jp-type-playlist">
-	  <div class="jp-gui jp-interface">
-	    <div class="jp-controls">
-	      <button class="jp-previous" role="button" tabindex="0">previous</button>
-	      <button class="jp-play" role="button" tabindex="0">play</button>
-	      <button class="jp-next" role="button" tabindex="0">next</button>
-	      <button class="jp-stop" role="button" tabindex="0">stop</button>
-	    </div>
-	    <div class="jp-progress">
-	      <div class="jp-seek-bar">
-		<div class="jp-play-bar"></div>
-	      </div>
-	    </div>
-	    <div class="jp-volume-controls">
-	      <button class="jp-mute" role="button" tabindex="0">mute</button>
-	      <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
-	      <div class="jp-volume-bar">
-		<div class="jp-volume-bar-value"></div>
-	      </div>
-	    </div>
-	    <div class="jp-time-holder">
-	      <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-	      <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
-	    </div>
-	    <div class="jp-toggles">
-	      <button class="jp-repeat" role="button" tabindex="0">repeat</button>
-	      <button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
-	    </div>
-	  </div>
-	  <div class="jp-playlist">
-	    <ul>
-	      <li>&nbsp;</li>
-	    </ul>
-	  </div>
-	  <div class="jp-no-solution">
-	    <span>Update Required</span>
-	    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+  <div class="blurb">
+    Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking.
+  </div>
+  <div class="subscribe">
+    <h3>SUBSCRIBE TO THE SHOW</h3>
+    <a href="/feed/"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
+    <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
+  </div>
+  <div class="player">
+    <h3>LISTEN TO THE EPISODES</h3>
+    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+      <div class="jp-type-playlist">
+        <div class="jp-gui jp-interface">
+          <div class="jp-controls">
+            <button class="jp-previous" role="button" tabindex="0">previous</button>
+            <button class="jp-play" role="button" tabindex="0">play</button>
+            <button class="jp-next" role="button" tabindex="0">next</button>
+            <button class="jp-stop" role="button" tabindex="0">stop</button>
           </div>
+          <div class="jp-progress">
+            <div class="jp-seek-bar">
+              <div class="jp-play-bar"></div>
+            </div>
+          </div>
+          <div class="jp-volume-controls">
+            <button class="jp-mute" role="button" tabindex="0">mute</button>
+            <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+            <div class="jp-volume-bar">
+              <div class="jp-volume-bar-value"></div>
+            </div>
+          </div>
+          <div class="jp-time-holder">
+            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+            <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+          </div>
+          <div class="jp-toggles">
+            <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+            <button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
+          </div>
+        </div>
+        <div class="jp-playlist">
+          <ul>
+            <li>&nbsp;</li>
+          </ul>
+        </div>
+        <div class="jp-no-solution">
+          <span>Update Required</span>
+          To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
         </div>
       </div>
     </div>
-    <div class="promo">
-      <h3>LISTEN TO THE PROMO</h3>
-      <audio controls>
-        <source src="{{ url_for('static', filename = 'promo.mp3')}}">
-      </audio>
-    </div>
-    <marquee>RUBBER DUCK AND HIS TRUCK ARE ROARING ACROSS THE RADIOS AND PODCASTS OF THE COUNTRY</marquee>
-    <div class="promo">
-      <h3>CHECK US OUT ON TWITTER</h3>
-      <a href="http://twitter.com/earfulofconvoy">We're tweeting up a storm</a>
-    </div>
-    <div class="promo">
-      <h3>OR, BETTER, WE'RE ON ELLO</h3>
-      <iframe class='button' frameborder='0' border='0' scrolling='no' allowtransparency='true' height='40' width='40' src='https://button.ello.co/button?color=black&username=earfulofconvoy&size=large'></iframe>
-    </div>
+  </div>
+  <div class="promo">
+    <h3>LISTEN TO THE PROMO</h3>
+    <audio controls>
+      <source src="{{ url_for('static', filename = 'promo.mp3')}}">
+    </audio>
+  </div>
+  <marquee>RUBBER DUCK AND HIS TRUCK ARE ROARING ACROSS THE RADIOS AND PODCASTS OF THE COUNTRY</marquee>
+  <div class="promo">
+    <h3>CHECK US OUT ON TWITTER</h3>
+    <a href="http://twitter.com/earfulofconvoy">We're tweeting up a storm</a>
+  </div>
+  <div class="promo">
+    <h3>OR, BETTER, WE'RE ON ELLO</h3>
+    <iframe class='button' frameborder='0' border='0' scrolling='no' allowtransparency='true' height='40' width='40' src='https://button.ello.co/button?color=black&username=earfulofconvoy&size=large'></iframe>
+  </div>
+</div>
 {% endblock %}

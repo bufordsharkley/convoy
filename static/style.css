@@ -10,6 +10,7 @@ div.banner {
 
 div.banner img {
   width: 800px;
+  max-width: 90%;
 }
 
 div.blurb {
@@ -45,6 +46,11 @@ div.player h3 {
 div.jp-audio {
   margin-left: auto;
   margin-right: auto;
+  max-width: 80%;
+}
+
+div.jp-progress {
+  max-width: 40%;
 }
 
 div.promo {

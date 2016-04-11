@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link type="text/plain" rel="author" href="/humans.txt" />
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-  {% block head %}
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="alternate" type="application/rss+xml" title="Earful of Convoy RSS" href="/feed/" />
-  <title>Earful of Convoy Podcast</title>
-  <meta name="description" content="Earful of Convoy is Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking. (Convoy is a film by Sam Peckinpah; the song is by C.W. McCall. Podcasts are audio files you can listen to on your podcast devices.)">
-  {% endblock %}
-</head>
-<body>
-  <nav>
-  <div class="banner">
-    <a href="{{url_for('index')}}">
-      <img src="{{ url_for('static', filename = 'convoy.png')}}" alt="An Earful of Convoy"/>
-    </a>
-  </div>
-  </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/plain" rel="author" href="/humans.txt" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    {% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="alternate" type="application/rss+xml" title="Earful of Convoy RSS" href="/feed/" />
+    <title>Earful of Convoy Podcast</title>
+    <meta name="description" content="Earful of Convoy is Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking. (Convoy is a film by Sam Peckinpah; the song is by C.W. McCall. Podcasts are audio files you can listen to on your podcast devices.)">
+    {% endblock %}
+  </head>
+  <body>
+    <nav>
+      <div class="banner">
+        <a href="{{url_for('index')}}">
+          <img src="{{ url_for('static', filename = 'convoy.png')}}" alt="An Earful of Convoy"/>
+        </a>
+      </div>
+    </nav>
 
-  <div class="content">
-  {% block content %}{% endblock %}
-  </div>
-  {% block footer %}
-  <footer>
-    &copy; 2016 <a href="http://thisisalan.com/">Alan Joyce</a> &amp; <a href="http://www.markmollineaux.com/">Mark Mollineaux</a><br/>
-  </footer>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+    {% block footer %}
+    <footer>
+      &copy; 2016 <a href="http://thisisalan.com/">Alan Joyce</a> &amp; <a href="http://www.markmollineaux.com/">Mark Mollineaux</a><br/>
+    </footer>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-40447990-7', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-40447990-7', 'auto');
+    ga('send', 'pageview');
 
-</script>
-  {% endblock %}
-</body>
+    </script>
+    {% endblock %}
+  </body>
 </html>
