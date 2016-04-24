@@ -13,51 +13,13 @@
       jPlayer: "#jquery_jplayer_1",
       cssSelectorAncestor: "#jp_container_1"
       }, [
+        {% for episode in podcast.episodes %}
         {
-        title:"Earful of Convoy: Episode 1 (0:00:00 - 0:05:00)",
-        free:true,
-        mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_1.mp3",
+          title:"{{ episode.title }}",
+          free:true,
+          mp3:"{{ episode.url }}",
         },
-        {
-        title:"Earful of Convoy: Episode 2 (0:05:00 - 0:10:00)",
-        free:true,
-        mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_2.mp3",
-        },
-        {
-        title:"Earful of Convoy: Episode 3 (0:10:00 - 0:15:00)",
-        free:true,
-        mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_3.mp3",
-        },
-        {
-        title:"Earful of Convoy: Episode 4 (0:15:00 - 0:20:00)",
-              free:true,
-              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_4.mp3",
-        },
-        {
-        title:"Earful of Convoy: Episode 5 (0:20:00 - 0:25:00)",
-              free:true,
-              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_5.mp3",
-        },
-        {
-        title:"Earful of Convoy: Episode 6 (0:25:00 - 0:30:00)",
-              free:true,
-              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_6.mp3",
-        },
-        {
-        title:"Earful of Convoy: Episode 7 (0:30:00 - 0:35:00)",
-              free:true,
-              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_7.mp3",
-        },
-        {
-        title:"Earful of Convoy: Episode 8 (0:35:00 - 0:40:00)",
-              free:true,
-              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_8.mp3",
-        },
-        {
-        title:"Earful of Convoy: Episode 9 (0:40:00 - 0:45:00)",
-              free:true,
-              mp3:"http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_9.mp3",
-        }
+        {% endfor %}
       ], {
         swfPath: "../../dist/jplayer",
         supplied: "oga, mp3",

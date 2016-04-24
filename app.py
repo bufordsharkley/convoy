@@ -1,18 +1,18 @@
 import copy
 import datetime
-import jinja2
 import re
 import yaml
 
 import flask
-from jinja2 import TemplateNotFound
+import jinja2
 
 app = flask.Flask(__name__)
 
 
 @app.route('/')
 def index():
-    return flask.render_template('index.html')
+    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    return flask.render_template('index.html', podcast=podcast)
 
 
 @app.route('/feed/')
