@@ -28,7 +28,9 @@ def podcast_feed():
 
     def parse_datetime(datetime_string):
         # aka 2015-01-09T19:30:00
-        return datetime.datetime(*map(int, re.split('[^\d]', datetime_string)[:-1]))
+        return datetime.datetime(*map(int,
+                                      re.split('[^\d]',
+                                      datetime_string)[:-1]))
 
     def parse_podcast_years(podcast):
         podcast = copy.deepcopy(podcast)
@@ -39,44 +41,9 @@ def podcast_feed():
     podcast = yaml.load(app.open_resource('static/podcast.yaml'))
     podcast = parse_podcast_years(podcast)
     copyright_years = extract_copyright_years(podcast)
-    template = jinja2.Template("""\
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
-<channel>
-<title>{{ podcast.title }}</title>
-<description>{{ podcast.description }}</description>
-<link>{{ podcast.website }}</link>
-<language>en-us</language>
-<itunes:subtitle>{{ podcast.description }}</itunes:subtitle>
-<itunes:author>{{ podcast.host }}</itunes:author>
-<itunes:summary>{{ podcast['long description'] }}</itunes:summary>
-<itunes:image href="{{ podcast.logo }}"/>
-<itunes:category text="{{ podcast['itunes category'] }}" />
-<itunes:explicit>{{ podcast['itunes explicit'] }}</itunes:explicit>
-<image>
-    <url>{{ podcast.logo }}</url>
-    <title>{{ podcast.title }}</title>
-    <link>{{ podcast.website }}</link>
-</image>
-<copyright>Copyright {{ copyright_years }}, {{ podcast.title}} Family</copyright>
-{% for episode in podcast.episodes -%}
-<item>
-    <title>{{ episode.title }}</title>
-    <description>{{ episode.description }}</description>
-    <itunes:summary>{{ episode.description }}</itunes:summary>
-    <link>{{ podcast.website }}</link>
-    <guid isPermaLink="false">ep{{ loop.index }}</guid>
-    <pubDate>{{ episode.datetime.strftime("%a, %-d %b %Y %H:%M:%S +0000")}}</pubDate>
-    <enclosure url="{{ episode.url }}" length="{{ episode['audio size'] }}" type="audio/mpeg" />
-</item>
-{% endfor -%}
-</channel>
-</rss>
-
-""")
-
-    text = template.render(podcast=podcast, copyright_years=copyright_years)
-    response = flask.make_response(text)
+    response = flask.make_response(flask.render_template('podcast.xml',
+                                     podcast=podcast,
+                                     copyright_years=copyright_years))
     response.headers["Content-Type"] = "application/xml"
     return response
 

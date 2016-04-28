@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<channel>
+<title>{{ podcast.title }}</title>
+<description>{{ podcast.description }}</description>
+<link>{{ podcast.website }}</link>
+<language>en-us</language>
+<itunes:subtitle>{{ podcast.description }}</itunes:subtitle>
+<itunes:author>{{ podcast.host }}</itunes:author>
+<itunes:summary>{{ podcast['long description'] }}</itunes:summary>
+<itunes:image href="{{ podcast.logo }}"/>
+<itunes:category text="{{ podcast['itunes category'] }}" />
+<itunes:explicit>{{ podcast['itunes explicit'] }}</itunes:explicit>
+<image>
+    <url>{{ podcast.logo }}</url>
+    <title>{{ podcast.title }}</title>
+    <link>{{ podcast.website }}</link>
+</image>
+<copyright>Copyright {{ copyright_years }}, {{ podcast.title}} Family</copyright>
+{% for episode in podcast.episodes -%}
+<item>
+    <title>{{ episode.title }}</title>
+    <description>{{ episode.description }}</description>
+    <itunes:summary>{{ episode.description }}</itunes:summary>
+    <link>{{ podcast.website }}</link>
+    <guid isPermaLink="false">ep{{ loop.index }}</guid>
+    <pubDate>{{ episode.datetime.strftime("%a, %-d %b %Y %H:%M:%S +0000")}}</pubDate>
+    <enclosure url="{{ episode.url }}" length="{{ episode['audio size'] }}" type="audio/mpeg" />
+</item>
+{% endfor -%}
+</channel>
+</rss>
