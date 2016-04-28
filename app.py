@@ -22,7 +22,7 @@ def podcast_feed():
         min_year = min(years)
         max_year = max(years)
         if min_year != max_year:
-            return str(max_year)
+            return '{}-{}'.format(min_year, max_year)
         else:
             return str(max_year)
 
@@ -44,7 +44,7 @@ def podcast_feed():
     response = flask.make_response(flask.render_template('podcast.xml',
                                      podcast=podcast,
                                      copyright_years=copyright_years))
-    response.headers["Content-Type"] = "application/xml"
+    response.mimetype = "application/xml"
     return response
 
 
