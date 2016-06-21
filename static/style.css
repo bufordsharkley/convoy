@@ -76,4 +76,11 @@ footer {
   padding-bottom: 40px;
 }
 
+div.promo h2 {
+  color: red;
+  font-size: 2em;
+}
 
+img.dogbro {
+  height: 120px;
+}
