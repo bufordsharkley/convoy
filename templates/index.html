@@ -92,7 +92,7 @@
   <div class="promo">
     <h3>LISTEN TO THE PROMO</h3>
     <audio controls>
-      <source src="{{ url_for('static', filename = 'promo.mp3')}}">
+      <source src="{{ url_for('static', filename='promo.mp3')}}">
     </audio>
   </div>
   <marquee>RUBBER DUCK AND HIS TRUCK ARE ROARING ACROSS THE RADIOS AND PODCASTS OF THE COUNTRY</marquee>
@@ -103,6 +103,8 @@
   <div class="promo">
     <h3>OR, BETTER, WE'RE ON ELLO</h3>
     <iframe class='button' frameborder='0' border='0' scrolling='no' allowtransparency='true' height='40' width='40' src='https://button.ello.co/button?color=black&username=earfulofconvoy&size=large'></iframe>
+    <h3>OUR OFFICIAL PRESIDENTIAL ENDORSEMENT</h3>
+    <img src="{{ url_for('static', filename='rubber_duck_for_prez.png')}}">
   </div>
   <hr/>
   <div class="promo" id="feuding">
