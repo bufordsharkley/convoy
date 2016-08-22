@@ -77,3 +77,13 @@ episodes:
      datetime: '2016-07-25T20:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_13.mp3
      audio size: 115546443
+   - title: "Earful of Convoy: Episode 14 (1:05:00 - 1:10:00)"
+     description: "In this episode, subtitled \"The Education of Chuck Arnoldi\", we bring you the latest in celebrity net worth, hypothesize what Convoy would be like without Melissa (not much difference), and even find time for our favorite segment, \"Looking Up Things on Wikipedia.\" The real treasure here is Exhibit A, the interview with the Dog Brothers, which is roaring up your podcast feed right now. So listen in: we won't talk to you like a child."
+     datetime: '2016-08-06T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_14.mp3
+     audio size: 115474554
+   - title: "EXHIBIT A: The Dog Brothers Interview"
+     description: "We interview the Dog Brothers."
+     datetime: '2016-07-30T14:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_14-2.mp3
+     audio size: 28400034
