@@ -9,10 +9,23 @@ import jinja2
 app = flask.Flask(__name__)
 
 
+def get_eps():
+    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    eps = podcast['episodes']
+    return {x['url'].split('_ep_')[1].split('.mp3')[0]: x for x in eps}
+
+
 @app.route('/')
 def index():
     podcast = yaml.load(app.open_resource('static/podcast.yaml'))
     return flask.render_template('index.html', podcast=podcast)
+
+
+@app.route('/ep/<num>')
+def episode(num):
+    eps = get_eps()
+    info = eps[num]
+    return flask.render_template('episode.html', episode=info)
 
 
 @app.route('/feed/')

@@ -1,7 +1,12 @@
 from flask_frozen import Freezer
-from app import app
 
-freezer = Freezer(app)
+import app
 
-if __name__ == '__main__':
-    freezer.freeze()
+freezer = Freezer(app.app)
+
+@freezer.register_generator
+def episode():
+    for ep in app.get_eps():
+        yield {'num': ep}
+
+freezer.freeze()
