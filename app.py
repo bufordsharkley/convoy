@@ -25,6 +25,8 @@ def index():
 def episode(num):
     eps = get_eps()
     info = eps[num]
+    info['datetime'] = datetime.datetime.strptime(
+        info['datetime'], "%Y-%m-%dT%H:%M:%S" )
     return flask.render_template('episode.html', episode=info)
 
 

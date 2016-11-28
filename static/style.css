@@ -20,6 +20,14 @@ div.blurb {
   text-align: center;
 }
 
+div.eppagedescription {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
 div.subscribe {
   line-height: 1.5;
 }

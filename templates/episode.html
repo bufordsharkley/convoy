@@ -43,7 +43,8 @@
     <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
   </div>
   <div class="player">
-    <h3>LISTEN TO THE EPISODES</h3>
+    <h3>{{ episode.title }}</h3>
+    <h3>Recorded on {{ episode.datetime.strftime('%Y-%m-%d') }} at {{episode.datetime.strftime('%-I:%M %p')}}</h3>
     <div id="jquery_jplayer_1" class="jp-jplayer"></div>
     <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
       <div class="jp-type-playlist">
@@ -88,5 +89,11 @@
     </div>
   </div>
   <marquee>{{episode.description}}</marquee>
+  <div class="eppagedescription">
+    <p>{{episode.description}}</p>
+    <p><br/></p>
+
+    <p>Audio size is {{episode['audio size'] }} bytes.</p>
+  </div>
 </div>
 {% endblock %}
