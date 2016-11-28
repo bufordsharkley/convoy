@@ -12,7 +12,13 @@ app = flask.Flask(__name__)
 def get_eps():
     podcast = yaml.load(app.open_resource('static/podcast.yaml'))
     eps = podcast['episodes']
-    return {x['url'].split('_ep_')[1].split('.mp3')[0]: x for x in eps}
+    for ep in eps:
+        ep['datetime'] = datetime.datetime.strptime(
+            ep['datetime'], "%Y-%m-%dT%H:%M:%S" )
+    eps = {x['url'].split('_ep_')[1].split('.mp3')[0]: x for x in eps}
+    for k, v in eps.items():
+        v['key'] = k
+    return eps
 
 
 @app.route('/')
@@ -21,13 +27,14 @@ def index():
     return flask.render_template('index.html', podcast=podcast)
 
 
+@app.route('/eps/')
+def episodes():
+    return flask.render_template('episodes.html', episodes=get_eps())
+
 @app.route('/ep/<num>')
 def episode(num):
     eps = get_eps()
-    info = eps[num]
-    info['datetime'] = datetime.datetime.strptime(
-        info['datetime'], "%Y-%m-%dT%H:%M:%S" )
-    return flask.render_template('episode.html', episode=info)
+    return flask.render_template('episode.html', episode=eps[num])
 
 
 @app.route('/feed/')
