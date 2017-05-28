@@ -37,7 +37,13 @@ def episode(num):
     return flask.render_template('episode.html', episode=eps[num])
 
 
+# I would just chain these decorators, but I think flask-frozen doesn't like it?
 @app.route('/feed/')
+def podcast_feed_legacy():
+    return podcast_feed()
+
+
+@app.route('/feed.xml')
 def podcast_feed():
     def extract_copyright_years(podcast):
         years = [(x['datetime']).year for x in podcast['episodes']]
