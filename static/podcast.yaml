@@ -134,3 +134,19 @@ episodes:
      datetime: '2017-02-18T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_21.mp3
      audio size: 110874898
+   - title: "Earful of Convoy: Episode 22 (1:45:00 - 1:50:00)"
+     description: >
+       In the FFF (final full five), Earful is cut short by ten minutes due to
+       baseball, but the Convoy crew perseveres with their unique style of controlled
+       individualism―through asking the tough questions ("Why does Dirty Lyle Laugh?"
+       "How did Duck grow a beard?"), and substantial research into Jonty Rhodes. For
+       the second-to-last-time, we wish you a thumbs-up goodbye. (This episode brought
+       to you by our new sponsor, vipfaq.)
+     datetime: '2017-04-08T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_22.mp3
+     audio size: 104944058
+   - title: "Earful of Convoy: Episode 23 (1:50:00 - 1:51:02)"
+     description: "PARTY EP"
+     datetime: '2017-07-15T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_23.mp3
+     audio size: 172884577
