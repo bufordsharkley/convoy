@@ -7,17 +7,25 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% block head %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
+    {% if podcast.title == 'An Earful of Cocktail' %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cocktail_style.css') }}">
+    {% else %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="alternate" type="application/rss+xml" title="Earful of Convoy RSS" href="/feed/" />
+    {% endif %}
+    <link rel="alternate" type="application/rss+xml" title="Earful RSS" href="/feed/" />
     <title>Earful of Convoy Podcast</title>
-    <meta name="description" content="Earful of Convoy is Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking. (Convoy is a film by Sam Peckinpah; the song is by C.W. McCall. Podcasts are audio files you can listen to on your podcast devices.)">
+    <meta name="description" content="{{podcast.description}} (Convoy is a film by Sam Peckinpah; the song is by C.W. McCall. Podcasts are audio files you can listen to on your podcast devices.)">
     {% endblock %}
   </head>
   <body>
     <nav>
       <div class="banner">
         <a href="{{url_for('index')}}">
+          {% if podcast.title == 'An Earful of Cocktail' %}
+          <img src="{{ url_for('static', filename = 'cocktail.png')}}" alt="An Earful of Cocktail"/>
+          {% else %}
           <img src="{{ url_for('static', filename = 'convoy.png')}}" alt="An Earful of Convoy"/>
+          {% endif %}
         </a>
       </div>
     </nav>

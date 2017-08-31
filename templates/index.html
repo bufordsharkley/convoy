@@ -37,13 +37,14 @@
 {% block content %}
 <div class="mainpage">
   <div class="blurb">
-    Northern California's #1 podcast about the 1978 movie based upon the 1976 novelty song about trucking.
+    {{ podcast.description}}
   </div>
   <div class="subscribe">
     <h3>SUBSCRIBE TO THE SHOW</h3>
     <a href="/feed.xml"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
     <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
   </div>
+  {% if podcast.episodes %}
   <div class="player">
     <h3>LISTEN TO THE EPISODES</h3>
     <h3><a href="/eps/">OR SEE MORE DETAILED DESCRIPTIONS</a></h3>
@@ -90,12 +91,20 @@
       </div>
     </div>
   </div>
+  {% endif %}
   <div class="promo">
     <h3>LISTEN TO THE PROMO</h3>
     <audio controls>
+      {% if podcast.title == 'An Earful of Cocktail' %}
+      <source src="{{ url_for('static', filename='cocktail_promo.mp3')}}">
+      {% else %}
       <source src="{{ url_for('static', filename='promo.mp3')}}">
+      {% endif %}
     </audio>
   </div>
+  {% if podcast.title == 'An Earful of Cocktail' %}
+  <marquee>SERVING UP DRINKS ACROSS THE RADIOS AND PODCASTS OF THESE MANY UNITED STATES</marquee>
+  {% else %}
   <marquee>RUBBER DUCK AND HIS TRUCK ARE ROARING ACROSS THE RADIOS AND PODCASTS OF THE COUNTRY</marquee>
   <div class="promo">
     <h3>CHECK US OUT ON TWEET STREET</h3>
@@ -129,5 +138,6 @@
       <p>A: It is Crazy Eights.
     </ul>
   </div>
+  {% endif %}
 </div>
 {% endblock %}

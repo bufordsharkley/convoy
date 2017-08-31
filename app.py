@@ -8,9 +8,14 @@ import jinja2
 
 app = flask.Flask(__name__)
 
+cocktail_app = flask.Flask(__name__)
 
-def get_eps():
-    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+
+cocktail_info = yaml.load(app.open_resource('static/cocktail.yaml'))
+convoy_info = yaml.load(app.open_resource('static/podcast.yaml'))
+
+
+def get_eps(podcast):
     eps = podcast['episodes']
     for ep in eps:
         ep['datetime'] = datetime.datetime.strptime(
@@ -27,14 +32,22 @@ def index():
     return flask.render_template('index.html', podcast=podcast)
 
 
+@cocktail_app.route('/')
+def index():
+    podcast = yaml.load(app.open_resource('static/cocktail.yaml'))
+    return flask.render_template('index.html', podcast=podcast)
+
+
 @app.route('/eps/')
 def episodes():
-    return flask.render_template('episodes.html', episodes=get_eps())
+    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 @app.route('/ep/<num>')
 def episode(num):
-    eps = get_eps()
-    return flask.render_template('episode.html', episode=eps[num])
+    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    eps = get_eps(podcast)
+    return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
 
 # I would just chain these decorators, but I think flask-frozen doesn't like it?
@@ -44,6 +57,7 @@ def podcast_feed_legacy():
 
 
 @app.route('/feed.xml')
+@cocktail_app.route('/feed.xml')
 def podcast_feed():
     def extract_copyright_years(podcast):
         years = [(x['datetime']).year for x in podcast['episodes']]
@@ -77,6 +91,7 @@ def podcast_feed():
 
 
 @app.route('/humans.txt')
+@cocktail_app.route('/humans.txt')
 def humans_txt():
     return flask.send_from_directory(app.static_folder, 'humans.txt')
 
@@ -87,4 +102,5 @@ def page_not_found(e):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    cocktail_app.run(debug=True)
+    #app.run(debug=True)

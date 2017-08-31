@@ -1,5 +1,11 @@
-freeze:
-	    env/bin/python freeze.py
+freeze_cocktail:
+	    env/bin/python freeze.py cocktail
 
-server: freeze
+freeze_convoy:
+	    env/bin/python freeze.py convoy
+
+server_cocktail: freeze_cocktail
+	    cd build && python -m SimpleHTTPServer
+
+server_convoy: freeze_convoy
 	    cd build && python -m SimpleHTTPServer
