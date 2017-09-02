@@ -7,7 +7,8 @@ body {
 
 div.crossnav {
   background-color: #fff;
-  border-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   font-size: 24px;
   height: 50px;
   width: 250px;
