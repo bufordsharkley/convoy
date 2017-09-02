@@ -59,8 +59,13 @@ def podcast_feed_legacy():
 @app.route('/feed.xml')
 @cocktail_app.route('/feed.xml')
 def podcast_feed():
+
+    cocktail_info = yaml.load(app.open_resource('static/cocktail.yaml'))
+    convoy_info = yaml.load(app.open_resource('static/podcast.yaml'))
     def extract_copyright_years(podcast):
         years = [(x['datetime']).year for x in podcast['episodes']]
+        if not years:
+            return '1994-1998'
         min_year = min(years)
         max_year = max(years)
         if min_year != max_year:
@@ -80,7 +85,18 @@ def podcast_feed():
             episode['datetime'] = parse_datetime(episode['datetime'])
         return podcast
 
-    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    def merge_podcast_info(all_info):
+        resp = {}
+        for info in all_info:
+            for k, v in info.items():
+                if k == 'episodes' and 'episodes' in resp:
+                    resp[k] = resp[k] + v
+                else:
+                    resp[k] = v
+        return resp
+
+    all_podcast = [convoy_info, cocktail_info]
+    podcast = merge_podcast_info(all_podcast)
     podcast = parse_podcast_years(podcast)
     copyright_years = extract_copyright_years(podcast)
     response = flask.make_response(flask.render_template('podcast.xml',
@@ -102,5 +118,4 @@ def page_not_found(e):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    cocktail_app.run(debug=True, port=5001)
+    cocktail_app.run(debug=True)
