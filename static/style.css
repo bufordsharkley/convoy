@@ -5,19 +5,28 @@ body {
 }
 
 div.crossnav {
-  background-color: #444;
-  right: 10px;
-  padding-bottom: 10px;
-  top: 10px;
-  margin-right: 20px;
-  position: absolute;
-  border-radius: 5px;
+  background-color: #000;
+  border-radius: 15px;
   font-size: 24px;
+  height: 50px;
+  width: 250px;
+  margin-right: 2%;
+  margin-left: auto;
+  margin-top: 2%;
 }
 
 div.crossnav a {
   color: #fff;
   text-decoration: none;
+}
+
+div.crossnav img {
+  float: left;
+}
+
+div.crossnav p {
+  padding-top: 10px;
+  margin-right: 5px;
 }
 
 div.banner {
