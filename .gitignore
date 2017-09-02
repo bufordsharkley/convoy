@@ -9,8 +9,8 @@ lib
 *.egg-info
 bin
 build
-build_convoy
-build_cocktail
+convoy_build
+cocktail_build
 dist
 sdist
 eggs
