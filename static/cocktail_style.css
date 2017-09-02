@@ -5,6 +5,22 @@ body {
   color: white;
 }
 
+div.crossnav {
+  background-color: #EEE;
+  right: 10px;
+  padding-bottom: 10px;
+  top: 10px;
+  margin-right: 20px;
+  position: absolute;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+div.crossnav a {
+  color: #111;
+  text-decoration: none;
+}
+
 div.banner {
   text-align: center;
 }

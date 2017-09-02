@@ -4,6 +4,22 @@ body {
   text-align: center;
 }
 
+div.crossnav {
+  background-color: #444;
+  right: 10px;
+  padding-bottom: 10px;
+  top: 10px;
+  margin-right: 20px;
+  position: absolute;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+div.crossnav a {
+  color: #fff;
+  text-decoration: none;
+}
+
 div.banner {
   text-align: center;
 }
