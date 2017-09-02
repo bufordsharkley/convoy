@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/plain" rel="author" href="/humans.txt" />
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% block head %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
     {% if podcast.title == 'An Earful of Cocktail' %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='cocktail_favicon.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cocktail_style.css') }}">
     {% else %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     {% endif %}
     <link rel="alternate" type="application/rss+xml" title="Earful RSS" href="/feed/" />
-    <title>Earful of Convoy Podcast</title>
+    <title>{{podcast.title}}</title>
     <meta name="description" content="{{podcast.description}} (Convoy is a film by Sam Peckinpah; the song is by C.W. McCall. Podcasts are audio files you can listen to on your podcast devices.)">
     {% endblock %}
   </head>
