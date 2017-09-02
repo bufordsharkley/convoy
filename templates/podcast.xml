@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 <channel>
-<title>{{ podcast.title }}</title>
+<title>{{ podcast.master_title }}</title>
 <description>{{ podcast.description }}</description>
 <link>{{ podcast.website }}</link>
 <language>en-us</language>
