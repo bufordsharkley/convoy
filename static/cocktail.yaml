@@ -28,9 +28,11 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_01.png
      cocktail:
        name: The Uncle Pat
-       recipe: >
+       recipe: |
          1.5 oz potcheen
          2 oz flat beer through rusty pipes
          0.5 oz grenadine
-         Garnish with rind of half a lime, with dollar sign carved in
+
+         Carve a dollar sign into rind of half a lime and garnish
+
          Served on the rocks in double old-fashioned glass.

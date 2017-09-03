@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="mainpage">
+  {% for episode in episodes.values() | sort(attribute='datetime') %}
+  <a href="/ep/{{episode.key}}">{{episode.title}}</a>
+  <marquee>{{episode.cocktail.name}}</marquee>
+  <div>
+    <h2>{{episode.cocktail.name}}</h2>
+    <br/>
+    <div class="cocktail_recipe">
+    {% for line in episode.cocktail.recipe.splitlines() %}
+    {{line}}<br/>
+    {% endfor %}
+    </div>
+    <hr/>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

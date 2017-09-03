@@ -44,6 +44,11 @@ def episodes():
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
+@cocktail_app.route('/cocktails/')
+def cocktails():
+    podcast = yaml.load(app.open_resource('static/cocktail.yaml'))
+    return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
+
 @app.route('/eps/')
 def episodes():
     podcast = yaml.load(app.open_resource('static/podcast.yaml'))
