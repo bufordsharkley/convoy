@@ -42,6 +42,9 @@
     <a href="/feed.xml"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
     <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
   </div>
+  {% if episode.image %}
+  <img src="{{episode.image}}" alt="A tasty episode image"/>
+  {% endif %}
   <div class="player">
     <h3>{{ episode.title }}</h3>
     <h3>Recorded on {{ episode.datetime.strftime('%Y-%m-%d') }} at {{episode.datetime.strftime('%-I:%M %p')}}</h3>

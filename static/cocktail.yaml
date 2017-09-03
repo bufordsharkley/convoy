@@ -7,4 +7,30 @@ long description: "The world's most popular Cocktail podcast. The gang breaks Co
 logo: http://earfulofconvoy.com/static/earful_album.png
 itunes category: "TV &amp; Film"
 itunes explicit: clean
-episodes: []
+episodes:
+   - title: "Earful of Cocktail: Episode 1 (0:00:00 - 0:05:00)"
+     description: >
+       The Cocktail Gang gets "Wild Again" as we set off on a new podtail... or should
+       we say "pod tale"! After all, we have a Whale of a Story to share with
+       you: the story of brash, young, scared military man Brian Flanagan and his
+       dreams of owning the city of New York, one spinning bottle of liquor at a
+       time. New features are debuted: "Drink of the Ep", "Flair in the Air", and
+       "Who Let the Spoilers Out?". We pick apart the film’s depiction of
+       masculinity in the 1980s, fill you in on the latest news and gossip about
+       Gilles Gothic, examine the roots of George W. Bush’s imperialist aims, and
+       check up on your favorite Long Island City subway stops. As we’ve always
+       said, there has to be a crossroad, a place to draw the line. And as
+       always, we attempt to answer the question, "what is theirs and what is
+       mine?" The answer may surprise you. Drink of the Ep: the Uncle Pat.
+     datetime: '2017-09-02T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_1.mp3
+     audio size: 113972981
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_01.png
+     cocktail:
+       name: The Uncle Pat
+       recipe: >
+         1.5 oz potcheen
+         2 oz flat beer through rusty pipes
+         0.5 oz grenadine
+         Garnish with rind of half a lime, with dollar sign carved in
+         Served on the rocks in double old-fashioned glass.

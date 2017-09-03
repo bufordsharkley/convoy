@@ -38,14 +38,28 @@ def index():
     return flask.render_template('index.html', podcast=podcast)
 
 
+@cocktail_app.route('/eps/')
+def episodes():
+    podcast = yaml.load(app.open_resource('static/cocktail.yaml'))
+    return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
+
+
 @app.route('/eps/')
 def episodes():
     podcast = yaml.load(app.open_resource('static/podcast.yaml'))
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
+
 @app.route('/ep/<num>')
 def episode(num):
     podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    eps = get_eps(podcast)
+    return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
+
+
+@cocktail_app.route('/ep/<num>')
+def episode(num):
+    podcast = yaml.load(app.open_resource('static/cocktail.yaml'))
     eps = get_eps(podcast)
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
@@ -75,6 +89,8 @@ def podcast_feed():
 
     def parse_datetime(datetime_string):
         # aka 2015-01-09T19:30:00
+        if isinstance(datetime_string, datetime.datetime):
+            return datetime_string
         return datetime.datetime(*map(int,
                                       re.split('[^\d]',
                                       datetime_string)[:-1]))

@@ -10,13 +10,15 @@
     <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
   </div>
   {% for episode in episodes.values() | sort(attribute='datetime') %}
+  {% if episode.image %}
+  <img src="{{episode.image}}" alt="A tasty episode image"/>
+  {% endif %}
   <a href="/ep/{{episode.key}}">{{episode.title}}</a>
   <marquee>{{episode.description}}</marquee>
   <div>Recorded on {{ episode.datetime.strftime('%Y-%m-%d') }} at {{episode.datetime.strftime('%-I:%M %p')}}</div>
   <div class="eppagedescription">
     <p>{{episode.description}}</p>
     <p><br/></p>
-
     <p>Audio size is {{episode['audio size'] }} bytes.</p>
     <hr/>
   </div>
