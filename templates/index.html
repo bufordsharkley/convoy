@@ -52,6 +52,9 @@
   <div class="player">
     <h3>LISTEN TO THE EPISODES</h3>
     <h3><a href="/eps/">OR SEE MORE DETAILED DESCRIPTIONS</a></h3>
+    {% if podcast.title == 'An Earful of Cocktail' %}
+    <h3><a href="/cocktails/">OR GO STRAIGHT TO THE COCKTAILS</a></h3>
+    {% endif %}
     <div id="jquery_jplayer_1" class="jp-jplayer"></div>
     <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
       <div class="jp-type-playlist">

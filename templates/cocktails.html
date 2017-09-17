@@ -7,7 +7,7 @@
   <div>
     <h2>{{episode.cocktail.name}}</h2>
     <br/>
-    <div class="cocktail_recipe">
+    <div class="cocktail_recipe" id="cocktail{{episode.key}}">
     {% for line in episode.cocktail.recipe.splitlines() %}
     {{line}}<br/>
     {% endfor %}

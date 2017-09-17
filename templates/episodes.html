@@ -18,6 +18,9 @@
   <div>Recorded on {{ episode.datetime.strftime('%Y-%m-%d') }} at {{episode.datetime.strftime('%-I:%M %p')}}</div>
   <div class="eppagedescription">
     <p>{{episode.description}}</p>
+    {% if episode.cocktail %}
+    <p>Drink of the Ep is the <a href="/cocktails#cocktail{{episode.key}}">{{episode.cocktail.name}}</a></p>
+    {% endif %}
     <p><br/></p>
     <p>Audio size is {{episode['audio size'] }} bytes.</p>
     <hr/>
