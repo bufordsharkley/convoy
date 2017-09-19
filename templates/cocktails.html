@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="mainpage">
-  {% for episode in episodes.values() | sort(attribute='datetime') %}
+  {% for episode in episodes.values() | sort(attribute='datetime') if 'cocktail' in episode %}
   <a href="/ep/{{episode.key}}">{{episode.title}}</a>
   <marquee>{{episode.cocktail.name}}</marquee>
   <div>
