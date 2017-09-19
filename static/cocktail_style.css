@@ -5,6 +5,11 @@ body {
   color: white;
 }
 
+a {
+  color: hotpink;
+
+}
+
 div.crossnav {
   background-color: #fff;
   border-top-right-radius: 15px;
