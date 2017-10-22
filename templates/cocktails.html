@@ -12,6 +12,9 @@
     {{line}}<br/>
     {% endfor %}
     </div>
+    {% if episode.cocktail.image %}
+    <img src="{{episode.cocktail.image}}" alt="{{episode.cocktail.name}} image"/><br/>
+    {% endif %}
     <hr/>
   </div>
   {% endfor %}

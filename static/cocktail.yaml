@@ -28,6 +28,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_01.png
      cocktail:
        name: The Uncle Pat
+       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_01.jpg
        recipe: |
          1.5 oz potcheen
          2 oz flat beer through rusty pipes
