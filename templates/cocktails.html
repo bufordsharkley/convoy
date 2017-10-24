@@ -15,12 +15,18 @@
     {% if episode.cocktail.image %}
     <img src="{{episode.cocktail.image}}" alt="{{episode.cocktail.name}} image"/><br/>
     {% endif %}
-    <div>
+    <div style="width: 40%; margin: 0 auto;">
     {% for review in episode.cocktail.reviews %}
-    {% for line in review.review.splitlines() %}
-    {{ line }}<br/>
+    <div style="text-align: justify">
+    {% for paragraph in review.review.splitlines() %}
+    <p style="margin-bottom: 2em">
+    {{ paragraph }}
+    </p>
     {% endfor %}
+    </div>
+    <div style="text-align:right">
     - {{ review.reviewer }}
+    </div>
     {% endfor %}
     </div>
     <hr/>
