@@ -13,9 +13,9 @@
     {% endfor %}
     </div>
     {% if episode.cocktail.image %}
-    <img src="{{episode.cocktail.image}}" alt="{{episode.cocktail.name}} image"/><br/>
+    <img src="{{episode.cocktail.image}}" alt="{{episode.cocktail.name}} image" style="max-width:100%"/><br/>
     {% endif %}
-    <div style="width: 40%; margin: 0 auto;">
+    <div style="width: 40%; margin: 0 auto; min-width: 19em">
     {% for review in episode.cocktail.reviews %}
     <div style="text-align: justify">
     {% for paragraph in review.review.splitlines() %}
