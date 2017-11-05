@@ -59,6 +59,10 @@ episodes:
              all you have is the remainder of the ice, an overlarge lime rind,
              and the grenadine you never wanted in the first place. You indifferently
              try to sip it for a while, but eventually dump it out.
+         - reviewer: Alan Joyce
+           review: >
+             From rusty pipes come terrible drinks. Potcheen should not be in
+             anything. The Uncle Pat is bad.
    - title: "Earful of Cocktail: Episode 2 (0:05:00 - 0:10:00)"
      description: >
         Outwork, outthink, outscheme, and outmanoeuvre: that's the strategy for the
@@ -76,6 +80,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_02.png
      cocktail:
        name: Big Apple Interview
+       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_02.jpg
        recipe: |
          1.5 oz vodka
          0.5 oz apple juice
@@ -85,6 +90,24 @@ episodes:
          Stir, serve up in oversized cocktail glass.
 
          Garnish with atomic fireball candy, sliced if possible.
+       reviews:
+         - reviewer: Hervey Okkles
+           review: >
+             For the record, it is *not* possible to slice atomic fireball candy.
+
+             In capturing the airy lustrousness of the gray Manhattan interview
+             rooms, Stoli was selected, which seemed to be adequately '80s
+             glitzy. As someone who does not like vodka cocktails and does not
+             like apple juice, it's uncanny how *good* this is―almost certainly
+             the best drink of its kind. Both the apple juice and pernod swim
+             faintly against the big nothingness of vodka and seltzer; strong
+             flavors in small quantities, it gives you the impression of a noisy
+             street-level hubbub wafting 30 floors up, at the threshold of
+             audibility. (The apple in particular gives the drink a certain
+             honest bulkiness.) As you make you way through, the outer layer of
+             the atomic fireball dissolves, lending an unsubtle satire of the
+             cutthroat business world: stick around long enough and you're
+             ankle-deep in blood.
    - title: "Earful of Cocktail: Episode 3 (0:10:00 - 0:15:00)"
      description: >
         An episode with all the excitement of the Keynesian revolution... but
