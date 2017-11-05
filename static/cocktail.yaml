@@ -108,6 +108,11 @@ episodes:
              the atomic fireball dissolves, lending an unsubtle satire of the
              cutthroat business world: stick around long enough and you're
              ankle-deep in blood.
+         - reviewer: Alan Joyce
+           review: >
+             I don't like vodka cocktails much but this one was OK. More subtle
+             than expected. For best results let it sit a day until the Atomic
+             Fireball fully dissolves.
    - title: "Earful of Cocktail: Episode 3 (0:10:00 - 0:15:00)"
      description: >
         An episode with all the excitement of the Keynesian revolution... but
@@ -136,3 +141,23 @@ episodes:
          Shake all ingredients to mix, and strain into glass.
 
          Garnish with maraschino cherry. Also garnish with sprinkles.
+   - title: "Earful of Cocktail: Episode 4 (0:15:00 - 0:20:00)"
+     description: >
+        In this week's episode of Earful of Cocktail, we celebrate the life of famed
+        movie star and bartender Tom Cruise. As Brian Flanagan contemplates his
+        own mortality, faces his addiction to love, and staves off hug-me eyes,
+        light dawns on Marble Head. Guest for "With Fresh Eyes": Marc Chambers,
+        host of the podcast whose name we all know. #RIPTomCruise #NeverRecover
+        #StickWithTheBrew
+     datetime: '2017-11-04T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_4.mp3
+     audio size: 112728090
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_04.png
+     cocktail:
+       name: Finnegan's Obit
+       recipe: |
+         4 oz Remy Martin cognac
+
+         Pour into oversize snifter.
+
+         Garnish with orange and black sprinkles.
