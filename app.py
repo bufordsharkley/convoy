@@ -1,18 +1,20 @@
 import copy
 import datetime
 import re
+import sys
+
 import yaml
 
 import flask
 import jinja2
 
-app = flask.Flask(__name__)
+convoy_app = flask.Flask(__name__)
 
 cocktail_app = flask.Flask(__name__)
 
 
-cocktail_info = yaml.load(app.open_resource('static/cocktail.yaml'))
-convoy_info = yaml.load(app.open_resource('static/podcast.yaml'))
+cocktail_info = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
+convoy_info = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
 
 
 def get_eps(podcast):
@@ -26,67 +28,66 @@ def get_eps(podcast):
     return eps
 
 
-@app.route('/')
+@convoy_app.route('/')
 def index():
-    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
     return flask.render_template('index.html', podcast=podcast)
 
 
 @cocktail_app.route('/')
 def index():
-    podcast = yaml.load(app.open_resource('static/cocktail.yaml'))
+    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
     return flask.render_template('index.html', podcast=podcast)
 
 
 @cocktail_app.route('/eps/')
 def episodes():
-    podcast = yaml.load(app.open_resource('static/cocktail.yaml'))
+    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
-@app.route('/cocktails/')
+@convoy_app.route('/cocktails/')
 def cocktails():
-    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
     return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
 
 
 @cocktail_app.route('/cocktails/')
 def cocktails():
-    podcast = yaml.load(app.open_resource('static/cocktail.yaml'))
+    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
     return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
 
-@app.route('/eps/')
+@convoy_app.route('/eps/')
 def episodes():
-    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
-@app.route('/ep/<num>')
+@convoy_app.route('/ep/<num>')
 def episode(num):
-    podcast = yaml.load(app.open_resource('static/podcast.yaml'))
+    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
     eps = get_eps(podcast)
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
 
 @cocktail_app.route('/ep/<num>')
 def episode(num):
-    podcast = yaml.load(app.open_resource('static/cocktail.yaml'))
+    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
     eps = get_eps(podcast)
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
 
 # I would just chain these decorators, but I think flask-frozen doesn't like it?
-@app.route('/feed/')
+@convoy_app.route('/feed/')
 def podcast_feed_legacy():
     return podcast_feed()
 
 
-@app.route('/feed.xml')
+@convoy_app.route('/feed.xml')
 @cocktail_app.route('/feed.xml')
 def podcast_feed():
-
-    cocktail_info = yaml.load(app.open_resource('static/cocktail.yaml'))
-    convoy_info = yaml.load(app.open_resource('static/podcast.yaml'))
+    cocktail_info = yaml.load(cocktail_app.open_resource('static/cocktail.yaml'))
+    convoy_info = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
     def extract_copyright_years(podcast):
         years = [(x['datetime']).year for x in podcast['episodes']]
         if not years:
@@ -133,16 +134,18 @@ def podcast_feed():
     return response
 
 
-@app.route('/humans.txt')
+@convoy_app.route('/humans.txt')
 @cocktail_app.route('/humans.txt')
 def humans_txt():
-    return flask.send_from_directory(app.static_folder, 'humans.txt')
+    return flask.send_from_directory(convoy_app.static_folder, 'humans.txt')
 
 
-@app.errorhandler(404)
+@convoy_app.errorhandler(404)
 def page_not_found(e):
     return flask.render_template('404.html'), 404
 
 
 if __name__ == '__main__':
+    if len(sys.argv) > 2:
+        convoy_app.run(debug=True)
     cocktail_app.run(debug=True)

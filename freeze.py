@@ -17,10 +17,10 @@ if podcast == 'cocktail':
     info = app.cocktail_info
     app.cocktail_app.config['FREEZER_DESTINATION'] = 'cocktail_build'
 else:
-    freezer = Freezer(app.app)
+    freezer = Freezer(app.convoy_app)
     info = app.convoy_info
     FREEZER_DESTINATION = 'convoy_build'
-    app.app.config['FREEZER_DESTINATION'] = 'convoy_build'
+    app.convoy_app.config['FREEZER_DESTINATION'] = 'convoy_build'
 
 
 @freezer.register_generator
