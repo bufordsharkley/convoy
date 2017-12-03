@@ -151,7 +151,7 @@ episodes:
         #StickWithTheBrew
      datetime: '2017-11-04T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_4.mp3
-     audio size: 112728090
+     audio size: 112906846
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_04.png
      cocktail:
        name: Finnegan's Obit
@@ -161,3 +161,24 @@ episodes:
          Pour into oversize snifter.
 
          Garnish with orange and black sprinkles.
+   - title: "Earful of Cocktail: Episode 5 (0:20:00 - 0:25:00)"
+     description: >
+        It's a Target Kids takeover this episode of Earful, as we lurk within
+        internet-only radio signals under the cover of a volleyball game. We break
+        down the fifth five minutes, from assessing business proposals, juggling
+        pizza, to examining the forgotten B-side of the Big Bopper's biggest bop.
+        Also featuring detailed economic analysis of the bartender game through a
+        Georgist lens, andeven cameos from Trump AND Clinton! Guest for "With
+        Fresh Eyes": Trevor Adamo, who has useful information on comics-related
+        websites to visit.
+     datetime: '2017-12-02T18:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_5.mp3
+     audio size: 113734373
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_05.png
+     cocktail:
+       name: Silicon Valley Dirty Lyle
+       recipe: |
+         14 oz Soylent
+         1 oz Everclear
+
+         Pour into in a pint glass. Serve lukewarm.
