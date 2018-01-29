@@ -4,6 +4,7 @@ description: "The world's most popular Cocktail podcast"
 website: http://earfulofcocktail.com
 host: Alan Joyce and Hervey Okkles
 long description: "The world's most popular Cocktail podcast. The gang breaks Cocktail down, five minutes at a time, complete with painfully detailed analysis of every sip. We'll have special segments, special guests, and special effects. Join us for some Happy Hour Hijinx."
+frontpage description: "The world's most popular Cocktail podcast. The gang breaks Cocktail down, five minutes at a time, complete with painfully detailed analysis of every sip. We'll have special segments, special guests, and special effects. Join us for some Happy Hour Hijinx."
 logo: http://earfulofconvoy.com/static/earful_album.png
 itunes category: "TV &amp; Film"
 itunes explicit: clean
@@ -208,3 +209,27 @@ episodes:
          Shake with crushed ice, pour into tall glass.
 
          Garnish with 5 rose petals and a faux Morning Glory.
+   - title: "Earful of Cocktail: Episode 7 (0:30:00 - 0:35:00)"
+     description: >
+       Pull out your HDCP stripper, organize your locally-administered FTP
+       server, and get all shook up for another five minutes of Cocktail! When
+       Brian's fling with Coral marks the start of a relationship, threatening
+       a veritable bro paradise, it's up to the Earful Gang to analyze the
+       gender-fluid spaces that emerge–and the results can only be described as
+       "extratentacular"!  Best listened to from the perch of a hot tub in
+       front of your fireplace.
+     datetime: '2018-01-28T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_7.mp3
+     audio size: 111955968
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_07.png
+     cocktail:
+       name: Angry Basketball
+       recipe: |
+         2.0 oz gin
+         1.0 oz lemon juice
+         0.25 oz grenadine
+
+         In a clear mug, add ingredients and boiling water. Add two cubes of
+         black Jell-O.
+
+         Garnish with cinnamon stick.

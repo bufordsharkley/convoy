@@ -41,7 +41,7 @@
 {% block content %}
 <div class="mainpage">
   <div class="blurb">
-    {{ podcast['long description'] }}
+    {{ podcast['frontpage description'] }}
   </div>
   <div class="subscribe">
     <h3>SUBSCRIBE TO THE SHOW</h3>
@@ -111,6 +111,14 @@
   </div>
   {% if podcast.title == 'An Earful of Cocktail' %}
   <marquee>SERVING UP DRINKS ACROSS THE RADIOS AND PODCASTS OF THESE MANY UNITED STATES</marquee>
+  <div class="promo" id="faqs">
+    <h2>FAQs</h2>
+    <ul>
+      <li><p>Q: What movie are you talking about?
+      <br/>
+      <p>A: It is Cocktail (1988).
+    </ul>
+  </div>
   {% else %}
   <marquee>RUBBER DUCK AND HIS TRUCK ARE ROARING ACROSS THE RADIOS AND PODCASTS OF THE COUNTRY</marquee>
   <div class="promo">
