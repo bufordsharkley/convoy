@@ -1,0 +1,19 @@
+title: The KvotheCast
+description: "Fantasy fans know will the love the rambunctious adventures of the timeless scamp Kvothe. This is a podcast about him and his wonderful book."
+website: http://earfulofconvoy.com/kvothe
+host: Alan Joyce and Hervey Okkles
+long description: "Fantasy fans know will the love the rambunctious adventures of the timeless scamp Kvothe. This is a podcast about him and his wonderful book."
+logo: http://earfulofconvoy.com/static/earless/kvothecast.png
+itunes category: "Literature"
+itunes explicit: clean
+episodes:
+  - title: "KvotheCast 1: Prologue and Chapter One"
+    description: Prologue and Chapter One. In this episode, Kvothe is introduced in being cool and silent, and then a big spider eats a horse.
+    datetime: '2018-03-04T21:32:00'
+    url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_1.mp3
+    audio size: 45676544
+  - title: "KvotheCast 2: Chapters Two and Three"
+    description: Chapters Two and Three. In this episode, Kvothe buys an expensive wall decoration, and falls out of a chair."
+    datetime: '2018-03-13T20:30:00'
+    url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_2.mp3
+    audio size: 45676544

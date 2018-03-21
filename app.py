@@ -83,45 +83,51 @@ def podcast_feed_legacy():
     return podcast_feed()
 
 
+def extract_copyright_years(podcast):
+    years = [(x['datetime']).year for x in podcast['episodes']]
+    if not years:
+        return '1994-1998'
+    min_year = min(years)
+    max_year = max(years)
+    if min_year != max_year:
+        return '{}-{}'.format(min_year, max_year)
+    else:
+        return str(max_year)
+
+
+def parse_datetime(datetime_string):
+    # aka 2015-01-09T19:30:00
+    if isinstance(datetime_string, datetime.datetime):
+        return datetime_string
+    return datetime.datetime(*map(int,
+                                  re.split('[^\d]',
+                                  datetime_string)[:-1]))
+
+
+def parse_podcast_years(podcast):
+    podcast = copy.deepcopy(podcast)
+    for episode in podcast['episodes']:
+        episode['datetime'] = parse_datetime(episode['datetime'])
+    return podcast
+
+
+def merge_podcast_info(all_info):
+    resp = {}
+    for info in all_info:
+        for k, v in info.items():
+            if k == 'episodes' and 'episodes' in resp:
+                resp[k] = resp[k] + v
+            else:
+                resp[k] = v
+    return resp
+
+
 @convoy_app.route('/feed.xml')
 @cocktail_app.route('/feed.xml')
 def podcast_feed():
     cocktail_info = yaml.load(cocktail_app.open_resource('static/cocktail.yaml'))
     convoy_info = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
-    def extract_copyright_years(podcast):
-        years = [(x['datetime']).year for x in podcast['episodes']]
-        if not years:
-            return '1994-1998'
-        min_year = min(years)
-        max_year = max(years)
-        if min_year != max_year:
-            return '{}-{}'.format(min_year, max_year)
-        else:
-            return str(max_year)
 
-    def parse_datetime(datetime_string):
-        # aka 2015-01-09T19:30:00
-        if isinstance(datetime_string, datetime.datetime):
-            return datetime_string
-        return datetime.datetime(*map(int,
-                                      re.split('[^\d]',
-                                      datetime_string)[:-1]))
-
-    def parse_podcast_years(podcast):
-        podcast = copy.deepcopy(podcast)
-        for episode in podcast['episodes']:
-            episode['datetime'] = parse_datetime(episode['datetime'])
-        return podcast
-
-    def merge_podcast_info(all_info):
-        resp = {}
-        for info in all_info:
-            for k, v in info.items():
-                if k == 'episodes' and 'episodes' in resp:
-                    resp[k] = resp[k] + v
-                else:
-                    resp[k] = v
-        return resp
 
     all_podcast = [convoy_info, cocktail_info]
     podcast = merge_podcast_info(all_podcast)
@@ -132,6 +138,26 @@ def podcast_feed():
                                      copyright_years=copyright_years))
     response.mimetype = "application/xml"
     return response
+
+
+@convoy_app.route('/kvothe.xml')
+@cocktail_app.route('/kvothe.xml')
+def kvothe_feed():
+    kvothe_info = yaml.load(cocktail_app.open_resource(
+        'static/earless/kvothe.yaml'))
+    podcast = parse_podcast_years(kvothe_info)
+    copyright_years = extract_copyright_years(podcast)
+    response = flask.make_response(flask.render_template('podcast.xml',
+                                     podcast=podcast,
+                                     copyright_years=copyright_years))
+    response.mimetype = "application/xml"
+    return response
+
+
+@convoy_app.route('/kvothe')
+@cocktail_app.route('/kvothe')
+def kvothe():
+    return flask.send_from_directory(convoy_app.static_folder, 'earless/kvothecast.png')
 
 
 @convoy_app.route('/humans.txt')
