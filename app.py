@@ -157,7 +157,8 @@ def kvothe_feed():
 @convoy_app.route('/kvothe')
 @cocktail_app.route('/kvothe')
 def kvothe():
-    return flask.send_from_directory(convoy_app.static_folder, 'earless/kvothecast.png')
+    podcast = yaml.load(convoy_app.open_resource('static/earless/kvothe.yaml'))
+    return flask.render_template('index.html', podcast=podcast)
 
 
 @convoy_app.route('/humans.txt')

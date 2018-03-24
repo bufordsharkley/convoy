@@ -45,8 +45,10 @@
   </div>
   <div class="subscribe">
     <h3>SUBSCRIBE TO THE SHOW</h3>
-    <a href="/feed.xml"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
+    <a href="{{podcast.rss_feed}}"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
+    {% if podcast.itunes_url %}
     <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
+    {% endif %}
   </div>
   {% if podcast.episodes %}
   <div class="player">
@@ -99,18 +101,16 @@
     </div>
   </div>
   {% endif %}
+  {% if podcast.promo_file %}
   <div class="promo">
     <h3>LISTEN TO THE PROMO</h3>
     <audio controls>
-      {% if podcast.title == 'An Earful of Cocktail' %}
-      <source src="{{ url_for('static', filename='cocktail_promo.mp3')}}">
-      {% else %}
-      <source src="{{ url_for('static', filename='promo.mp3')}}">
-      {% endif %}
+      <source src="{{ url_for('static', filename=podcast.promo_file)}}">
     </audio>
   </div>
+  {% endif %}
+  <marquee>{{ podcast.marquee }}</marquee>
   {% if podcast.title == 'An Earful of Cocktail' %}
-  <marquee>SERVING UP DRINKS ACROSS THE RADIOS AND PODCASTS OF THESE MANY UNITED STATES</marquee>
   <div class="promo" id="faqs">
     <h2>FAQs</h2>
     <ul>
@@ -119,8 +119,7 @@
       <p>A: It is Cocktail (1988).
     </ul>
   </div>
-  {% else %}
-  <marquee>RUBBER DUCK AND HIS TRUCK ARE ROARING ACROSS THE RADIOS AND PODCASTS OF THE COUNTRY</marquee>
+  {% elif podcast.title == 'An Earful of Convoy' %}
   <div class="promo">
     <h3>CHECK US OUT ON TWEET STREET</h3>
     <a href="http://twitter.com/earfulofconvoy">We're tweeting up a storm</a>
@@ -153,6 +152,7 @@
       <p>A: It is Crazy Eights.
     </ul>
   </div>
+  {% else %}
   {% endif %}
 </div>
 {% endblock %}

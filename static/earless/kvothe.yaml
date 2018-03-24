@@ -6,6 +6,9 @@ long description: "Fantasy fans know will the love the rambunctious adventures o
 logo: http://earfulofconvoy.com/static/earless/kvothecast.png
 itunes category: "Literature"
 itunes explicit: clean
+marquee: TALKIN' KVOTHE! THE MAN, THE LEGEND!
+layout_image: earless/kvothecast.png
+rss_feed: '/kvothe.xml'
 episodes:
   - title: "KvotheCast 1: Prologue and Chapter One"
     description: Prologue and Chapter One. In this episode, Kvothe is introduced in being cool and silent, and then a big spider eats a horse.

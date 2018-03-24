@@ -23,17 +23,13 @@
       <div class="crossnav">
         {% if podcast.title == 'An Earful of Cocktail' %}
         <a href="http://earfulofconvoy.com"><img src="/static/convoy.png" alt="Earful of Convoy" height="50"><p>next podcast</p></a>
-        {% else %}
+        {% elif podcast.title == 'An Earful of Convoy' %}
         <a href="http://earfulofcocktail.com"><img src="/static/cocktail.png" alt="Earful of Cocktail" height="50"><p>next podcast</p></a>
         {% endif %}
       </div>
       <div class="banner">
         <a href="{{url_for('index')}}">
-          {% if podcast.title == 'An Earful of Cocktail' %}
-          <img src="{{ url_for('static', filename = 'cocktail.png')}}" alt="An Earful of Cocktail"/>
-          {% else %}
-          <img src="{{ url_for('static', filename = 'convoy.png')}}" alt="An Earful of Convoy"/>
-          {% endif %}
+          <img src="{{ url_for('static', filename = podcast.layout_image)}}" alt="{{podcast.title}}"/>
         </a>
       </div>
     </nav>
