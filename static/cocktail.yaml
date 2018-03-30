@@ -135,6 +135,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_03.png
      cocktail:
        name: Ding-A-Ling
+       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_03.jpg
        recipe: |
          0.25 oz vodka
          1 oz Kahlua
@@ -147,6 +148,45 @@ episodes:
          Shake all ingredients to mix, and strain into glass.
 
          Garnish with maraschino cherry. Also garnish with sprinkles.
+       reviews:
+         - reviewer: Hervey Okkles
+           review: >
+             In designing the perfect TGI Fridays-style cocktail, it's important to balance
+             two necessary subcomponents: the actual cocktail itself (comprising
+             the essential substance of the drink) and the corporate-mandated
+             elements (comprising gimmick, spectacle, and profit). Let's quickly
+             dispense with the former concern: the Ding-A-Ling is a solid
+             cocktail. The hazy licorice smell initially pervades, eventually
+             subsiding into soft cream, then souring subtly into shades of harsh
+             coffee and sweet. Essentially a White Russian with tuned-down base
+             spirit and tuned-up cacao and anise, the Ding-A-Ling is a can't miss
+             sort of concoction that we knocked out of the park. Soft and spicy,
+             rich and mysterious, I can recommend it without reservation.
+
+             Technically, the drink is something of a mess, for several
+             reasons. Sprinkles: the sort of can't-miss gimmick that one would
+             see everywhere in the T.G.I.sphere if they worked. They do not.
+             For each sprinkle that successfully rests atop the cream, ten or
+             twenty sink immediately.  Sprinkles do not demonstrably add to the
+             presentation of the drink, and they do not demonstrably add to the
+             flavor. The gimmick with the vodka-soaked Twizzler is not
+             worth the awkward process of the soak, and Twizzler-balancing within
+             the cocktail glass without it buckling and collapsing into the center
+             was an impossibility. Finally, the cherry sank like a stone, not
+             to be seen again; simply wasted. A fair amount of work was done
+             trying to balance the cherry against the Twizzler, but it's not
+             doable in a reasonable amount of time, certainly not the amount of
+             time available to a harried Friday's bartender. Upon finishing the
+             drink, the customer is left with an unappetizing layer of gunk.
+
+             With a proper R&D budget, TGI Fridays may be able to design a proper glass
+             to allow the ambitious vision of the Ding-A-Ling to function as intended.
+         - reviewer: Alan Joyce
+           review: >
+             At first, cream. Fluffy, creamy coffee cream. Then a brutal awakening — the
+             violent intrusion of licorice brought by an unfortunate quantity of Ouzo.
+
+             It's fair to say there's balance here.
    - title: "Earful of Cocktail: Episode 4 (0:15:00 - 0:20:00)"
      description: >
         In this week's episode of Earful of Cocktail, we celebrate the life of famed
@@ -161,12 +201,19 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_04.png
      cocktail:
        name: Finnegan's Obit
+       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_05.jpg
        recipe: |
          4 oz Remy Martin cognac
 
          Pour into oversize snifter.
 
          Garnish with orange and black sprinkles.
+       reviews:
+         - reviewer: Alan Joyce
+           review: >
+             Alas, Finnegan, ye shall be missed. Rémy Martin is enjoyable. Even moreso with
+             spooky sprinkles. The large snifter really impresses upon you the alcoholic
+             aroma of the drink. A modest effort here.
    - title: "Earful of Cocktail: Episode 5 (0:20:00 - 0:25:00)"
      description: >
         It's a Target Kids takeover this episode of Earful, as we lurk within
