@@ -270,7 +270,7 @@ episodes:
        gender-fluid spaces that emerge–and the results can only be described as
        "extratentacular"!  Best listened to from the perch of a hot tub in
        front of your fireplace.
-     datetime: '2018-01-28T17:00:00'
+     datetime: '2018-01-27T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_7.mp3
      audio size: 111955968
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_07.png
@@ -285,3 +285,29 @@ episodes:
          black Jell-O.
 
          Garnish with cinnamon stick.
+   - title: "Earful of Cocktail: Episode 8 (0:35:00 - 0:40:00)"
+     description: >
+       Get your mind untwisted, mate, by listening to an all-new episode of Earful!
+       In this ep, we return to the beginning of the film's essence, helping you spot
+       the difference between one-nighters and meaningful relationships with
+       unattached millionaresses, and bringing you a veritable Kokomo-splosion of
+       information about Mike Love's beloved chart-topper!  Also in the ep, free throw
+       mathematics, inside tips on MIDI conversions, and a heads-up on some truly
+       outstanding web properties (http://shoevids.com!) So curl up with your big
+       snifter; we'll get there fast and then we'll take it slow...
+     datetime: '2018-03-24T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_8.mp3
+     audio size: 115439616
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_08.png
+     cocktail:
+       name: The Kokomo Brochure
+       recipe: |
+         2.0 oz white Jamaican rum
+         juice from 1.0 whole orange
+         0.5 oz Cointreau
+         0.5 oz Grand Marnier
+         0.5 oz Licor 43
+         Orangina to fill
+
+         Shake everything but Orangina with ice. Finely filter into zombie
+         glass half-full with crushed ice. Fill with Orangina.
