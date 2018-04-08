@@ -53,7 +53,11 @@
   {% if podcast.episodes %}
   <div class="player">
     <h3>LISTEN TO THE EPISODES</h3>
+    {% if podcast.title == 'The KvotheCast' %}
+    <h3><a href="/kvothe/eps/">OR SEE MORE DETAILED DESCRIPTIONS</a></h3>
+    {% else %}
     <h3><a href="/eps/">OR SEE MORE DETAILED DESCRIPTIONS</a></h3>
+    {% endif %}
     {% if podcast.title == 'An Earful of Cocktail' %}
     <h3><a href="/cocktails/">OR GO STRAIGHT TO THE COCKTAILS</a></h3>
     {% endif %}

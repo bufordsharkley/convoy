@@ -16,7 +16,7 @@ episodes:
     url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_1.mp3
     audio size: 45676544
   - title: "KvotheCast 2: Chapters Two and Three"
-    description: Chapters Two and Three. In this episode, Kvothe buys an expensive wall decoration, and falls out of a chair."
+    description: Chapters Two and Three. In this episode, Kvothe buys an expensive wall decoration, and falls out of a chair.
     datetime: '2018-03-13T20:30:00'
     url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_2.mp3
     audio size: 45676544
@@ -24,4 +24,9 @@ episodes:
     description: Chapters Four and Five and Six. In this episode, Kvothe's special friend watches him sleep, and also Kvothe begins telling the story of Kvothe.
     datetime: '2018-03-21T18:00:00'
     url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_3.mp3
+    audio size: 45676544
+  - title: "KvotheCast 4: Chapters Seven and Eight and Nine"
+    description: Chapters Seven and Eight and Nine. In this episode, Kvothe is really good at learning shorthand.
+    datetime: '2018-04-03T19:15:00'
+    url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_4.mp3
     audio size: 45676544
