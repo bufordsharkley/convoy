@@ -115,6 +115,13 @@
   {% endif %}
   <marquee>{{ podcast.marquee }}</marquee>
   {% if podcast.title == 'An Earful of Cocktail' %}
+  <hr/>
+  <div class="promo" id="feuding">
+    <h2>FEUDING SECTION</h2>
+    <h3>CURRENT FEUDS:</h3>
+    <img src="{{ url_for('static', filename = 'dogbrothers/clintyboy.png')}}" class="dogbro" />
+  </div>
+  <hr/>
   <div class="promo" id="faqs">
     <h2>FAQs</h2>
     <ul>
