@@ -116,21 +116,6 @@
   {% endif %}
   <marquee>{{ podcast.marquee }}</marquee>
   {% if podcast.title == 'An Earful of Cocktail' %}
-  <hr/>
-  <div class="promo" id="feuding">
-    <h2>FEUDING SECTION</h2>
-    <h3>CURRENT FEUDS:</h3>
-    <img src="{{ url_for('static', filename = 'dogbrothers/clintyboy.png')}}" class="dogbro" />
-  </div>
-  <hr/>
-  <div class="promo" id="faqs">
-    <h2>FAQs</h2>
-    <ul>
-      <li><p>Q: What movie are you talking about?
-      <br/>
-      <p>A: It is Cocktail (1988).
-    </ul>
-  </div>
   {% elif podcast.title == 'An Earful of Convoy' %}
   <div class="promo">
     <h3>CHECK US OUT ON TWEET STREET</h3>
@@ -142,29 +127,42 @@
     <h3>OUR OFFICIAL PRESIDENTIAL ENDORSEMENT</h3>
     <img src="{{ url_for('static', filename='rubber_duck_for_prez.png')}}">
   </div>
+  {% else %}
+  {% endif %}
   <hr/>
   <div class="promo" id="feuding">
     <h2>FEUDING SECTION</h2>
     <h3>CURRENT FEUDS:</h3>
+    <img src="{{ url_for('static', filename = 'dogbrothers/clintyboy.png')}}" class="dogbro" />
+    {% if podcast.title == 'An Earful of Convoy' %}
     <p>Terry and Michelle</p><br /><br />
+    {% endif %}
     <h3>PREVIOUS FEUDS:</h3>
+    {% if podcast.title == 'An Earful of Convoy' %}
     <p><strike>The Dog Brothers</strike> (resolved 7/30/16)</p>
     <!--
     <img src="{{ url_for('static', filename = 'dogbrothers/simmons.jpg')}}" class="dogbro" />
     <img src="{{ url_for('static', filename = 'dogbrothers/seydor.jpg')}}" class="dogbro" />
     <img src="{{ url_for('static', filename = 'dogbrothers/redman.jpg')}}"  class="dogbro" />
     -->
+    {% endif %}
   </div>
   <hr/>
   <div class="promo" id="faqs">
     <h2>FAQs</h2>
+    {% if podcast.title == 'An Earful of Cocktail' %}
+    <ul>
+      <li><p>Q: What movie are you talking about?
+      <br/>
+      <p>A: It is Cocktail (1988).
+    </ul>
+    {% elif podcast.title == 'An Earful of Convoy' %}
     <ul>
       <li><p>Q: What card game are Sherriff Lyle Wallace and Chief of Police Tiny Alvarez playing in the Alvarez police station?
       <br/>
       <p>A: It is Crazy Eights.
     </ul>
+    {% endif %}
   </div>
-  {% else %}
-  {% endif %}
 </div>
 {% endblock %}
