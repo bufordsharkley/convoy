@@ -11,7 +11,7 @@
   </div>
   {% for episode in episodes.values() | sort(attribute='datetime') %}
   {% if episode.image %}
-  <img src="{{episode.image}}" alt="A tasty episode image"/><br/>
+  <img src="{{episode.image}}" class="cool_img" alt="A tasty episode image"/><br/>
   {% endif %}
   <a href="/ep/{{episode.key}}">{{episode.title}}</a>
   <marquee>{{episode.description}}</marquee>
