@@ -19,9 +19,9 @@
     {% for review in episode.cocktail.reviews %}
     <div style="text-align: justify; margin-top: 1em;">
     {% for paragraph in review.review.splitlines() %}
-    <p style="margin-bottom: 2em">
-    {{ paragraph }}
-    </p>
+        <p style="margin-bottom: 2em">
+        {{ paragraph.replace('|', '<br/>') | safe }}
+        </p>
     {% endfor %}
     </div>
     <div style="text-align:right;">

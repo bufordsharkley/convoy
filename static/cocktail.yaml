@@ -209,6 +209,26 @@ episodes:
 
          Garnish with orange and black sprinkles.
        reviews:
+         - reviewer: Hervey Okkles
+           review: >
+             There's no way to happily attend the funeral of Tom Cruise, but at
+             least one can sip the proper cocktail while weeping. This drink shares
+             some similarities to drinking "Remy Martin, neat", with several key departures:
+
+             1) There are sprinkles floating in it|
+             2) The glass is very big
+
+             The sprinkles, somewhat surprisingly, blossom with great majesty into an
+             inky cloud within seconds. Not only contributing to the atmosphere of
+             mourning, this also adds to the taste of the spicy rich deep bloomy
+             cognac, adding a note of sour. Also, the sprinkles are chewy.
+
+             The large glass helps direct everything directly to the nose and
+             face, targeting the mulchy spiciness into the sinuses and also
+             presenting a miniature comfortable world to fall into, as one stares
+             into the bottom of the very large snifter. Other see you as carrying
+             a deep and somber reminder of loss, while you discover a deep and rich world to
+             escape into.
          - reviewer: Alan Joyce
            review: >
              Alas, Finnegan, ye shall be missed. Rémy Martin is enjoyable. Even moreso with
@@ -261,6 +281,37 @@ episodes:
          Shake with crushed ice, pour into tall glass.
 
          Garnish with 5 rose petals and a faux Morning Glory.
+       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_07.jpg
+       reviews:
+         - reviewer: Hervey Okkles
+           review: >
+               A pretty drink for pretty yuppies; it wows upon first glance
+               with its emerald tones and partially-plastic bouquet. Though one
+               knows that the content will prove false―precisely the point with
+               such a yuppie gimmick―it impresses at first, coming in smooth with
+               clean neon edges. But as per the yuppie lifestyle, as soon as you
+               commit to it, the harshness is upon you. Cough syrup
+               bright, wave after aqua wave of a Sharkleberry Finn immediacy, it's
+               really too much to stand, too ersatz to consume quickly, and
+               quite overbearingly loud. One is quickly convinced to renounce yuppieism
+               and plan the jailbreak. Late, late in the drink, long after
+               reckoning and regret, the actual taste emerges: copper and grain.
+         - reviewer: Alan Joyce
+           review: >
+              This drink is a feast for the eyes, if not always the tongue. It
+              has three phases:
+
+              1) An initial rise of tempered sweetness, not unintriguing|
+              2) An overwhelming spike of sickening syrup|
+              3) A mellowing out into a slightly bitter finish
+
+              The evolution of it over these phases is interesting and worth
+              experiencing. While phase 2 does undercut the overall appeal of
+              the drink, I found phase 1 and 3 to be pretty palatable. The
+              peach schnapps shines throughout, making the drink a lot more
+              approachable than it would be otherwise.
+
+              Visually, the drink is absolutely stunning.
    - title: "Earful of Cocktail: Episode 7 (0:30:00 - 0:35:00)"
      description: >
        Pull out your HDCP stripper, organize your locally-administered FTP
@@ -311,3 +362,29 @@ episodes:
 
          Shake everything but Orangina with ice. Finely filter into zombie
          glass half-full with crushed ice. Fill with Orangina.
+
+   - title: "Earful of Cocktail: Episode 9 (0:40:00 - 0:45:00)"
+     description: >
+        Get ready to hit the road, mon, with the Earful Crew, as we dissect another
+        five minutes of Cocktail! In this episode, Owen will take care of you as we
+        carefully analyze the continuity of Flanagan's circular barwork, assess the
+        sublimated rage beneath the worry-free happiness, and draw connections to
+        avant-garde films of the 1930s. Relax with a shot of the roadside
+        sick-making plant as we introduce new segments "Shue's Shoes," "Key Line Pie,"
+        and "That weird interstitial segment before we get to The Sync." It will
+        *certainly* be an adventure.
+     datetime: '2018-04-21T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_9.mp3
+     audio size: 114724864
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_09.png
+     cocktail:
+       name: Purgatory Happy Hour
+       recipe: |
+         1.0 oz Jim Beam Apple
+         1.0 oz Donut Vodka
+         0.5 oz Lagavulin
+         0.75 oz Rose's Lime
+         0.5 oz Midori
+         0.25 oz Simple Syrup
+
+         Shake with crushed ice, pour into double old-fashioned glass.
