@@ -6,7 +6,7 @@ long description: "Fantasy fans know will the love the rambunctious adventures o
 logo: http://earfulofconvoy.com/static/earless/kvothecast.png
 itunes category: "Literature"
 itunes explicit: clean
-marquee: TALKIN' KVOTHE! THE MAN, THE LEGEND!
+marquee: THE CURE FOR THE COMMON KVOTHE! TALKIN' KVOTHE! THE MAN, THE LEGEND!
 layout_image: earless/kvothecast.png
 rss_feed: '/kvothe.xml'
 episodes:
@@ -34,4 +34,9 @@ episodes:
     description: Chapters Ten and Eleven and Twelve. In this episode, Kvothe does some cool mind exercises, and we learn about the history of barter and also how cool Kvothe's parents were.
     datetime: '2018-04-19T20:30:00'
     url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_5.mp3
+    audio size: 45676544
+  - title: "KvotheCast 6: Chapters Thirteen and Fourteen and Fifteen"
+    description: Chapters Thirteen and Fourteen and Fifteen. In this episode, Kvothe almost dies because he is stupid
+    datetime: '2018-05-07T20:30:00'
+    url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_6.mp3
     audio size: 45676544
