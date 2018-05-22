@@ -53,6 +53,19 @@ def episodes():
     #return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
+@cocktail_app.route('/playlist.html')
+def playlist():
+    podcast = yaml.load(cocktail_app.open_resource('static/cocktail.yaml'))
+    return flask.render_template('playlist.html', podcast=podcast)
+
+
+@convoy_app.route('/playlist.html')
+def playlist():
+    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    return flask.render_template('playlist.html', podcast=podcast)
+
+
+
 @convoy_app.route('/cocktails/')
 def cocktails():
     podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
