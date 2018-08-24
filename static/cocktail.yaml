@@ -487,3 +487,27 @@ episodes:
          1.0 clean shoelace
 
          Collect ingredients in ashtray, pour into main glass to recreate waterfall.
+   - title: "Earful of Cocktail: Episode 12 (0:55:00 - 1:00:00)"
+     description: >
+       The Earful Crew checks in with a special Monday show, and trust us when we tell
+       you: it's nothing short of spectacular! We utilize powerful algebra to
+       calculate the badness of infidelity,  assess the racial theories of
+       Douglas Coughlin, and track the friendship of Eck, Boyd, and
+       Bean—Jamaica's original Dream Buds. As you sit back for an extra-long
+       spoiler alert and plenty of Reagan talk, just note how tasty this podcast
+       is! Featuring the new segment, "What's Alan Opening"?
+     datetime: '2018-07-23T20:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_12.mp3
+     audio size: 112869376
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_12.png
+     cocktail:
+       name: Nothing Special
+       recipe: |
+         1.5 oz Remy Martin cognac
+         1.0 oz Guava nectar
+         2.0 oz still water (melted ice, lukewarm)
+         151 Lemon Hart Rum (substitute Hamilton or other demerara rum) float
+
+         Attempt to light the rum float on fire.
+
+         Sprinkle gold leaf into fire.
