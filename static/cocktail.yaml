@@ -369,6 +369,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_07.png
      cocktail:
        name: Angry Basketball
+       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_04.jpg
        recipe: |
          2.0 oz gin
          1.0 oz lemon juice
@@ -421,6 +422,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_09.png
      cocktail:
        name: Purgatory Happy Hour
+       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_09.jpg
        recipe: |
          1.0 oz Jim Beam Apple
          1.0 oz Donut Vodka
@@ -511,3 +513,28 @@ episodes:
          Attempt to light the rum float on fire.
 
          Sprinkle gold leaf into fire.
+   - title: "Earful of Cocktail: Episode 13 (1:00:00 - 1:05:00)"
+     description: >
+       It's episode 13 of Earful of Cocktail, and an important one: Shue finally
+       gets her name, while Brian wakes up from his extended dream sequence
+       back in NYC! Some big questions are answered here: What's it like for an
+       Australian coming to America?  Where can you go to key out and talk to
+       theta people? And what *did* Brian did to her? Listen for cogent market
+       analysis (primarily of Odin Productions) as well as the sound of a
+       DUALSHOCK 4 being repeatedly disconnected. Also featuring fan-favorite
+       segment "We Write An Email Live On-Air."
+     datetime: '2018-07-28T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_13.mp3
+     audio size: 112869376
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_13.png
+     cocktail:
+       name: The Tony Scaduto
+       recipe: |
+         1.5 oz Tequila
+         1.0 oz carrot juice
+         2.7 tsp Pineapple preserves
+         0.5 oz Lime slice
+
+         Shake with ice, strain into large cocktail glass rimmed with Himalayan pink salt.
+
+         Garnish with lime slice
