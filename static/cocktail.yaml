@@ -525,7 +525,7 @@ episodes:
        segment "We Write An Email Live On-Air."
      datetime: '2018-07-28T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_13.mp3
-     audio size: 112869376
+     audio size: 112250880
      image: http://media.earfulofconvoy.com/earful/cocktail_ep_13.png
      cocktail:
        name: The Tony Scaduto
@@ -538,3 +538,22 @@ episodes:
          Shake with ice, strain into large cocktail glass rimmed with Himalayan pink salt.
 
          Garnish with lime slice
+   - title: "Earful of Cocktail: Episode 14 (1:05:00 - 1:10:00)"
+     description: >
+       The art world meets pugilism in this episode of Earful, and the gang's
+       here to give you the full blow-by-blow! The new ep is decidedly urban in
+       orientation, featuring Bonnie party-breaking her new boy toy, Brian
+       attempting to buttle, and some cruel misdeeds done to brewer's yeast.
+       Meanwhile, we resolve the feud with the Catbro.
+     datetime: '2018-08-11T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_14.mp3
+     audio size: 112906240
+     image: http://media.earfulofconvoy.com/earful/cocktail_ep_14.png
+     cocktail:
+       name: Art World Orientation
+       recipe: |
+         1.0 oz Bourbon
+         1.0 oz Pimm's no. 1
+         1.0 tsp liquid smoke (or some uncomfortable amount)
+         1.0 strip of cooked bacon (Maple)
+         1.0 pkg Pop Rocks
