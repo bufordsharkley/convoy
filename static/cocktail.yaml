@@ -31,10 +31,10 @@ episodes:
      datetime: '2017-09-02T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_1.mp3
      audio size: 113972981
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_01.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_01.jpg
      cocktail:
        name: The Uncle Pat
-       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_01.jpg
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_01.jpg
        recipe: |
          1.5 oz potcheen
          2 oz flat beer through rusty pipes
@@ -83,10 +83,10 @@ episodes:
      datetime: '2017-09-16T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_2.mp3
      audio size: 112270399
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_02.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_02.jpg
      cocktail:
        name: Big Apple Interview
-       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_02.jpg
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_02.jpg
        recipe: |
          1.5 oz vodka
          0.5 oz apple juice
@@ -132,10 +132,10 @@ episodes:
      datetime: '2017-10-21T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_3.mp3
      audio size: 114239758
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_03.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_03.jpg
      cocktail:
        name: Ding-A-Ling
-       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_03.jpg
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_03.jpg
        recipe: |
          0.25 oz vodka
          1 oz Kahlua
@@ -198,10 +198,10 @@ episodes:
      datetime: '2017-11-04T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_4.mp3
      audio size: 112906846
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_04.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_04.jpg
      cocktail:
        name: Finnegan's Obit
-       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_05.jpg
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_04.jpg
        recipe: |
          4 oz Remy Martin cognac
 
@@ -247,7 +247,7 @@ episodes:
      datetime: '2017-12-02T18:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_5.mp3
      audio size: 113734373
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_05.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_05.jpg
      cocktail:
        name: Silicon Valley Dirty Lyle
        recipe: |
@@ -255,7 +255,7 @@ episodes:
          1 oz Everclear
 
          Pour into in a pint glass. Serve lukewarm.
-       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_06.jpg
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_05.jpg
        reviews:
          - reviewer: Hervey Okkles
            review: >
@@ -310,7 +310,7 @@ episodes:
      datetime: '2018-01-06T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_6.mp3
      audio size: 113592320
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_06.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_06.jpg
      cocktail:
        name: Yuppie Behind Bars
        recipe: |
@@ -323,7 +323,7 @@ episodes:
          Shake with crushed ice, pour into tall glass.
 
          Garnish with 5 rose petals and a faux Morning Glory.
-       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_07.jpg
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_06.jpg
        reviews:
          - reviewer: Hervey Okkles
            review: >
@@ -366,10 +366,10 @@ episodes:
      datetime: '2018-01-27T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_7.mp3
      audio size: 111955968
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_07.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_07.jpg
      cocktail:
        name: Angry Basketball
-       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_04.jpg
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_07.jpg
        recipe: |
          2.0 oz gin
          1.0 oz lemon juice
@@ -430,7 +430,7 @@ episodes:
      datetime: '2018-03-24T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_8.mp3
      audio size: 115439616
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_08.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_08.jpg
      cocktail:
        name: The Kokomo Brochure
        recipe: |
@@ -457,10 +457,10 @@ episodes:
      datetime: '2018-04-21T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_9.mp3
      audio size: 114724864
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_09.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_09.jpg
      cocktail:
        name: Purgatory Happy Hour
-       image: http://media.earfulofconvoy.com/earful/cocktail_cocktail_09.jpg
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_09.jpg
        recipe: |
          1.0 oz Jim Beam Apple
          1.0 oz Donut Vodka
@@ -483,7 +483,7 @@ episodes:
      datetime: '2018-05-12T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_10.mp3
      audio size: 114724864
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_10.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_10.jpg
      cocktail:
        name: Fight on the Beach
        recipe: |
@@ -509,7 +509,7 @@ episodes:
      datetime: '2018-07-07T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_11.mp3
      audio size: 115124224
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_11.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_11.jpg
      cocktail:
        name: Millionaire's Waterfall
        recipe: |
@@ -539,7 +539,7 @@ episodes:
      datetime: '2018-07-23T20:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_12.mp3
      audio size: 112869376
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_12.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_12.jpg
      cocktail:
        name: Nothing Special
        recipe: |
@@ -564,7 +564,7 @@ episodes:
      datetime: '2018-07-28T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_13.mp3
      audio size: 112250880
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_13.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_13.jpg
      cocktail:
        name: The Tony Scaduto
        recipe: |
@@ -586,7 +586,7 @@ episodes:
      datetime: '2018-08-11T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_14.mp3
      audio size: 112906240
-     image: http://media.earfulofconvoy.com/earful/cocktail_ep_14.png
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_14.jpg
      cocktail:
        name: Art World Orientation
        recipe: |

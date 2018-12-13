@@ -10,19 +10,20 @@
     <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
   </div>
   {% for episode in episodes.values() | sort(attribute='datetime') %}
-  {% if episode.image %}
-  <img src="{{episode.image}}" class="cool_img" alt="A tasty episode image"/><br/>
-  {% endif %}
-  <a href="/ep/{{episode.key}}">{{episode.title}}</a>
-  <marquee>{{episode.description}}</marquee>
-  <div>Recorded on {{ episode.datetime.strftime('%Y-%m-%d') }} at {{episode.datetime.strftime('%-I:%M %p')}}</div>
+  <a href="/ep/{{episode.key}}">
+  <div class="ep_img_container" {% if episode.image %}style="background-image: url('{{episode.image}}');"{% endif %}>
+    <div class="ep_title_container"><span class="ep_title">{{episode.title}}</span></div>
+  </div>
+  </a>
+  <div class="ep_marquee"><marquee class="episode_marquee">{{episode.description}}</marquee></div>
+  <div></div>
   <div class="eppagedescription">
+    <hr/>
     <p>{{episode.description}}</p>
     {% if episode.cocktail %}
-    <p>Drink of the Ep is the <a href="/cocktails#cocktail{{episode.key}}">{{episode.cocktail.name}}</a></p>
+    <p>Drink of the Ep &mdash; <a href="/cocktails#cocktail{{episode.key}}">{{episode.cocktail.name}}</a></p>
     {% endif %}
-    <p><br/></p>
-    <p>Audio size is {{episode['audio size'] }} bytes.</p>
+    <p>Audio size is {{episode['audio size'] }} bytes. <span class="record_time">Recorded on {{ episode.datetime.strftime('%Y-%m-%d') }} at {{episode.datetime.strftime('%-I:%M %p')}}</span></p>
     <hr/>
   </div>
   {% endfor %}

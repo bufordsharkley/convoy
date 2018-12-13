@@ -43,7 +43,7 @@
     <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
   </div>
   {% if episode.image %}
-  <img src="{{episode.image}}" class="cool_img" alt="A tasty episode image"/>
+  <img src="{{episode.image}}" class="episode_img_large" alt="A tasty episode image"/>
   {% endif %}
   <div class="player">
     <h3>{{ episode.title }}</h3>

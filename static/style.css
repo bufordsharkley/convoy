@@ -50,10 +50,14 @@ div.blurb {
 }
 
 div.eppagedescription {
-  width: 350px;
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 
@@ -126,4 +130,48 @@ img.dogbro {
 
 img.cool_img {
   max-width: 100%;
+}
+
+div.ep_img_container {
+  height: 190px;
+  padding-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  background-position: center;
+}
+
+div.ep_title_container {
+  transform: rotate(2.5deg);
+} 
+
+span.ep_title {
+  background-color: #fff;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+div.ep_marquee {
+  margin-top: -90px;
+  margin-bottom: 20px;
+}
+
+marquee.episode_marquee {
+  font-size: 30px;
+  font-variant: small-caps;
+  mix-blend-mode: color-dodge;
+}
+
+div.eppagedescription p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+span.record_time {
+  text-align: right;
+  float: right;
+}
+
+img.episode_img_large {
+  width: 100%;
+  margin-top: 40px;
 }

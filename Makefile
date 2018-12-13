@@ -1,3 +1,16 @@
+freeze_cocktail_local:
+	    python freeze.py cocktail
+
+freeze_convoy_local:
+	    python freeze.py convoy
+
+server_cocktail_local: freeze_cocktail_local
+	    cd cocktail_build && python -m SimpleHTTPServer
+
+server_convoy_local: freeze_convoy_local
+	    cd convoy_build && python -m SimpleHTTPServer
+
+
 freeze_cocktail:
 	    env/bin/python freeze.py cocktail
 
