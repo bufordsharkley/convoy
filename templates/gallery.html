@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="mainpage">
+  <section id="meditative_gallery">
+  {% for episode in episodes.values() | sort(attribute='datetime') %}
+  {% if episode.image %}
+  <a href="/ep/{{episode.key}}">
+    <img src="{{episode.image}}"/>
+  </a>
+  {% endif %}
+  {% endfor %}
+  </section>
+</div>
+{% endblock %}

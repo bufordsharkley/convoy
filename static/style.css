@@ -175,3 +175,9 @@ img.episode_img_large {
   width: 100%;
   margin-top: 40px;
 }
+
+#meditative_gallery img {
+  width: 800px;
+  display: inline-block;
+  white-space-collapsing:discard;
+}
