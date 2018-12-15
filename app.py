@@ -46,11 +46,16 @@ def episodes():
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
+@convoy_app.route('/gallery/')
+def meditative_gallery():
+    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
+
+
 @cocktail_app.route('/gallery/')
 def meditative_gallery():
     podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
     return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
-
 
 
 #@cocktail_app.route('/kvothe/eps/')
