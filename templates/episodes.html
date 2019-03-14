@@ -9,6 +9,7 @@
     <a href="/feed.xml"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
     <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on iTunes</a>
   </div>
+  <h3>You also have the option of viewing this listing of Earful Eps as a <a href="/gallery">meditative gallery</a>.</h3>
   {% for episode in episodes.values() | sort(attribute='datetime') %}
   <a href="/ep/{{episode.key}}">
   <div class="ep_img_container" {% if episode.image %}style="background-image: url('{{episode.image}}');"{% endif %}>
