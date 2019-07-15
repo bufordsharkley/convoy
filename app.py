@@ -28,33 +28,47 @@ def get_eps(podcast):
     return eps
 
 
+def get_convoy_data():
+    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    years = [x['datetime'][:4] for x in podcast['episodes']]
+    podcast['years'] = (min(years), max(years))
+    return podcast
+
+
+def get_cocktail_data():
+    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
+    years = [x['datetime'][:4] for x in podcast['episodes']]
+    podcast['years'] = (min(years), max(years))
+    return podcast
+
+
 @convoy_app.route('/')
 def index():
-    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    podcast = get_convoy_data()
     return flask.render_template('index.html', podcast=podcast)
 
 
 @cocktail_app.route('/')
 def index():
-    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
+    podcast = get_cocktail_data()
     return flask.render_template('index.html', podcast=podcast)
 
 
 @cocktail_app.route('/eps/')
 def episodes():
-    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
+    podcast = get_cocktail_data()
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
 @convoy_app.route('/gallery/')
 def meditative_gallery():
-    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    podcast = get_convoy_data()
     return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
 
 
 @cocktail_app.route('/gallery/')
 def meditative_gallery():
-    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
+    podcast = get_cocktail_data()
     return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
 
 
@@ -67,44 +81,44 @@ def meditative_gallery():
 
 @cocktail_app.route('/playlist.html')
 def playlist():
-    podcast = yaml.load(cocktail_app.open_resource('static/cocktail.yaml'))
+    podcast = get_cocktail_data()
     return flask.render_template('playlist.html', podcast=podcast)
 
 
 @convoy_app.route('/playlist.html')
 def playlist():
-    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    podcast = get_convoy_data()
     return flask.render_template('playlist.html', podcast=podcast)
 
 
 
 @convoy_app.route('/cocktails/')
 def cocktails():
-    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    podcast = get_convoy_data()
     return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
 
 
 @cocktail_app.route('/cocktails/')
 def cocktails():
-    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
+    podcast = get_cocktail_data()
     return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
 
 @convoy_app.route('/eps/')
 def episodes():
-    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    podcast = get_convoy_data()
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
 @convoy_app.route('/ep/<num>')
 def episode(num):
-    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    podcast = get_convoy_data()
     eps = get_eps(podcast)
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
 
 @cocktail_app.route('/ep/<num>')
 def episode(num):
-    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
+    podcast = get_cocktail_data()
     eps = get_eps(podcast)
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
@@ -190,6 +204,8 @@ def kvothe_feed():
 @cocktail_app.route('/kvothe')
 def kvothe():
     podcast = yaml.load(convoy_app.open_resource('static/earless/kvothe.yaml'))
+    years = [x['datetime'][:4] for x in podcast['episodes']]
+    podcast['years'] = (min(years), max(years))
     return flask.render_template('index.html', podcast=podcast)
 
 
