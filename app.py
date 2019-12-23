@@ -109,14 +109,14 @@ def episodes():
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
-@convoy_app.route('/ep/<num>')
+@convoy_app.route('/ep/<num>/index.html')
 def episode(num):
     podcast = get_convoy_data()
     eps = get_eps(podcast)
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
 
-@cocktail_app.route('/ep/<num>')
+@cocktail_app.route('/ep/<num>/index.html')
 def episode(num):
     podcast = get_cocktail_data()
     eps = get_eps(podcast)
