@@ -10,6 +10,9 @@
     {% if podcast.title == 'An Earful of Cocktail' %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='cocktail_favicon.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cocktail_style.css') }}">
+    {% elif podcast.title == "An Earful of You've Got Mail" %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ygm_favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ygm_style.css') }}">
     {% else %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% endif %}
@@ -33,6 +36,11 @@
         </a>
       </div>
     </nav>
+    {% if podcast.title == "An Earful of You've Got Mail" %}
+    {% for ii in range(20) %}
+      <img src="{{ url_for('static', filename='under_construction.gif')}}" alt="Under construction"/>
+    {% endfor %}
+    {% endif %}
     <div class="content">
       {% block content %}{% endblock %}
     </div>

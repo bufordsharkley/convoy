@@ -9,8 +9,8 @@ import flask
 import jinja2
 
 convoy_app = flask.Flask(__name__)
-
 cocktail_app = flask.Flask(__name__)
+ygm_app = flask.Flask(__name__)
 
 
 cocktail_info = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
@@ -42,6 +42,13 @@ def get_cocktail_data():
     return podcast
 
 
+def get_ygm_data():
+    podcast = yaml.load(convoy_app.open_resource('static/ygm.yaml'))
+    years = [x['datetime'][:4] for x in podcast['episodes']]
+    podcast['years'] = (min(years), max(years))
+    return podcast
+
+
 @convoy_app.route('/')
 def index():
     podcast = get_convoy_data()
@@ -54,9 +61,27 @@ def index():
     return flask.render_template('index.html', podcast=podcast)
 
 
+@ygm_app.route('/')
+def index():
+    podcast = get_ygm_data()
+    return flask.render_template('index.html', podcast=podcast)
+
+
+@convoy_app.route('/eps/')
+def episodes():
+    podcast = get_convoy_data()
+    return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
+
+
 @cocktail_app.route('/eps/')
 def episodes():
     podcast = get_cocktail_data()
+    return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
+
+
+@ygm_app.route('/eps/')
+def episodes():
+    podcast = get_ygm_data()
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
@@ -72,11 +97,23 @@ def meditative_gallery():
     return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
 
 
+@ygm_app.route('/gallery/')
+def meditative_gallery():
+    podcast = get_ygm_data()
+    return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
+
+
 #@cocktail_app.route('/kvothe/eps/')
 #@convoy_app.route('/kvothe/eps/')
 #def kvothe_episodes():
     #podcast = yaml.load(convoy_app.open_resource('static/earless/kvothe.yaml'))
     #return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
+
+
+@convoy_app.route('/playlist.html')
+def playlist():
+    podcast = get_convoy_data()
+    return flask.render_template('playlist.html', podcast=podcast)
 
 
 @cocktail_app.route('/playlist.html')
@@ -85,11 +122,10 @@ def playlist():
     return flask.render_template('playlist.html', podcast=podcast)
 
 
-@convoy_app.route('/playlist.html')
+@ygm_app.route('/playlist.html')
 def playlist():
-    podcast = get_convoy_data()
+    podcast = get_ygm_data()
     return flask.render_template('playlist.html', podcast=podcast)
-
 
 
 @convoy_app.route('/cocktails/')
@@ -102,11 +138,6 @@ def cocktails():
 def cocktails():
     podcast = get_cocktail_data()
     return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
-
-@convoy_app.route('/eps/')
-def episodes():
-    podcast = get_convoy_data()
-    return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
 @convoy_app.route('/ep/<num>')
@@ -123,10 +154,12 @@ def episode(num):
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
 
-# I would just chain these decorators, but I think flask-frozen doesn't like it?
-@convoy_app.route('/feed/')
-def podcast_feed_legacy():
-    return podcast_feed()
+@ygm_app.route('/ep/<num>')
+def episode(num):
+    podcast = get_ygm_data()
+    eps = get_eps(podcast)
+    return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
+
 
 
 def extract_copyright_years(podcast):
@@ -166,6 +199,12 @@ def merge_podcast_info(all_info):
             else:
                 resp[k] = v
     return resp
+
+
+# I would just chain these decorators, but I think flask-frozen doesn't like it?
+@convoy_app.route('/feed/')
+def podcast_feed_legacy():
+    return podcast_feed()
 
 
 @convoy_app.route('/feed.xml')
@@ -221,6 +260,14 @@ def page_not_found(e):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 2:
-        convoy_app.run(debug=True)
+    if len(sys.argv) > 1:
+        arg = sys.argv[1]
+        if arg.startswith('cock'):
+            cocktail_app.run(debug=True)
+        elif arg.startswith('con'):
+            convoy_app.run(debug=True)
+        elif arg.startswith('ygm'):
+            ygm_app.run(debug=True)
+        else:
+            raise NotImplementedError(args)
     cocktail_app.run(debug=True)

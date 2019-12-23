@@ -1,18 +1,18 @@
-title: An Earful of Cocktail
-master_title: An Earful of Convoy/Cocktail
+title: An Earful of You've Got Mail
+master_title: An Earful of Convoy/Cocktail/You've Got Mail
 description: "The world's most popular Cocktail podcast"
-website: http://earfulofcocktail.com
+website: http://earfulofyouvegotmail.com
 host: Alan Joyce and Hervey Okkles
 long description: "The world's most popular Cocktail podcast. The gang breaks Cocktail down, five minutes at a time, complete with painfully detailed analysis of every sip. We'll have special segments, special guests, and special effects. Join us for some Happy Hour Hijinx."
 frontpage description: "The world's most popular Cocktail podcast. The gang breaks Cocktail down, five minutes at a time, complete with painfully detailed analysis of every sip. We'll have special segments, special guests, and special effects. Join us for some Happy Hour Hijinx."
 logo: http://earfulofconvoy.com/static/earful_album.png
 itunes category: "TV &amp; Film"
 itunes explicit: clean
-layout_image: cocktail.png
+layout_image: ygm.png
 marquee: SERVING UP DRINKS ACROSS THE RADIOS AND PODCASTS OF THESE MANY UNITED STATES
 rss_feed: '/feed.xml'
 itunes_url: https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668
-promo_file: cocktail_promo.mp3
+promo_file: ygm_promo.mp3
 episodes:
    - title: "Earful of Cocktail: Episode 1 (0:00:00 - 0:05:00)"
      description: >
@@ -705,8 +705,6 @@ episodes:
        special edition of theme song
        compound words 
        penthouse etymology
-       details of doug's death
-       instructions on cutting your throat with a brandy bottle
        ...
      datetime: '2019-06-22T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_19.mp3
