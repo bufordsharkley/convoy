@@ -699,3 +699,26 @@ episodes:
          Lots of chunks of peaches, torn by hand
 
          Mix and stir in snifter, drink with a bamboo straw.
+   - title: "Earful of Cocktail: Episode 19 (1:30:00 - 1:35:00)"
+     description: >
+       We're solving a mystery, the mystery of the murder of Douglas Coughlin!
+       The clues are everywhere! Can someone commit suicide by slashing their
+       own throat? (we consult Quora) Who wrote the "suicide" letter? (We
+       conduct advanced handwriting analyses) With additional investigations
+       into etymology of penthouse and other compound words, the coroner scene,
+       the corner scene, blood temperature measurement techniques, and more!
+       Also featuring an update on the Pittsburgh Orchestra, and a very special
+       edition of the famous theme song.
+     datetime: '2019-06-22T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_19.mp3
+     audio size: 112621568
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_19.jpg
+     cocktail:
+       name: Funeral Helper
+       recipe: |
+         0.333 oz Raspberry Syrup
+         0.5 oz Jagermeister
+         2.0 oz Irish Whisky
+         1.0 oz Dry Vermouth
+
+         Mix all but syrup, shake and strain into cocktail class. Drizzle.
