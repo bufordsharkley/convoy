@@ -433,6 +433,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_08.jpg
      cocktail:
        name: The Kokomo Brochure
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_08.jpg
        recipe: |
          2.0 oz white Jamaican rum
          juice from 1.0 whole orange
@@ -443,7 +444,36 @@ episodes:
 
          Shake everything but Orangina with ice. Finely filter into zombie
          glass half-full with crushed ice. Fill with Orangina.
+       reviews:
+         - reviewer: Hervey Okkles
+           review: >
+              On first sip, the carbonated taste of Origina can be strongly
+              sensed.  Upon more sips, you sense deeper, grasping, fresh orange flavor:
+              orange after orange wave of orange flavor.  Almost creamy, the alcohol
+              content comes in sideways, a spoiled rotten orange.  Then back (!) with
+              fresh and perky fresh juice. Not especially syrupy, as expected, it in
+              truth contains the languid viscous waves of fresh juicy waters. On a
+              beach, such an experience seems nearly essential, and I can comprehend why
+              a beach resort would issue a coupon to comp the experience.
 
+              BEHIND-THE-SCENES TIDBIT: Alan and I had to split one Kokomo
+              Brochure between the two of us, owing to lack of orange ("orange"
+              orange). Such a raw deal made me feel short-changed, in the same
+              manner of the irate tourist in the movie.
+         - reviewer: Alan Joyce
+           review: >
+              You might think that orange on top of Orangina on top of multiple types of
+              orange liqueur would be too much orange. You would be wrong.
+
+              The Brochure tastes and feels (thanks to the shake) a bit like an Orange
+              Julius, which is a very good thing. Maybe it’s the subtle hint of Licor 43. Do
+              they put Licor 43 in Orange Juliuses? Probably not.
+
+              It’s remarkable how creamy this tastes, despite not having any cream in it. Is
+              it possible that your mind fills in “creamsicle” when it tastes orange and
+              spices?
+
+              Above all else, this drink is pure Kokomo.
    - title: "Earful of Cocktail: Episode 9 (0:40:00 - 0:45:00)"
      description: >
         Get ready to hit the road, mon, with the Earful Crew, as we dissect another
@@ -701,39 +731,64 @@ episodes:
          Mix and stir in snifter, drink with a bamboo straw.
    - title: "Earful of Cocktail: Episode 19 (1:30:00 - 1:35:00)"
      description: >
-       pittsburgh update
-       special edition of theme song
-       compound words 
-       penthouse etymology
-       details of doug's death
-       instructions on cutting your throat with a brandy bottle
-       ...
+       We're solving a mystery, the mystery of the murder of Douglas Coughlin!
+       The clues are everywhere! Can someone commit suicide by slashing their
+       own throat? (we consult Quora) Who wrote the "suicide" letter? (We
+       conduct advanced handwriting analyses) With additional investigations
+       into etymology of penthouse and other compound words, the coroner scene,
+       the corner scene, blood temperature measurement techniques, and more!
+       Also featuring an update on the Pittsburgh Orchestra, and a very special
+       edition of the famous theme song.
      datetime: '2019-06-22T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_19.mp3
      audio size: 112621568
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_19.jpg
      cocktail:
-       name: Boat Brain On The Rocks
+       name: Funeral Helper
        recipe: |
-         0.5 oz Nice Cognac
-         1.5 oz Apple Brandy
-         3.0 bright yellow butterscotch candies
-         Lots of chunks of peaches, torn by hand
+         0.333 oz Raspberry Syrup
+         0.5 oz Jagermeister
+         2.0 oz Irish Whisky
+         1.0 oz Dry Vermouth
 
-         Mix and stir in snifter, drink with a bamboo straw.
+         Mix all but syrup, shake and strain into cocktail class. Drizzle.
    - title: "Earful of Cocktail: Episode 20 (1:35:00 - 1:40:00)"
      description: >
-       ...
+       We hit the FFF of Cocktail, and we have a FIGHT on our hands! A good
+       time as any to crack open the Security Guard Force Continuum, and assess
+       how adequately various security guards/bellmen deescalated the flare-up
+       between Flanagan and Penthouse Daddy. (thanks to crimedoctor.com)
+       In the remaining time, we analyze the planning of the Flanagan/Shue wedding,
+       discover a mystery guest, fix the movie's ending, and
+       reference Benihana. Throughout, we are aided by special guest J.T, noted vinyl
+       expert.
      datetime: '2019-07-20T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_20.mp3
      audio size: 114452480
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_20.jpg
      cocktail:
-       name: Boat Brain On The Rocks
+       name: FUTURE TWINZ
        recipe: |
-         0.5 oz Nice Cognac
-         1.5 oz Apple Brandy
-         3.0 bright yellow butterscotch candies
-         Lots of chunks of peaches, torn by hand
+         1.5 oz Scotch whisky (recc. Cutty Sark)
+         0.5 oz Maraschino liqueur
+         MGD
+         "twin" (2.0) Maraschino cherries (sword thru them)
 
-         Mix and stir in snifter, drink with a bamboo straw.
+         Shake the maraschino and scotch and train into Double old-fashioned
+         glass, fill glass with MGD and add garnish
+   - title: "Earful of Cocktail: Episode 21 (1:40:00 - 1:43:23)"
+     description: >
+       NOT a party ep
+     datetime: '2019-10-19T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_21.mp3
+     audio size: 114556341
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_21.jpg
+     cocktail:
+       name: The "Cocktail" (1988) Cocktail
+       recipe: |
+          1.5 oz Vodka
+          0.5 oz Grain alcohol
+          0.5 oz Blue Curacao
+          1.0 oz Blood orange sour mix
+
+          Garnish with celery, and also sugarcubes, with toothpicks poked into them
