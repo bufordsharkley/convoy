@@ -433,6 +433,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_08.jpg
      cocktail:
        name: The Kokomo Brochure
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_08.jpg
        recipe: |
          2.0 oz white Jamaican rum
          juice from 1.0 whole orange
@@ -763,7 +764,7 @@ episodes:
        expert.
      datetime: '2019-07-20T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_20.mp3
-     audio size: 112621568
+     audio size: 114452480
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_20.jpg
      cocktail:
        name: FUTURE TWINZ
@@ -775,3 +776,19 @@ episodes:
 
          Shake the maraschino and scotch and train into Double old-fashioned
          glass, fill glass with MGD and add garnish
+   - title: "Earful of Cocktail: Episode 21 (1:40:00 - 1:43:23)"
+     description: >
+       NOT a party ep
+     datetime: '2019-10-19T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_21.mp3
+     audio size: 114556341
+     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_21.jpg
+     cocktail:
+       name: The "Cocktail" (1988) Cocktail
+       recipe: |
+          1.5 oz Vodka
+          0.5 oz Grain alcohol
+          0.5 oz Blue Curacao
+          1.0 oz Blood orange sour mix
+
+          Garnish with celery, and also sugarcubes, with toothpicks poked into them
