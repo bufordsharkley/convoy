@@ -16,6 +16,10 @@ if podcast == 'cocktail':
     freezer = Freezer(app.cocktail_app)
     info = app.cocktail_info
     app.cocktail_app.config['FREEZER_DESTINATION'] = 'cocktail_build'
+elif podcast == 'ygm':
+    freezer = Freezer(app.ygm_app)
+    info = app.ygm_info
+    app.ygm_app.config['FREEZER_DESTINATION'] = 'ygm_build'
 else:
     freezer = Freezer(app.convoy_app)
     info = app.convoy_info

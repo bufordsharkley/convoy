@@ -27,7 +27,7 @@ freeze_convoy:
 	    env/bin/python freeze.py convoy
 
 server_ygm: freeze_ygm
-	    cd ygm && python -m SimpleHTTPServer
+	    cd ygm_build && python -m SimpleHTTPServer
 
 server_cocktail: freeze_cocktail
 	    cd cocktail_build && python -m SimpleHTTPServer

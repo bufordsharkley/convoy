@@ -15,6 +15,7 @@ ygm_app = flask.Flask(__name__)
 
 cocktail_info = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
 convoy_info = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+ygm_info = yaml.load(convoy_app.open_resource('static/ygm.yaml'))
 
 
 def get_eps(podcast):

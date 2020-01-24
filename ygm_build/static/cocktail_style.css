@@ -1,0 +1,27 @@
+body {
+  background: black; 
+  color: white;
+}
+
+a {
+  color: hotpink;
+
+}
+
+div.crossnav {
+  background-color: #fff;
+  width: 250px;
+}
+
+div.crossnav a {
+  color: #000;
+}
+
+div.crossnav img {
+  float: left;
+}
+
+div.banner img {
+  width: 400px;
+}
+
