@@ -11,6 +11,7 @@ bin
 build
 convoy_build
 cocktail_build
+ygm_build
 dist
 sdist
 eggs
