@@ -155,7 +155,7 @@ def episode(num):
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
 
-@ygm_app.route('/ep/<num>')
+@ygm_app.route('/ep/<num>/index.html')
 def episode(num):
     podcast = get_ygm_data()
     eps = get_eps(podcast)
