@@ -733,11 +733,11 @@ episodes:
      description: >
        We're solving a mystery, the mystery of the murder of Douglas Coughlin!
        The clues are everywhere! Can someone commit suicide by slashing their
-       own throat? (we consult Quora) Who wrote the "suicide" letter? (We
-       conduct advanced handwriting analyses) With additional investigations
+       own throat? (we consult Quora.) Who wrote the "suicide" letter? (We
+       conduct advanced handwriting analyses.) Also featuring additional investigations
        into etymology of penthouse and other compound words, the coroner scene,
        the corner scene, blood temperature measurement techniques, and more!
-       Also featuring an update on the Pittsburgh Orchestra, and a very special
+       Additionally: an update on the Pittsburgh Orchestra, plus a very special
        edition of the famous theme song.
      datetime: '2019-06-22T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_19.mp3
@@ -759,7 +759,7 @@ episodes:
        how adequately various security guards/bellmen deescalated the flare-up
        between Flanagan and Penthouse Daddy. (thanks to crimedoctor.com)
        In the remaining time, we analyze the planning of the Flanagan/Shue wedding,
-       discover a mystery guest, fix the movie's ending, and
+       discover a mystery wedding guest, fix the movie's ending, and
        reference Benihana. Throughout, we are aided by special guest J.T, noted vinyl
        expert.
      datetime: '2019-07-20T17:00:00'
@@ -792,3 +792,10 @@ episodes:
           1.0 oz Blood orange sour mix
 
           Garnish with celery, and also sugarcubes, with toothpicks poked into them
+   - title: "Earful of Cocktail: Exhibit A: Interview with Heywood Gould"
+     description: >
+       We talk to Heywood Gould about "Cocktail" (1984), "Cocktail" (1988),
+       "Cocktail 2" (TBD), "Cocktail: The Musical" (TBD), and much, much more
+     datetime: '2019-10-21T15:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_21-2.mp3
+     audio size: 72806400
