@@ -210,12 +210,14 @@ def podcast_feed_legacy():
 
 @convoy_app.route('/feed.xml')
 @cocktail_app.route('/feed.xml')
+@ygm_app.route('/feed.xml')
 def podcast_feed():
     cocktail_info = yaml.load(cocktail_app.open_resource('static/cocktail.yaml'))
     convoy_info = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    ygm_info = yaml.load(convoy_app.open_resource('static/ygm.yaml'))
 
 
-    all_podcast = [convoy_info, cocktail_info]
+    all_podcast = [convoy_info, cocktail_info, ygm_info]
     podcast = merge_podcast_info(all_podcast)
     podcast = parse_podcast_years(podcast)
     copyright_years = extract_copyright_years(podcast)
