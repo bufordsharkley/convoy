@@ -102,6 +102,7 @@ episodes:
      datetime: '2016-08-06T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_14.mp3
      audio size: 115474554
+     image: http://media.earfulofconvoy.com/earful/ep_img/convoy_ep_14.jpg
    - title: "EXHIBIT A: The Dog Brothers Interview"
      description: "We interview the Dog Brothers."
      datetime: '2016-08-06T17:00:01'
@@ -112,11 +113,25 @@ episodes:
      datetime: '2016-08-20T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_15.mp3
      audio size: 112177704
+     image: http://media.earfulofconvoy.com/earful/ep_img/convoy_ep_15.jpg
    - title: "Earful of Convoy: Episode 16 (1:15:00 - 1:20:00)"
      description: "Haskins, Haskins! Here comes Haskins! And here comes Earful of Convoy: ep 16! As Duck and Melissa finally consummate their relationship, the Earful crew disambiguates Carousels from Merry-Go-Rounds, picks apart anniversary gifts, and empathizes with the political mobs of Trucker Heaven. Comes complete with our long-awaited analysis of \"Around the World with the Rubber Duck\"!"
      datetime: '2016-09-10T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_16.mp3
      audio size: 116833325
+     image: http://media.earfulofconvoy.com/earful/ep_img/convoy_ep_16.jpg
+   - title: "Earful of Convoy: Episode 17 (1:20:00 - 1:25:00)"
+     description: "The way podcasts were meant to be recorded: with a majority of its fans in the studio with them. The Earful gang is joined by F'guest #1 and Amy as they dive into the seedy world of politics. Will Duck be a good People's Leader? What will that even mean? Will it make a good sitcom? Featuring fan-favorite games \"Have You Shaken Hands with Your Dad?\" and \"Must One Sacrifice the Individual for the Cause of the Common Purpose?\" #FinishStrong"
+     datetime: '2016-10-01T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_17.mp3
+     audio size: 117156840
+     image: http://media.earfulofconvoy.com/earful/ep_img/convoy_ep_17.jpg
+   - title: "Earful of Convoy: Episode 18 (1:25:00 - 1:30:00)"
+     description: "In an episode that critics are calling \"overlong\", the Earful gang picks apart the 18th five minutes of Convoy in very much the same way that Rubber Duck and pals pick apart Alvarez, Texas. Updates on a new feud with Chip Davis's publicists, comparisons with the Wild Bunch, C.W. McCall's surprising net worth, and the holidays. We get expert insight into the rules of Crazy Eights with Shiney (Don't Call Me Spider) Mike, and give you evergreen updates on the battle between the American League and National League. If you don't listen to the last half hour, we won't hold it against you!"
+     datetime: '2016-10-29T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_18.mp3
+     audio size: 115949568
+     image: http://media.earfulofconvoy.com/earful/ep_img/convoy_ep_18.jpg
      cocktail:
        name: The Dirty Lyle
        recipe: |
@@ -124,21 +139,12 @@ episodes:
          Some lemonade
 
          Drink in a tumbler glass, lukewarm.
-   - title: "Earful of Convoy: Episode 17 (1:20:00 - 1:25:00)"
-     description: "The way podcasts were meant to be recorded: with a majority of its fans in the studio with them. The Earful gang is joined by F'guest #1 and Amy as they dive into the seedy world of politics. Will Duck be a good People's Leader? What will that even mean? Will it make a good sitcom? Featuring fan-favorite games \"Have You Shaken Hands with Your Dad?\" and \"Must One Sacrifice the Individual for the Cause of the Common Purpose?\" #FinishStrong"
-     datetime: '2016-10-01T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_17.mp3
-     audio size: 117156840
-   - title: "Earful of Convoy: Episode 18 (1:25:00 - 1:30:00)"
-     description: "In an episode that critics are calling \"overlong\", the Earful gang picks apart the 18th five minutes of Convoy in very much the same way that Rubber Duck and pals pick apart Alvarez, Texas. Updates on a new feud with Chip Davis's publicists, comparisons with the Wild Bunch, C.W. McCall's surprising net worth, and the holidays. We get expert insight into the rules of Crazy Eights with Shiney (Don't Call Me Spider) Mike, and give you evergreen updates on the battle between the American League and National League. If you don't listen to the last half hour, we won't hold it against you!"
-     datetime: '2016-10-29T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_18.mp3
-     audio size: 115949568
    - title: "Earful of Convoy: Episode 19 (1:30:00 - 1:35:00)"
      description: "A meaty chunk of Convoy analysis for all the Convoyheads out there! Alan and Hervey really expore the social and political implications of the 19th five minutes, finding a surprisingly coherent anarcho-syndicalist message. (Maybe Old Sam was a good Union Man after all!) Meanwhile, we discuss the hypothetical sequel (Convoy 2: Mr Duck Goes to Washington), get our hands dirty with \"Cannon Fodder\", eat some matzoh, and apply the appropriate amount of hand-wringing for our part in normalizing President-Elect Trump. But ultimately, we must never forget, it's *Melissa's Five Minutes*."
      datetime: '2016-11-19T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_convoy_ep_19.mp3
      audio size: 117186560
+     image: http://media.earfulofconvoy.com/earful/ep_img/convoy_ep_19.jpg
    - title: "Earful of Convoy: Episode 20 (1:35:00 - 1:40:00)"
      description: "#GetWoke with the Convoy gang as we adjudicate canon in an action-packed episode: Duck gets separated, Pigpen crashes/mumbles, and the Bear gets into the Hardware. But importantly, we follow the money and see how deep it goes. Go Blue Pillin' with the Convoy gang and see how careless trucking causes wrecks. Go Red Pillin' with the Convoy gang and see how Steve Chasey Love coerced crowds of schoolchildren to their almost certain death. How many schoolchildren? We count! So sit back, buy a drinko, and try not to get too hot-blooded When Melissa Shrugs. Not featuring the famous segment \"The Convoy Gang Writes An Email\"."
      datetime: '2017-01-21T17:00:00'
