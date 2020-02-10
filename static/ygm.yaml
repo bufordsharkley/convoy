@@ -26,3 +26,16 @@ episodes:
      url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_1.mp3
      image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_01.jpg
      audio size: 116299776
+   - title: "Earful of You've Got Mail: Episode 2 (0:05:00 - 0:10:00)"
+     description: >
+       Get ready for cameos! Joe finishes the juice, Patricia poses for the
+       mags, and everybody zigs and zags to to the Cranberries (peak 1990s).
+       Time for emails about enjoying emails, some good tips on learning Latin
+       like a Local, some real-time mapping of Manhattan businesses, and some
+       Gant charting!
+     datetime: '2020-01-31T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_2.mp3
+     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_02.jpg
+     audio size: 103286784
+     cocktail:
+       name: The Cappuccino
