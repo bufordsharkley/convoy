@@ -13,9 +13,18 @@ cocktail_app = flask.Flask(__name__)
 ygm_app = flask.Flask(__name__)
 
 
-cocktail_info = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
-convoy_info = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
-ygm_info = yaml.load(convoy_app.open_resource('static/ygm.yaml'))
+def get_yaml(podcast):
+    if podcast == 'convoy':
+        resource = convoy_app.open_resource('static/convoy.yaml')
+    elif podcast == 'cocktail':
+        resource = convoy_app.open_resource('static/cocktail.yaml')
+    elif podcast == 'ygm':
+        resource = convoy_app.open_resource('static/ygm.yaml')
+    elif podcast == 'kvothe':
+        resource = convoy_app.open_resource('static/earless/kvothe.yaml')
+    else:
+        raise Exception('No yaml for {}'.format(podcast))
+    return yaml.load(resource, Loader=yaml.FullLoader)
 
 
 def get_eps(podcast):
@@ -30,21 +39,21 @@ def get_eps(podcast):
 
 
 def get_convoy_data():
-    podcast = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
+    podcast = get_yaml('convoy')
     years = [x['datetime'][:4] for x in podcast['episodes']]
     podcast['years'] = (min(years), max(years))
     return podcast
 
 
 def get_cocktail_data():
-    podcast = yaml.load(convoy_app.open_resource('static/cocktail.yaml'))
+    podcast = get_yaml('cocktail')
     years = [x['datetime'][:4] for x in podcast['episodes']]
     podcast['years'] = (min(years), max(years))
     return podcast
 
 
 def get_ygm_data():
-    podcast = yaml.load(convoy_app.open_resource('static/ygm.yaml'))
+    podcast = get_yaml('ygm')
     years = [x['datetime'][:4] for x in podcast['episodes']]
     podcast['years'] = (min(years), max(years))
     return podcast
@@ -212,10 +221,9 @@ def podcast_feed_legacy():
 @cocktail_app.route('/feed.xml')
 @ygm_app.route('/feed.xml')
 def podcast_feed():
-    cocktail_info = yaml.load(cocktail_app.open_resource('static/cocktail.yaml'))
-    convoy_info = yaml.load(convoy_app.open_resource('static/convoy.yaml'))
-    ygm_info = yaml.load(convoy_app.open_resource('static/ygm.yaml'))
-
+    cocktail_info = get_yaml('cocktail')
+    convoy_info = get_yaml('convoy')
+    ygm_info = get_yaml('ygm')
 
     all_podcast = [convoy_info, cocktail_info, ygm_info]
     podcast = merge_podcast_info(all_podcast)
@@ -231,8 +239,7 @@ def podcast_feed():
 @convoy_app.route('/kvothe.xml')
 @cocktail_app.route('/kvothe.xml')
 def kvothe_feed():
-    kvothe_info = yaml.load(cocktail_app.open_resource(
-        'static/earless/kvothe.yaml'))
+    cocktail_info = get_yaml('kvothe')
     podcast = parse_podcast_years(kvothe_info)
     copyright_years = extract_copyright_years(podcast)
     response = flask.make_response(flask.render_template('podcast.xml',
@@ -245,7 +252,7 @@ def kvothe_feed():
 @convoy_app.route('/kvothe')
 @cocktail_app.route('/kvothe')
 def kvothe():
-    podcast = yaml.load(convoy_app.open_resource('static/earless/kvothe.yaml'))
+    podcast = get_yaml('kvothe')
     years = [x['datetime'][:4] for x in podcast['episodes']]
     podcast['years'] = (min(years), max(years))
     return flask.render_template('index.html', podcast=podcast)

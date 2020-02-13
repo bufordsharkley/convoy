@@ -14,15 +14,15 @@ podcast = args[0].strip().lower()
 
 if podcast == 'cocktail':
     freezer = Freezer(app.cocktail_app)
-    info = app.cocktail_info
+    info = app.get_yaml('cocktail')
     app.cocktail_app.config['FREEZER_DESTINATION'] = 'cocktail_build'
 elif podcast == 'ygm':
     freezer = Freezer(app.ygm_app)
-    info = app.ygm_info
+    info = app.get_yaml('ygm')
     app.ygm_app.config['FREEZER_DESTINATION'] = 'ygm_build'
 else:
     freezer = Freezer(app.convoy_app)
-    info = app.convoy_info
+    info = app.get_yaml('convoy')
     FREEZER_DESTINATION = 'convoy_build'
     app.convoy_app.config['FREEZER_DESTINATION'] = 'convoy_build'
 
