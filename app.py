@@ -238,8 +238,9 @@ def podcast_feed():
 
 @convoy_app.route('/kvothe.xml')
 @cocktail_app.route('/kvothe.xml')
+@ygm_app.route('/kvothe.xml')
 def kvothe_feed():
-    cocktail_info = get_yaml('kvothe')
+    kvothe_info = get_yaml('kvothe')
     podcast = parse_podcast_years(kvothe_info)
     copyright_years = extract_copyright_years(podcast)
     response = flask.make_response(flask.render_template('podcast.xml',
@@ -249,8 +250,9 @@ def kvothe_feed():
     return response
 
 
-@convoy_app.route('/kvothe')
-@cocktail_app.route('/kvothe')
+@convoy_app.route('/kvothe/index.html')
+@cocktail_app.route('/kvothe/index.html')
+@ygm_app.route('/kvothe/index.html')
 def kvothe():
     podcast = get_yaml('kvothe')
     years = [x['datetime'][:4] for x in podcast['episodes']]
