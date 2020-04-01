@@ -2,13 +2,13 @@
 {% block head %}
   {{ super() }}
   {% if podcast.title == 'An Earful of Cocktail' %}
-  <link href="static/jplayer/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+  <link href="/static/jplayer/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
   {% else %}
-  <link href="static/jplayer/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+  <link href="/static/jplayer/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
   {% endif %}
-  <script type="text/javascript" src="static/jquery.min.js"></script>
-  <script type="text/javascript" src="static/jplayer/jquery.jplayer.min.js"></script>
-  <script type="text/javascript" src="static/jplayer/jplayer.playlist.min.js"></script>
+  <script type="text/javascript" src="/static/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/jplayer/jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="/static/jplayer/jplayer.playlist.min.js"></script>
   <script type="text/javascript">
   //<![CDATA[
   $(document).ready(function(){
