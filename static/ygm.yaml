@@ -43,10 +43,19 @@ episodes:
        name: The Cappuccino
    - title: "Earful of You've Got Mail: Episode 3 (0:10:00 - 0:15:00)"
      description: >
-       ...
+       Penultimate pre-COVID episode.
      datetime: '2020-02-29T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_3.mp3
      image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_03.jpg
      audio size: 113876992
      cocktail:
        name: Honey with Tea
+   - title: "Earful of You've Got Mail: Episode 4 (0:15:00 - 0:20:00)"
+     description: >
+       Final pre-COVID episode. Plague looms.
+     datetime: '2020-03-14T17:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_4.mp3
+     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_04.jpg
+     audio size: 107083776
+     cocktail:
+       name: Tall Skim Caramel Macchiato
