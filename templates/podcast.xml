@@ -11,6 +11,10 @@
 <itunes:image href="{{ podcast.logo }}"/>
 <itunes:category text="{{ podcast['itunes category'] }}" />
 <itunes:explicit>{{ podcast['itunes explicit'] }}</itunes:explicit>
+<itunes:owner>
+  <itunes:name>{{ podcast.host }}</itunes:name>
+  <itunes:email>{{ podcast.email }}</itunes:email>
+</itunes:owner>
 <image>
     <url>{{ podcast.logo }}</url>
     <title>{{ podcast.title }}</title>
