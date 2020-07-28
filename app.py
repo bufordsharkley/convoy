@@ -14,7 +14,9 @@ ygm_app = flask.Flask(__name__)
 
 
 def get_yaml(podcast):
-    if podcast == 'convoy':
+    if podcast == 'master':  # General info for podcast listing, etc.
+        resource = convoy_app.open_resource('static/master.yaml')
+    elif podcast == 'convoy':
         resource = convoy_app.open_resource('static/convoy.yaml')
     elif podcast == 'cocktail':
         resource = convoy_app.open_resource('static/cocktail.yaml')
@@ -221,11 +223,7 @@ def podcast_feed_legacy():
 @cocktail_app.route('/feed.xml')
 @ygm_app.route('/feed.xml')
 def podcast_feed():
-    cocktail_info = get_yaml('cocktail')
-    convoy_info = get_yaml('convoy')
-    ygm_info = get_yaml('ygm')
-
-    all_podcast = [convoy_info, cocktail_info, ygm_info]
+    all_podcast = [get_yaml(x) for x in ('master', 'convoy', 'cocktail', 'ygm')]
     podcast = merge_podcast_info(all_podcast)
     podcast = parse_podcast_years(podcast)
     copyright_years = extract_copyright_years(podcast)

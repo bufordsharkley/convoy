@@ -3,12 +3,12 @@
 <channel>
 <title>{{ podcast.master_title }}</title>
 <description>{{ podcast.description }}</description>
-<link>{{ podcast.website }}</link>
+<link>{{ podcast.master_website }}</link>
 <language>en-us</language>
 <itunes:subtitle>{{ podcast.description }}</itunes:subtitle>
 <itunes:author>{{ podcast.host }}</itunes:author>
 <itunes:summary>{{ podcast['long description'] }}</itunes:summary>
-<itunes:image href="{{ podcast.logo }}"/>
+<itunes:image href="{{ podcast.master_logo }}"/>
 <itunes:category text="{{ podcast['itunes category'] }}" />
 <itunes:explicit>{{ podcast['itunes explicit'] }}</itunes:explicit>
 <itunes:owner>
@@ -16,9 +16,9 @@
   <itunes:email>{{ podcast.email }}</itunes:email>
 </itunes:owner>
 <image>
-    <url>{{ podcast.logo }}</url>
-    <title>{{ podcast.title }}</title>
-    <link>{{ podcast.website }}</link>
+    <url>{{ podcast.master_logo }}</url>
+    <title>{{ podcast.master_title }}</title>
+    <link>{{ podcast.master_website }}</link>
 </image>
 <copyright>Copyright {{ copyright_years }}, {{ podcast.title}} Family</copyright>
 {% for episode in podcast.episodes -%}
