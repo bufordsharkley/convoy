@@ -60,8 +60,13 @@ episodes:
     datetime: '2020-04-14T20:30:00'
     url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_10.mp3
     audio size: 45676544
-  - title: "KvotheCast 11: Chapters Thirty-Three and Thirty-Four and Thirty-Five and Thirty-Six and Thirty-Seven and Thirty-Eight and Thirty-Nine"
-    description: Chapters Thirty-Three and Thirty-Four and Thirty-Five and Thirty-Six and Thirty-Seven and Thirty-Eight and Thirty-Nine. In this episode, Kvothe plays the lute well, and goes to college.
-    datetime: '2020-04-13T20:30:00'
+  - title: "KvotheCast 11: Chapters Thirty-Three and Thirty-Four and Thirty-Five and Thirty-Six"
+    description: Chapters Thirty-Three and Thirty-Four and Thirty-Five and Thirty-Six. In this episode, Kvothe plays the lute well, and goes to college.
+    datetime: '2020-06-13T20:30:00'
     url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_11.mp3
+    audio size: 45676544
+  - title: "KvotheCast 12: Chapters Thirty-Seven and Thirty-Eight and Thirty-Nine"
+    description: Chapters Thirty-Seven and Thirty-Eight and Thirty-Nine. In this episode, Kvothe goes to the library, and gives a great lecture.
+    datetime: '2020-08-08T18:00:00'
+    url: http://media.earfulofconvoy.com/earful/earless/kvothecast_ep_12.mp3
     audio size: 45676544
