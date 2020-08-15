@@ -28,6 +28,7 @@ episodes:
      audio size: 116299776
      cocktail:
        name: Orange Juice
+       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_01.jpg
    - title: "Earful of You've Got Mail: Episode 2 (0:05:00 - 0:10:00)"
      description: >
        Get ready for cameos! Joe finishes the juice, Patricia poses for the
@@ -41,6 +42,7 @@ episodes:
      audio size: 103286784
      cocktail:
        name: The Cappuccino
+       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_02.jpg
    - title: "Earful of You've Got Mail: Episode 3 (0:10:00 - 0:15:00)"
      description: >
        Penultimate pre-COVID episode.
@@ -50,6 +52,7 @@ episodes:
      audio size: 113876992
      cocktail:
        name: Honey with Tea
+       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_03.jpg
    - title: "Earful of You've Got Mail: Episode 4 (0:15:00 - 0:20:00)"
      description: >
        Final pre-COVID episode. Plague looms.
@@ -59,3 +62,20 @@ episodes:
      audio size: 107083776
      cocktail:
        name: Tall Skim Caramel Macchiato
+       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_04.jpg
+   - title: "Earful of You've Got Mail: Episode 5 (0:20:00 - 0:25:00)"
+     description: >
+       The novel coronavirus cannot keep the Earful gang down! Like Tom Hanks,
+       we've risen from the dead; a little rusty, but with plenty of new
+       CDC-approved protocol for keeping the YGM analysis both incisive and
+       safe. In this ep, we bring you a veritable "Who's Who" from the Fox
+       family tree, say hello to New Jersey, and give careful ratings of all
+       "games" at the Fall Festival. Also featuring the popular new segment
+       "Our Set-Up."
+     datetime: '2020-08-14T21:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_5.mp3
+     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_05.jpg
+     audio size: 115216384
+     cocktail:
+       name: Fruit Shakes
+       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_05.jpg

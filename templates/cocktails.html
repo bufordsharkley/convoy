@@ -5,13 +5,15 @@
   <a href="/ep/{{episode.key}}">{{episode.title}}</a>
   <marquee>{{episode.cocktail.name}}</marquee>
   <div>
-    <h2>{{episode.cocktail.name}}</h2>
+    <h2 id="cocktail{{episode.key}}">{{episode.cocktail.name}}</h2>
     <br/>
-    <div class="cocktail_recipe" id="cocktail{{episode.key}}">
+    {% if episode.cocktail.recipe %}
+    <div class="cocktail_recipe">
     {% for line in episode.cocktail.recipe.splitlines() %}
     {{line}}<br/>
     {% endfor %}
     </div>
+    {% endif %}
     {% if episode.cocktail.image %}
     <img src="{{episode.cocktail.image}}" alt="{{episode.cocktail.name}} image" class="cool_img"/><br/>
     {% endif %}

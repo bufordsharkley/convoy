@@ -42,12 +42,16 @@
     {% for ii in range(20) %}
       <img src="{{ url_for('static', filename='under_construction.gif')}}" alt="Under construction"/>
     {% endfor %}
+    <br/>
     {% endif %}
     <div class="content">
       {% block content %}{% endblock %}
     </div>
     {% block footer %}
     <footer>
+      {% if podcast.title == "An Earful of You've Got Mail" %}
+        <img src="{{ url_for('static', filename='ygmfoot1.gif')}}" alt="You've Got Mail"/>
+      {% endif %}
       &copy; {{podcast.years[0]}}-{{podcast.years[1]}} <a href="http://thisisalan.com/">Alan Joyce</a> &amp; <a href="http://www.markmollineaux.com/">Mark Mollineaux</a><br/>
     </footer>
     <script>

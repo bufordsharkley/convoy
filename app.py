@@ -152,6 +152,12 @@ def cocktails():
     return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
 
 
+@ygm_app.route('/cocktails/')
+def cocktails():
+    podcast = get_ygm_data()
+    return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
+
+
 @convoy_app.route('/ep/<num>/index.html')
 def episode(num):
     podcast = get_convoy_data()

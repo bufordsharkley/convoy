@@ -428,7 +428,7 @@ episodes:
        snifter; we'll get there fast and then we'll take it slow...
      datetime: '2018-03-24T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_8.mp3
-     audio size: 115439616
+     audio size: 115261184
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_08.jpg
      cocktail:
        name: The Kokomo Brochure
@@ -511,7 +511,7 @@ episodes:
         vibes! Featuring the popular segments "Shue are You?" and "Shue's News."
      datetime: '2018-05-12T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_10.mp3
-     audio size: 114724864
+     audio size: 113225728
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_10.jpg
      cocktail:
        name: Fight on the Beach
@@ -780,7 +780,7 @@ episodes:
        NOT a party ep
      datetime: '2019-10-19T17:00:00'
      url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_21.mp3
-     audio size: 114556341
+     audio size: 114737152
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_21.jpg
      cocktail:
        name: The "Cocktail" (1988) Cocktail

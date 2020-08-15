@@ -51,6 +51,16 @@
     {% endif %}
     <a href="https://twitter.com/earfulof"><img src="{{ url_for('static', filename = 'twitter.png')}}" />Follow us on Tweet Street</a>
   </div>
+    {% if podcast.title == "An Earful of You've Got Mail" %}
+      <img src="{{ url_for('static', filename='ygm.gif')}}" alt="You've Got Mail"/>
+    <br/>
+    {% endif %}
+    {% if podcast.title == "An Earful of You've Got Mail" %}
+    {% for ii in range(1, 11) %}
+      <img src="{{ url_for('static', filename='ygmemail{}.gif'.format(ii))}}" alt="Email"/>
+    {% endfor %}
+    <br/>
+    {% endif %}
   {% if podcast.episodes %}
   <div class="player">
     <h3>LISTEN TO THE EPISODES</h3>
