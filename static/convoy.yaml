@@ -134,6 +134,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/ep_img/convoy_ep_18.jpg
      cocktail:
        name: The Dirty Lyle
+       image: http://media.earfulofconvoy.com/earful/drink_img/convoy_drink_18.jpg
        recipe: |
          Some Everclear
          Some lemonade

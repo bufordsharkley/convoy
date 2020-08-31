@@ -275,6 +275,38 @@ def page_not_found(e):
     return flask.render_template('404.html'), 404
 
 
+def print_calendar():
+    all_podcast = [get_yaml(x) for x in ('master', 'convoy', 'cocktail', 'ygm')]
+    podcast = merge_podcast_info(all_podcast)
+    prev_date = None
+    gaps = []
+    for episode in podcast['episodes']:
+        title = episode['title']
+        if 'Episode' not in title:
+            continue
+        series = None
+        if 'Convoy' in title:
+            series = 'convoy'
+        elif 'Cocktail' in title:
+            series = 'cocktail'
+        elif "Got Mail" in title:
+            series = 'ygm'
+        num = int(title.split('Episode ')[1].split()[0])
+        date = datetime.datetime.strptime(episode['datetime'],
+                                          "%Y-%m-%dT%H:%M:%S").date()
+        ep_str = "{} {}".format(series, num)
+        if prev_date is not None:
+            gap = (date - prev_date).days
+            print("       |")
+            print("{:>8}".format(gap))
+            for _ in range(round((gap - 7)/7)):
+                print("       |")
+            gaps.append((gap, ep_str))
+        print("{:<10} ({})".format(ep_str, date.strftime("%Y-%m-%d")))
+        prev_date = date
+    #print(sorted(gaps))
+
+
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         arg = sys.argv[1]
@@ -284,6 +316,9 @@ if __name__ == '__main__':
             convoy_app.run(debug=True)
         elif arg.startswith('ygm'):
             ygm_app.run(debug=True)
+        elif arg.startswith('cal'):
+            print_calendar()
         else:
-            raise NotImplementedError(args)
-    cocktail_app.run(debug=True)
+            raise Exception("Pass argument cocktail|convoy|ygm|calendar")
+    if len(sys.argv) == 1:
+        raise Exception("Pass argument cocktail|convoy|ygm|calendar")
