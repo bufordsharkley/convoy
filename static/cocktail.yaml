@@ -596,6 +596,7 @@ episodes:
      image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_13.jpg
      cocktail:
        name: The Tony Scaduto
+       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_13.jpg
        recipe: |
          1.5 oz Tequila
          1.0 oz carrot juice
@@ -605,6 +606,46 @@ episodes:
          Shake with ice, strain into large cocktail glass rimmed with Himalayan pink salt.
 
          Garnish with lime slice
+       reviews:
+         - reviewer: Hervey Okkles
+           review: >
+             Perfect.
+
+             This is a perfect cocktail; a historic moment has been realized
+             on-air, easily tantamount to the mythical coupling of gin and
+             vermouth in Martinez, CA. The Tony Scaduto is one of the four or
+             five most important cocktails ever created.
+
+             Notes on acquisition: unlike Bonnie's 1980s, it's hard to find
+             carrot juices these days; the large local supermarket only had one
+             in stock. The pineapple preserves had to be bought in bulk (it
+             isn't the easiest ingredient to deal with, a sticky ball of goo,
+             and as a small nit, it leaves a bit of preserve residue at the
+             end.)
+
+             The Tony Scaduto opens with a deep carrot nose, bristly and rooty.
+             This begins something of a back-to-the-soil narrative: in the
+             Scaduto, an inverted daquiri of sorts, we see the crisp
+             wistfulness of Havana bars transformed into the rustic, vegetables
+             replacing fruit. The masculine drink of Hemingway's day
+             transformed into the pastel feminine shades of Bonnie's 1980s NYC
+             apartment.
+
+             The drink gains width into arena of lime, balanced against
+             brackish rim, furthering widening into earthy carrot and agave,
+             wow. Widening further and further, almost to excess, it's a
+             peaceful lazy river sort of vibe, delicate and with an elegant
+             haiku bliss.
+
+             Like all the best cocktails, the Tony Scaduto feels weightless.
+
+             Perfect.
+         - reviewer: Alan Joyce
+           review: >
+             This is a good drink. It feels basic and elementary, like it should be a
+             standard staple at every bar in the world. The earthiness of the carrot juice
+             balanced well with the lime and tequila, creating something pleasant and not
+             too sweet. The world may one day come to love the Tony Scaduto.
    - title: "Earful of Cocktail: Episode 14 (1:05:00 - 1:10:00)"
      description: >
        The art world meets pugilism in this episode of Earful, and the gang's
