@@ -1,0 +1,60 @@
+spotify link
+Add "scene of the ep" to ep 5 description
+add feuds:
+ * youve got hanks
+ * pittsburgh symphony orchestra
+-------------
+remix the closing
+_---------------------
+
+FOR REFERENCE:
+* Key Line Pie
+* News Feuds and Screws
+* You've Got Spoilers
+* Drink of the Ep
+* Hack of the Ep
+* Contact
+------------
+
+        #- title: "Earful of You've Got Mail: Episode 7 (0:30:00 - 0:35:00)"
+        #description: >
+        #Pop an Ultra Dorm and 
+        #
+        #egg dish
+        #grey goose
+        #name of the show was correct
+        #in the book business
+        #recipes (????)
+        #dprice club costco
+        #harmonica
+        #poultry lift (??)
+        #costs - dollars, balance, birdie
+        #datetime: '2020-09-26T09:15:00'
+        #url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_7.mp3
+        #image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_07b.jpg
+        #audio size: 115187712
+        #cocktail:
+        #name: Stoli on the Rocks with a Fresh Glass
+        #image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_07.jpg
+        #
+        #- title: "Earful of You've Got Mail: Episode 7 (0:30:00 - 0:35:00)"
+        #description: >
+        #Verified checksum
+        #
+        #"We Watch 'The Shop Around the Corner'"
+        #Zabar's Exhibit A
+        #Happy Holidays - thanksgiving tradiditions vs xmas, christmas carol
+        #Lobster salad controversy
+        #Drin kof the ep hard
+        ###Expresso  -> Grind, Grind again
+        #Cash is king
+        #Quadratini
+        #"Press Send" to another ep of
+        #Lovitz
+        #datetime: '2020-10-10T09:15:00'
+        #url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_7.mp3
+        #image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_07b.jpg
+        #audio size: 115187712
+        #cocktail:
+        #name: Stoli on the Rocks with a Fresh Glass
+        ###image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_07.jpg
