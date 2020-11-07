@@ -61,22 +61,54 @@ def get_ygm_data():
     return podcast
 
 
+def get_feud_data():
+    feuds = {'current': [
+                {'img': 'dogbrothers/terryandmichelle.png',
+                 'pods': ['convoy']},
+                {'img': 'dogbrothers/pitt.png',
+                 'pods': ['cocktail', 'ygm']},
+                {'img': 'dogbrothers/ygh.png',
+                 'pods': ['ygm']},
+                {'img': 'dogbrothers/meagan.png',
+                 'pods': ['ygm']},
+                         ],
+             'previous': [
+                {'title': 'The Dog Brothers',
+                 'resolved_date': '7/30/16',
+                 'pods': ['convoy']},
+                {'title': '(name redacted)',
+                 'resolved_date': '8/29/18',
+                 'pods': ['convoy', 'cocktail', 'ygm']},
+                        ],
+            }
+    resp = {x: {'current': [], 'previous': []}
+            for x in ('convoy', 'cocktail', 'ygm')}
+    for k, v in feuds.items():
+        for feud in v:
+            for pod in feud['pods']:
+                resp[pod][k].append(feud)
+    return resp
+
+
 @convoy_app.route('/')
 def index():
     podcast = get_convoy_data()
-    return flask.render_template('index.html', podcast=podcast)
+    feuds = get_feud_data()['convoy']
+    return flask.render_template('index.html', podcast=podcast, feuds=feuds)
 
 
 @cocktail_app.route('/')
 def index():
     podcast = get_cocktail_data()
-    return flask.render_template('index.html', podcast=podcast)
+    feuds = get_feud_data()['cocktail']
+    return flask.render_template('index.html', podcast=podcast, feuds=feuds)
 
 
 @ygm_app.route('/')
 def index():
     podcast = get_ygm_data()
-    return flask.render_template('index.html', podcast=podcast)
+    feuds = get_feud_data()['ygm']
+    return flask.render_template('index.html', podcast=podcast, feuds=feuds)
 
 
 @convoy_app.route('/eps/')
@@ -261,7 +293,7 @@ def kvothe():
     podcast = get_yaml('kvothe')
     years = [x['datetime'][:4] for x in podcast['episodes']]
     podcast['years'] = (min(years), max(years))
-    return flask.render_template('index.html', podcast=podcast)
+    return flask.render_template('index.html', podcast=podcast, feuds=[])
 
 
 @convoy_app.route('/humans.txt')

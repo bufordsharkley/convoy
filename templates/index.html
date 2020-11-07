@@ -144,20 +144,18 @@
   <div class="promo" id="feuding">
     <h2>FEUDING SECTION</h2>
     <h3>CURRENT FEUDS:</h3>
-    {% if podcast.title == 'An Earful of Convoy' %}
-    <img src="{{ url_for('static', filename = 'dogbrothers/terryandmichelle.png')}}" class="dogbro" />
-    {% endif %}
+    {% for feud in feuds.current %}
+    <img src="{{ url_for('static', filename = feud.img)}}" class="dogbro" />
+    {% endfor %}
     <h3>PREVIOUS FEUDS:</h3>
-    {% if podcast.title == 'An Earful of Convoy' %}
-    <p><strike>The Dog Brothers</strike> (resolved 7/30/16)</p>
+    {% for feud in feuds.previous %}
+    <p><strike>{{ feud.title }}</strike> (resolved {{ feud.resolved_date }})</p>
+    {% endfor %}
     <!--
     <img src="{{ url_for('static', filename = 'dogbrothers/simmons.jpg')}}" class="dogbro" />
     <img src="{{ url_for('static', filename = 'dogbrothers/seydor.jpg')}}" class="dogbro" />
     <img src="{{ url_for('static', filename = 'dogbrothers/redman.jpg')}}"  class="dogbro" />
     -->
-    {% endif %}
-    <p><strike>(name redacted)</strike> (resolved 8/29/18)</p>
-    <!--<img src="{{ url_for('static', filename = 'dogbrothers/clintyboy.png')}}" class="dogbro" />-->
   </div>
   <hr/>
   <div class="promo" id="faqs">

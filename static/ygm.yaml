@@ -110,3 +110,19 @@ episodes:
      cocktail:
        name: Stoli on the Rocks with a Fresh Glass
        image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_07.jpg
+   - title: "Earful of You've Got Mail: Episode 8 (0:35:00 - 0:40:00)"
+     description: >
+       Pop an Ultra Dorm and settle in for another episode of Earful! A
+       veritable smorgasbord of savory morsels on display today: we analyze the
+       egg dish, judge the poultry lift, and assess garnishes. And as always, we
+       mix business with pleasure: analyzing the corporate structure of the Price
+       Club, guessing Birdie's salary, and auditing bookstore revenues (we're in
+       the book business, after all!)
+     datetime: '2020-09-26T19:15:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_8.mp3
+     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_08.jpg
+     audio size: 116166656
+     cocktail:
+       name: Evian water
+       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_08.jpg
+

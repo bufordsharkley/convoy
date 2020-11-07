@@ -4,9 +4,6 @@ add feuds:
  * youve got hanks
  * pittsburgh symphony orchestra
 -------------
-remix the closing
-_---------------------
-
 FOR REFERENCE:
 * Key Line Pie
 * News Feuds and Screws
@@ -15,6 +12,9 @@ FOR REFERENCE:
 * Hack of the Ep
 * Contact
 ------------
+Meagan Day -- *every* movie is individualistic, it's the nature of the medium
+-----------
+
 
         #- title: "Earful of You've Got Mail: Episode 7 (0:30:00 - 0:35:00)"
         #description: >
