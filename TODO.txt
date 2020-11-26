@@ -16,31 +16,6 @@ Meagan Day -- *every* movie is individualistic, it's the nature of the medium
 -----------
 
 
-        #- title: "Earful of You've Got Mail: Episode 7 (0:30:00 - 0:35:00)"
-        #description: >
-        #Pop an Ultra Dorm and 
-        #
-        #egg dish
-        #grey goose
-        #name of the show was correct
-        #in the book business
-        #recipes (????)
-        #dprice club costco
-        #harmonica
-        #poultry lift (??)
-        #costs - dollars, balance, birdie
-        #datetime: '2020-09-26T09:15:00'
-        #url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_7.mp3
-        #image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_07b.jpg
-        #audio size: 115187712
-        #cocktail:
-        #name: Stoli on the Rocks with a Fresh Glass
-        #image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_07.jpg
-        #
-        #- title: "Earful of You've Got Mail: Episode 7 (0:30:00 - 0:35:00)"
-        #description: >
-        #Verified checksum
-        #
         #"We Watch 'The Shop Around the Corner'"
         #Zabar's Exhibit A
         #Happy Holidays - thanksgiving tradiditions vs xmas, christmas carol
