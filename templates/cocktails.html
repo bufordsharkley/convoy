@@ -3,9 +3,9 @@
 <div class="mainpage">
   {% for episode in episodes.values() | sort(attribute='datetime') if 'cocktail' in episode %}
   <a href="/ep/{{episode.key}}">{{episode.title}}</a>
-  <marquee>{{episode.cocktail.name}}</marquee>
+  <marquee>{{episode.cocktail.name | safe}}</marquee>
   <div>
-    <h2 id="cocktail{{episode.key}}">{{episode.cocktail.name}}</h2>
+    <h2 id="cocktail{{episode.key}}">{{episode.cocktail.name | safe}}</h2>
     <br/>
     {% if episode.cocktail.recipe %}
     <div class="cocktail_recipe">

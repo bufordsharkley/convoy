@@ -141,3 +141,19 @@ episodes:
      cocktail:
        name: Starbucks Barista home espresso
        image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_09.jpg
+   - title: "Earful of You've Got Mail: Episode 10 (0:45:00 - 0:50:00)"
+     description: >
+       You've Got... Instant Message?!?! We've kicked into Web 2.0 here at
+       Earful, and the textboxes are flying! This ep, we have a delightful (and
+       very fun) Thanksgiving Round of "The Instrument Song (The Orchestra
+       Song)", Birdie is on the prowl, and we investigate the innovative
+       voice-over scheme that YGM uses to represent online communication.
+       ...Hello? Also featuring the popular segment "Our Jacobin Feud,"
+       featuring our new enemy Meagan Day.
+     datetime: '2020-10-24T18:00:00'
+     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_10.mp3
+     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_10.jpg
+     audio size: 116109312
+     cocktail:
+       name: Probable Sauternes <strike>(dinner wine)</strike>
+       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_10.jpg

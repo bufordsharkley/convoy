@@ -21,7 +21,7 @@
     <hr/>
     <p>{{episode.description}}</p>
     {% if episode.cocktail %}
-    <p>Drink of the Ep &mdash; <a href="/cocktails#cocktail{{episode.key}}">{{episode.cocktail.name}}</a></p>
+    <p>Drink of the Ep &mdash; <a href="/cocktails#cocktail{{episode.key}}">{{episode.cocktail.name | safe}}</a></p>
     {% endif %}
     <p>Audio size is {{episode['audio size'] }} bytes. <span class="record_time">Recorded on {{ episode.datetime.strftime('%Y-%m-%d') }} at {{episode.datetime.strftime('%-I:%M %p')}}</span></p>
     <hr/>
