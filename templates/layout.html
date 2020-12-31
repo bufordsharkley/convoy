@@ -17,8 +17,13 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% endif %}
     <link rel="alternate" type="application/rss+xml" title="Earful RSS" href="/feed/" />
+    <meta property="og:site_name" content="Earful of"/>
+    {% endblock %}
+    {% block metainfo %}
     <title>{{podcast.title}}</title>
-    <meta name="description" content="{{podcast.description}} (Convoy is a film by Sam Peckinpah; the song is by C.W. McCall. Podcasts are audio files you can listen to on your podcast devices.)">
+    <meta name="title" property="og:title" content="{{podcast.title}}"/>
+    <meta name="description" property="og:description" content="{{podcast.description}} (Earful is a podcast. Podcasts are audio files you can listen to on your podcast devices.)"/>
+    <meta property="og:image" content="{{podcast.logo}}"/>
     {% endblock %}
   </head>
   <body>

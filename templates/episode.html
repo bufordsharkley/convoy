@@ -32,6 +32,12 @@
   //]]>
   </script>
 {% endblock %}
+{% block metainfo %}
+  <title>{{ episode.title }}</title>
+  <meta name="title" property="og:title" content="{{episode.title}}"/>
+  <meta name="description" property="og:description" content="{{episode.description}}. For reference, more information about the podcast: {{podcast.description}} (Earful is a podcast. Podcasts are audio files you can listen to on your podcast devices.)"/>
+  <meta property="og:image" content="{{episode.image}}"/>
+{% endblock %}
 {% block content %}
 <div class="mainpage">
   <div class="blurb">
