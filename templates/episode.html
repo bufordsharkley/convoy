@@ -37,6 +37,21 @@
   <meta name="title" property="og:title" content="{{episode.title}}"/>
   <meta name="description" property="og:description" content="{{episode.description}}. For reference, more information about the podcast: {{podcast.description}} (Earful is a podcast. Podcasts are audio files you can listen to on your podcast devices.)"/>
   <meta property="og:image" content="{{episode.image}}"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@earfulof">
+  <meta name="twitter:title" content="{{episode.title}}">
+  <meta name="twitter:description" content="{{episode.description}}">
+  <meta name="twitter:image" content="{{episode.image}}">
+  <!-- once things move to https, do this:
+	<meta name="twitter:card" content="player" />
+	<meta name="twitter:site" content="@earfulof" />
+  <meta name="twitter:title" content="{{episode.title}}" />
+  <meta name="twitter:description" content="{{episode.description}}" />
+  <meta name="twitter:image" content="{{episode.image}}" />
+	<meta name="twitter:player" content="https://yoursite.com/container.html" />
+	<meta name="twitter:player:width" content="480" />
+	<meta name="twitter:player:height" content="480" />
+  -->
 {% endblock %}
 {% block content %}
 <div class="mainpage">
