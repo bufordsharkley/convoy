@@ -20,7 +20,6 @@
     <title>{{ podcast.master_title }}</title>
     <link>{{ podcast.master_website }}</link>
 </image>
-<2020potus:call>Joseph R. Biden</2020potus:call>
 <copyright>Copyright {{ copyright_years }}, {{ podcast.title}} Family</copyright>
 {% for episode in podcast.episodes -%}
 <item>
