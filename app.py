@@ -63,7 +63,7 @@ def get_ygm_data():
 
 def get_feud_data():
     feuds = {'current': [
-                {'img': 'dogbrothers/terryandmichelle.png',
+                {'img': 'dogbrothers/terry.png',
                  'pods': ['convoy',  'ygm']},
                 {'img': 'dogbrothers/pitt.png',
                  'pods': ['cocktail', 'ygm']},
@@ -81,6 +81,9 @@ def get_feud_data():
                 {'title': '(name redacted)',
                  'resolved_date': '8/29/18',
                  'pods': ['convoy', 'cocktail']},
+                {'title': 'Michelle (of Terry & Michelle)',
+                 'resolved_date': '2/06/21',
+                 'pods': ['convoy', 'ygm']},
                         ],
             }
     resp = {x: {'current': [], 'previous': []}
