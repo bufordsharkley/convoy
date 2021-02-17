@@ -1,11 +1,11 @@
 title: An Earful of You've Got Mail
 description: "The ultimate hacker podcast."
-website: http://earfulofyouvegotmail.com
+website: https://earfulofyouvegotmail.com
 host: Alan Joyce and Hervey Okkles
 email: staff@earfulof.com
 long description: "The ultimate hacker podcast"
 frontpage description: "\"An Earful of You've Got Mail\" is a podcast (2020-) with episodes typically two hours long. It analyzes five-minute segments of the 1998 film \"You've Got Mail\" in extensive detail.  It is co-hosted by Alan Joyce and Hervey Okkles (a name used by Mark Mollineaux). The podcast features the slogan, \"The Ultimate Hacker Podcast.\""
-logo: http://earfulofconvoy.com/static/earful_album3.png
+logo: https://earfulofconvoy.com/static/earful_album3.png
 itunes category: "TV &amp; Film"
 itunes explicit: clean
 layout_image: ygm.png
@@ -23,12 +23,12 @@ episodes:
        segments, "You've Got Spoilers," "Hack of the Ep," and "'Ware in the
        Air".
      datetime: '2020-01-24T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_1.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_01.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_1.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_01.jpg
      audio size: 116299776
      cocktail:
        name: Orange Juice
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_01.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_01.jpg
    - title: "Earful of You've Got Mail: Episode 2 (0:05:00 - 0:10:00)"
      description: >
        Get ready for cameos! Joe finishes the juice, Patricia poses for the
@@ -37,32 +37,32 @@ episodes:
        like a Local, some real-time mapping of Manhattan businesses, and some
        Gant charting!
      datetime: '2020-01-31T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_2.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_02.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_2.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_02.jpg
      audio size: 103286784
      cocktail:
        name: The Cappuccino
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_02.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_02.jpg
    - title: "Earful of You've Got Mail: Episode 3 (0:10:00 - 0:15:00)"
      description: >
        Penultimate pre-COVID episode.
      datetime: '2020-02-29T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_3.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_03.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_3.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_03.jpg
      audio size: 113876992
      cocktail:
        name: Honey with Tea
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_03.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_03.jpg
    - title: "Earful of You've Got Mail: Episode 4 (0:15:00 - 0:20:00)"
      description: >
        Final pre-COVID episode. Plague looms.
      datetime: '2020-03-14T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_4.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_04.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_4.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_04.jpg
      audio size: 107083776
      cocktail:
        name: Tall Skim Caramel Macchiato
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_04.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_04.jpg
    - title: "Earful of You've Got Mail: Episode 5 (0:20:00 - 0:25:00)"
      description: >
        The novel coronavirus cannot keep the Earful gang down! Like Tom Hanks,
@@ -73,12 +73,12 @@ episodes:
        "games" at the Fall Festival. Also featuring the popular new segment
        "Our Set-Up."
      datetime: '2020-08-14T21:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_5.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_05.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_5.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_05.jpg
      audio size: 115216384
      cocktail:
        name: Fruit Shakes
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_05.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_05.jpg
    - title: "Earful of You've Got Mail: Episode 6 (0:25:00 - 0:30:00)"
      description: >
        Two grand openings this week: Fox and Sons Books, and Episode 06 of An
@@ -89,12 +89,12 @@ episodes:
        and generally do the best we can, given that we cannot hear
        each other speak.
      datetime: '2020-08-29T18:30:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_6.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_06.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_6.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_06.jpg
      audio size: 115187712
      cocktail:
        name: Probable Black Coffee in Thermos
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_06.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_06.jpg
    - title: "Earful of You've Got Mail: Episode 7 (0:30:00 - 0:35:00)"
      description: >
         It's a hit! The Earful Gang is back with episode seven, and it's even
@@ -104,12 +104,12 @@ episodes:
         he in Mexico?) So step to the back of the drink line and listen in!
         (Also featuring the hit segment "We Check the Tweets")
      datetime: '2020-09-12T19:15:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_7.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_07.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_7.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_07.jpg
      audio size: 116875264
      cocktail:
        name: Stoli on the Rocks with a Fresh Glass
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_07.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_07.jpg
    - title: "Earful of You've Got Mail: Episode 8 (0:35:00 - 0:40:00)"
      description: >
        Pop an Ultra Dorm and settle in for another episode of Earful! A
@@ -119,12 +119,12 @@ episodes:
        Club, guessing Birdie's salary, and auditing bookstore revenues (we're in
        the book business, after all!)
      datetime: '2020-09-26T19:15:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_8.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_08.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_8.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_08.jpg
      audio size: 116166656
      cocktail:
        name: Evian water
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_08.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_08.jpg
    - title: "Earful of You've Got Mail: Episode 9 (0:40:00 - 0:45:00)"
      description: >
        "Press Send" to another ep of Earful, featuring plenty of holiday
@@ -135,12 +135,12 @@ episodes:
        Thanksgiving or Christmas. Also introducing the popular segment "We
        Watch 'The Shop Around the Corner.'"
      datetime: '2020-10-10T18:30:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_9.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_09.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_9.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_09.jpg
      audio size: 116072448
      cocktail:
        name: Starbucks Barista home espresso
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_09.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_09.jpg
    - title: "Earful of You've Got Mail: Episode 10 (0:45:00 - 0:50:00)"
      description: >
        You've Got... Instant Message?!?! We've kicked into Web 2.0 here at
@@ -151,12 +151,12 @@ episodes:
        ...Hello? Also featuring the popular segment "Our Jacobin Feud,"
        featuring our new enemy Meagan Day.
      datetime: '2020-10-24T18:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_10.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_10.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_10.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_10.jpg
      audio size: 116109312
      cocktail:
        name: Probable Sauternes <strike>(dinner wine)</strike>
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_10.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_10.jpg
    - title: "Earful of You've Got Mail: Episode 11 (0:50:00 - 0:55:00)"
      description: >
        In this, the final episode of Earful, the gang is in a feuding mood! We
@@ -170,12 +170,12 @@ episodes:
        the Tweets" and "We Relitigate the Feuds" (AKA "Feud Update" AKA "The
        Feud Litigator")
      datetime: '2020-11-07T18:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_11.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_11.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_11.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_11.jpg
      audio size: 116109312
      cocktail:
        name: Nestlé™ bottled water
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_11.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_11.jpg
    - title: "Earful of You've Got Mail: Episode 12 (0:55:00 - 1:00:00)"
      description: >
        Freshly equipped with macOS Big Sur (running beautifully), we're back
@@ -184,9 +184,9 @@ episodes:
        everybody's favorite show: "**NT WAT**". We also conclude the important
        saga of William Spungeon, and rhapsodize about the ecstasy of email. 10-4!
      datetime: '2020-11-21T18:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_ygm_ep_12.mp3
-     image: http://media.earfulofconvoy.com/earful/ep_img/ygm_ep_12.jpg
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_12.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_12.jpg
      audio size: 116109312
      cocktail:
        name: On-screen water
-       image: http://media.earfulofconvoy.com/earful/drink_img/ygm_drink_12.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_12.jpg
