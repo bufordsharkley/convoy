@@ -1,10 +1,10 @@
 title: An Earful of Cocktail
 description: "The world's most popular Cocktail podcast"
-website: http://earfulofcocktail.com
+website: https://earfulofcocktail.com
 host: Alan Joyce and Hervey Okkles
 long description: "\"An Earful of Cocktail\" is a podcast (2017-2019) with episodes typically two hours long. It analyzes five-minute segments of the 1988 film \"Cocktail\" in extensive detail.  It is co-hosted by Alan Joyce and Hervey Okkles (a name used by Mark Mollineaux). The podcast features the slogan, \"The World's Most Popular Cocktail Podcast.\""
 frontpage description: "\"An Earful of Cocktail\" is a podcast (2017-2019) with episodes typically two hours long. It analyzes five-minute segments of the 1988 film \"Cocktail\" in extensive detail.  It is co-hosted by Alan Joyce and Hervey Okkles (a name used by Mark Mollineaux). The podcast features the slogan, \"The World's Most Popular Cocktail Podcast.\""
-logo: http://earfulofconvoy.com/static/earful_album3.png
+logo: https://earfulofconvoy.com/static/earful_album3.png
 itunes category: "TV &amp; Film"
 itunes explicit: clean
 layout_image: cocktail.png
@@ -28,12 +28,12 @@ episodes:
        always, we attempt to answer the question, "what is theirs and what is
        mine?" The answer may surprise you.
      datetime: '2017-09-02T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_1.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_1.mp3
      audio size: 113972981
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_01.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_01.jpg
      cocktail:
        name: The Uncle Pat
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_01.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_01.jpg
        recipe: |
          1.5 oz potcheen
          2 oz flat beer through rusty pipes
@@ -80,12 +80,12 @@ episodes:
         1969 or 1965? The movie "Cocktail" offers clues. New feature: "Coughlin’s
         Laws."
      datetime: '2017-09-16T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_2.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_2.mp3
      audio size: 112270399
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_02.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_02.jpg
      cocktail:
        name: Big Apple Interview
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_02.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_02.jpg
        recipe: |
          1.5 oz vodka
          0.5 oz apple juice
@@ -129,12 +129,12 @@ episodes:
         vacant heart of 1980s greed. What does it mean? Nothing! Also featuring
         "With Fresh Eyes", with DJ scuttle_toes.
      datetime: '2017-10-21T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_3.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_3.mp3
      audio size: 114239758
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_03.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_03.jpg
      cocktail:
        name: Ding-A-Ling
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_03.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_03.jpg
        recipe: |
          0.25 oz vodka
          1 oz Kahlua
@@ -195,12 +195,12 @@ episodes:
         host of the podcast whose name we all know. #RIPTomCruise #NeverRecover
         #StickWithTheBrew
      datetime: '2017-11-04T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_4.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_4.mp3
      audio size: 112906846
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_04.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_04.jpg
      cocktail:
        name: Finnegan's Obit
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_04.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_04.jpg
        recipe: |
          4 oz Remy Martin cognac
 
@@ -244,9 +244,9 @@ episodes:
         Fresh Eyes": Trevor Adamo, who has useful information on comics-related
         websites to visit.
      datetime: '2017-12-02T18:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_5.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_5.mp3
      audio size: 113734373
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_05.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_05.jpg
      cocktail:
        name: Silicon Valley Dirty Lyle
        recipe: |
@@ -254,7 +254,7 @@ episodes:
          1 oz Everclear
 
          Pour into in a pint glass. Serve lukewarm.
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_05.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_05.jpg
        reviews:
          - reviewer: Hervey Okkles
            review: >
@@ -307,9 +307,9 @@ episodes:
         be watched? And really, what separates the prose of the Earful gang from the
         work of a yuppie poet?  ...and THAT'S the bottom line!
      datetime: '2018-01-06T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_6.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_6.mp3
      audio size: 113592320
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_06.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_06.jpg
      cocktail:
        name: Yuppie Behind Bars
        recipe: |
@@ -322,7 +322,7 @@ episodes:
          Shake with crushed ice, pour into tall glass.
 
          Garnish with 5 rose petals and a faux Morning Glory.
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_06.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_06.jpg
        reviews:
          - reviewer: Hervey Okkles
            review: >
@@ -363,12 +363,12 @@ episodes:
        "extratentacular"!  Best listened to from the perch of a hot tub in
        front of your fireplace.
      datetime: '2018-01-27T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_7.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_7.mp3
      audio size: 111955968
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_07.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_07.jpg
      cocktail:
        name: Angry Basketball
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_07.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_07.jpg
        recipe: |
          2.0 oz gin
          1.0 oz lemon juice
@@ -427,12 +427,12 @@ episodes:
        outstanding web properties (http://shoevids.com!) So curl up with your big
        snifter; we'll get there fast and then we'll take it slow...
      datetime: '2018-03-24T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_8.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_8.mp3
      audio size: 115261184
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_08.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_08.jpg
      cocktail:
        name: The Kokomo Brochure
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_08.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_08.jpg
        recipe: |
          2.0 oz white Jamaican rum
          juice from 1.0 whole orange
@@ -484,12 +484,12 @@ episodes:
         and "That weird interstitial segment before we get to The Sync." It will
         *certainly* be an adventure.
      datetime: '2018-04-21T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_9.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_9.mp3
      audio size: 114724864
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_09.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_09.jpg
      cocktail:
        name: Purgatory Happy Hour
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_09.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_09.jpg
        recipe: |
          1.0 oz Jim Beam Apple
          1.0 oz Donut Vodka
@@ -510,9 +510,9 @@ episodes:
         promise you: you've never listened to a podcast with such intense dance
         vibes! Featuring the popular segments "Shue are You?" and "Shue's News."
      datetime: '2018-05-12T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_10.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_10.mp3
      audio size: 113225728
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_10.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_10.jpg
      cocktail:
        name: Fight on the Beach
        recipe: |
@@ -536,9 +536,9 @@ episodes:
        before you know it, we've cornered the market!  Tada! Guest for "With
        Fresh Eyes": Alan's aunt, an expert on all things trucking.
      datetime: '2018-07-07T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_11.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_11.mp3
      audio size: 115124224
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_11.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_11.jpg
      cocktail:
        name: Millionaire's Waterfall
        recipe: |
@@ -566,9 +566,9 @@ episodes:
        spoiler alert and plenty of Reagan talk, just note how tasty this podcast
        is! Featuring the new segment, "What's Alan Opening"?
      datetime: '2018-07-23T20:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_12.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_12.mp3
      audio size: 112869376
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_12.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_12.jpg
      cocktail:
        name: Nothing Special
        recipe: |
@@ -591,12 +591,12 @@ episodes:
        DUALSHOCK 4 being repeatedly disconnected. Also featuring fan-favorite
        segment "We Write An Email Live On-Air."
      datetime: '2018-07-28T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_13.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_13.mp3
      audio size: 112250880
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_13.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_13.jpg
      cocktail:
        name: The Tony Scaduto
-       image: http://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_13.jpg
+       image: https://media.earfulofconvoy.com/earful/drink_img/cocktail_drink_13.jpg
        recipe: |
          1.5 oz Tequila
          1.0 oz carrot juice
@@ -654,9 +654,9 @@ episodes:
        attempting to buttle, and some cruel misdeeds done to brewer's yeast.
        Meanwhile, we resolve the feud with the Catbro.
      datetime: '2018-08-11T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_14.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_14.mp3
      audio size: 112906240
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_14.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_14.jpg
      cocktail:
        name: Art World Orientation
        recipe: |
@@ -681,9 +681,9 @@ episodes:
        guest (and a magnificent three-way sync) in Matt Apfel, longtime
        "Cocktail" aficionado and formerly of "Frankenfood" (not a plug).
      datetime: '2018-09-15T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_15.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_15.mp3
      audio size: 114458624
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_15.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_15.jpg
      cocktail:
        name: Unwanted Pregnancy
        recipe: |
@@ -705,9 +705,9 @@ episodes:
        update, and plenty of java: an analysis of "Starbucks Trajectory" and a
        recap of the famous coffee scene from George of the Jungle! Welcome Daddy!
      datetime: '2018-11-12T20:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_16.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_16.mp3
      audio size: 113133568
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_16.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_16.jpg
      cocktail:
        name: Penthouse Daddy
        recipe: |
@@ -732,9 +732,9 @@ episodes:
        Pittsburgh City Orchestra to inquire whether its Grammy-award-winning baritone
        actually played a small part in the movie 'Cocktail' (1988)".
      datetime: '2019-03-08T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_17.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_17.mp3
      audio size: 98455552
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_17.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_17.jpg
      cocktail:
        name: Kerry's Dream
        recipe: |
@@ -757,9 +757,9 @@ episodes:
        pressures! Featuring the popular segments "At This Time," "Read the Tweets",
        "Good Reads", and "With Fresh Eyes".
      datetime: '2019-03-23T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_18.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_18.mp3
      audio size: 109135872
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_18.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_18.jpg
      cocktail:
        name: Boat Brain On The Rocks
        recipe: |
@@ -780,9 +780,9 @@ episodes:
        Additionally: an update on the Pittsburgh Orchestra, plus a very special
        edition of the famous theme song.
      datetime: '2019-06-22T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_19.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_19.mp3
      audio size: 112621568
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_19.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_19.jpg
      cocktail:
        name: Funeral Helper
        recipe: |
@@ -803,9 +803,9 @@ episodes:
        reference Benihana. Throughout, we are aided by special guest J.T, noted vinyl
        expert.
      datetime: '2019-07-20T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_20.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_20.mp3
      audio size: 114452480
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_20.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_20.jpg
      cocktail:
        name: FUTURE TWINZ
        recipe: |
@@ -820,9 +820,9 @@ episodes:
      description: >
        NOT a party ep
      datetime: '2019-10-19T17:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_21.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_21.mp3
      audio size: 114737152
-     image: http://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_21.jpg
+     image: https://media.earfulofconvoy.com/earful/ep_img/cocktail_ep_21.jpg
      cocktail:
        name: The "Cocktail" (1988) Cocktail
        recipe: |
@@ -837,5 +837,5 @@ episodes:
        We talk to Heywood Gould about "Cocktail" (1984), "Cocktail" (1988),
        "Cocktail 2" (TBD), "Cocktail: The Musical" (TBD), and much, much more
      datetime: '2019-10-21T15:00:00'
-     url: http://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_21-2.mp3
+     url: https://media.earfulofconvoy.com/earful/earful_of_cocktail_ep_21-2.mp3
      audio size: 72806400
