@@ -172,7 +172,7 @@ episodes:
      datetime: '2020-11-07T18:00:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_11.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_11.jpg
-     audio size: 116109312
+     audio size: 115132416
      cocktail:
        name: Nestlé™ bottled water
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_11.jpg
@@ -186,7 +186,27 @@ episodes:
      datetime: '2020-11-21T18:00:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_12.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_12.jpg
-     audio size: 116109312
+     audio size: 116916224
      cocktail:
        name: On-screen water
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_12.jpg
+   - title: "Earful of You've Got Mail: Episode 13 (1:00:00 - 1:05:00)"
+     description: >
+       If you're in search of the perfect combination of poetry and meanness, look no
+       further! Earful is back, and we're deep into cross-textual analysis: in
+       addition to a typically incisive analysis of a YGM chunk (Joe Fox shakes a
+       fence, Kathleen re-ups on tea), we crack open multiple additional texts‒first diving
+       deep into the themes of Ernst Lubitsch's "The Shop Around the Corner",
+       then plunging into the work of Miklós László's "Parfumerie", and finally
+       reading the back cover summary of Jane Austen's "Pride and Prejudice".
+       But don't worry: we still have plenty of time to analyze
+       the chair management at Cafe Lalo's (with more detail than any other
+       competing podcast). Also featuring the popular sements "We Taste-test
+       Skittles Dips" and "We Write An Email" (AKA "Email Time").
+     datetime: '2020-12-18T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_13.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_13.jpg
+     audio size: 115802112
+     cocktail:
+       name: Mochaccino, decaf, nonfat
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_13.jpg
