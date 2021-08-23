@@ -151,6 +151,7 @@ episodes:
      datetime: '2017-01-21T17:00:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_convoy_ep_20.mp3
      audio size: 113271491
+     image: https://media.earfulofconvoy.com/earful/ep_img/convoy_ep_20.jpg
    - title: "Earful of Convoy: Episode 21 (1:40:00 - 1:45:00)"
      description: >
        As it happens to all Peckinpah protagonists, death comes to Rubber Duck.
@@ -168,6 +169,7 @@ episodes:
      datetime: '2017-02-18T17:00:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_convoy_ep_21.mp3
      audio size: 110874898
+     image: https://media.earfulofconvoy.com/earful/ep_img/convoy_ep_21.jpg
    - title: "Earful of Convoy: Episode 22 (1:45:00 - 1:50:00)"
      description: >
        In the FFF (final full five), Earful is cut short by ten minutes due to
