@@ -34,6 +34,11 @@ def get_eps(podcast):
     for ep in eps:
         ep['datetime'] = datetime.datetime.strptime(
             ep['datetime'], "%Y-%m-%dT%H:%M:%S" )
+        try:
+            ep['record_datetime'] = datetime.datetime.strptime(
+                ep['record_datetime'], "%Y-%m-%dT%H:%M:%S" )
+        except KeyError:
+            ep['record_datetime'] = ep['datetime']
     eps = {x['url'].split('_ep_')[1].split('.mp3')[0]: x for x in eps}
     for k, v in eps.items():
         v['key'] = k
@@ -68,6 +73,8 @@ def get_feud_data():
                 {'img': 'dogbrothers/pitt.png',
                  'pods': ['cocktail', 'ygm']},
                 {'img': 'dogbrothers/meagan.png',
+                 'pods': ['ygm']},
+                {'img': 'dogbrothers/judas.png',
                  'pods': ['ygm']},
                          ],
              'previous': [

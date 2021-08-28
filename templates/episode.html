@@ -68,7 +68,7 @@
   {% endif %}
   <div class="player">
     <h3>{{ episode.title }}</h3>
-    <h3>Recorded on {{ episode.datetime.strftime('%Y-%m-%d') }} at {{episode.datetime.strftime('%-I:%M %p')}}</h3>
+    <h3>Recorded on {{ episode.record_datetime.strftime('%Y-%m-%d') }} at {{episode.record_datetime.strftime('%-I:%M %p')}}</h3>
     <div id="jquery_jplayer_1" class="jp-jplayer"></div>
     <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
       <div class="jp-type-playlist">
