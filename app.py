@@ -74,8 +74,6 @@ def get_feud_data():
                  'pods': ['cocktail', 'ygm']},
                 {'img': 'dogbrothers/meagan.png',
                  'pods': ['ygm']},
-                {'img': 'dogbrothers/judas.png',
-                 'pods': ['ygm']},
                          ],
              'previous': [
                 {'title': 'The Dog Brothers',
@@ -90,6 +88,9 @@ def get_feud_data():
                  'pods': ['convoy', 'cocktail']},
                 {'title': 'Michelle (of Terry & Michelle)',
                  'resolved_date': '2/06/21',
+                 'pods': ['convoy', 'ygm']},
+                {'title': 'Doug',
+                 'resolved_date': '8/28/21',
                  'pods': ['convoy', 'ygm']},
                         ],
             }
