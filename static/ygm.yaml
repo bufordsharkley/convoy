@@ -285,3 +285,19 @@ episodes:
      cocktail:
        name: Probable white wine cocktail
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_17.jpg
+   - title: "Earful of You've Got Mail: Episode 18 (1:25:00 - 1:30:00)"
+     description: >
+       If you're looking for an ep to cope with the Suez Canal blockage, and to
+       prepare for White Boy Summer, look no further!  In these five minutes,
+       we learn about the famously flawless taste of Kathleen Kelly,
+       (contrasted with the piggish, disgusting ignorance of Fox Books
+       employees), and dig into contingencies of elevator protocol. The
+       perfect episode to close out March 2021, the month we're currently in!
+     datetime: '2021-11-22T10:30:00'
+     record_datetime: '2021-03-27T19:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_18.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_18a.jpg
+     audio size: 115654656
+     cocktail:
+       name: Soup
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_18.jpg
