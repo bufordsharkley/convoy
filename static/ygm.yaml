@@ -281,7 +281,7 @@ episodes:
      record_datetime: '2021-03-06T19:00:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_17.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_17a.jpg
-     audio size: 115654656
+     audio size: 115183616
      cocktail:
        name: Probable white wine cocktail
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_17.jpg
@@ -297,7 +297,27 @@ episodes:
      record_datetime: '2021-03-27T19:00:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_18.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_18a.jpg
-     audio size: 115654656
+     audio size: 115030016
      cocktail:
        name: Soup
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_18.jpg
+   - title: "Earful of You've Got Mail: Episode 19 (1:30:00 - 1:35:00)"
+     description: >
+       The Earful Crew is burning the midnight oil to bring you
+       the 19th five minutes of You've Got Mail, and it's a momentous one!
+       The Shop Around the Corner is closed for good, and that means only three
+       things: MOPE MOPE MOPE! Kathleen flips the Closing Sign (we introduce our
+       new project "Supersonic"), and immediately becomes a femcel antinatalist.
+       Meanwhile, we're Dockside Foxside at the 19th Street Boat Basin,
+       conducting an intensive #BoatBarAnalysis, the softball team is
+       goosestepping ominously, Matt is home alone, and the Storybook Person is
+       open for business! Also featuring the popular segment "Beep Beep Beep
+       Read the Tweets".
+     datetime: '2021-12-29T21:00:00'
+     record_datetime: '2021-04-24T23:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_19.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_19.jpg
+     audio size: 115243008
+     cocktail:
+       name: Gibson Cocktail
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_19.jpg
