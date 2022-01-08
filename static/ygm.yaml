@@ -321,3 +321,20 @@ episodes:
      cocktail:
        name: Gibson Cocktail
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_19.jpg
+   - title: "Earful of You've Got Mail: Episode 20 (1:35:00 - 1:40:00)"
+     description: >
+       Have you ever been with a single podcast that fills your heart with joy?
+       Well, get ready for episode 20 of An Earful of You've Got Mail, in which
+       the Earful gang cracks open a rather light episode: Joe Fox is on his Travis
+       Bickle-like march, and we dive deep into address logistics, buzzer box
+       conduits, and the healing power of George. Also featuring our exciting
+       Top Ten countdown: "Looking Forward to 2008", to be followed by a series of
+       squeetstorms (AKA "squeens")
+     datetime: '2022-01-08T12:30:00'
+     record_datetime: '2021-05-08T19:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_20.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_20.jpg
+     audio size: 115611648
+     cocktail:
+       name: Tea with Honey (callback)
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_20.jpg
