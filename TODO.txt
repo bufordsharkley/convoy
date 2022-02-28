@@ -14,6 +14,8 @@ FOR REFERENCE:
 ------------
 Meagan Day -- *every* movie is individualistic, it's the nature of the medium
 -----------
+GOOF: 11>24 paper
+internship website url (late in ep 21)
 
 12:
 * Drunk Fox
@@ -63,3 +65,10 @@ DIEGO GUEST
 PERFECT FOR EACH OTHER
 CAN'T HELP OURSELVES
 
+
+--------------
+
+ffmpeg -f concat -safe 0 -i /tmp/cocktail.txt -c copy /tmp/output.mp4
+ffmpeg -i /tmp/cocktail-end.mp4 -vn -acodec copy /tmp/cocktail.aac
+ffmpeg -i /tmp/cocktail-end.mp4 -i /tmp/cocktail-wol.m4a  -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 /tmp/cocktail-wol.mp4
+ffmpeg -i /tmp/cocktail-wol.mp4 -ss 00:04:00 -t 00:08:22 -c:v copy -c:a copy /tmp/output.mp4
