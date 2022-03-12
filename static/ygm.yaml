@@ -346,10 +346,9 @@ episodes:
        Friend Request, forcibly shuts Kathleen's mouth, and enters his
        internet-capable hacker den. We complement the analysis with innovative
        fan theories and uncover mysterious book covers, as well as some... tweaking.
-       Also, a heartfelt retirement from email. Featuring the popular segments,
-       "The Set Up",
-       "The Feuding Section", "2008 Film Update", "Release Schedule", and
-       "Pepsi Segment".
+       Also, a heartfelt retirement from email. Featuring the popular segments
+       "The Set Up", "The Feuding Section", "2008 Film Update", "Release
+       Schedule", and "Pepsi Segment".
      datetime: '2022-02-27T16:00:00'
      record_datetime: '2021-06-19T16:50:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_21.mp3
@@ -358,3 +357,21 @@ episodes:
      cocktail:
        name: Coffee with Approximately 4.5 Sugars
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_21.jpg
+   - title: "Earful of You've Got Mail: Episode 22 (1:45:00 - 1:50:00)"
+     description: >
+       Howdy pardner, saddle up for the "Summer of You've Got Mail"! We've got
+       ourselves a heaping helping of film analysis today, with a veritable
+       bounty of scenes: extras are a-loading up their oysters at the
+       dear-departed Ocean Grill, the ballet of commerce is a-underway at the
+       flowers market, and the styrofoam cups are a-flowing at Gray's Papaya.
+       But most importantly, it's open season for vicious zings on NY152: we
+       grade Joe and Kathleen's efforts, and even attempt to manufacture our
+       own, in the special segment "We Come Up With Our Own NY152 Insults"
+     datetime: '2022-03-11T19:00:00'
+     record_datetime: '2021-06-19T16:50:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_22.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_22a.jpg
+     audio size: 115279872
+     cocktail:
+       name: Iced Teas at Ocean Grill
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_22.jpg
