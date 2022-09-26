@@ -371,7 +371,24 @@ episodes:
      record_datetime: '2021-06-19T16:50:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_22.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_22a.jpg
-     audio size: 115279872
+     audio size: 115210240
      cocktail:
        name: Iced Teas at Ocean Grill
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_22.jpg
+   - title: "Earful of You've Got Mail: Episode 23 (1:50:00 - 1:55:00)"
+     description: >
+       Already at the Last Full Five, but don't cry Jakob! We have plenty of
+       content for you, including a live feud update, a dip back into the
+       cyberworld, a long discussion of the best protocol while meeting a stranger,
+       and a reading of YGM as an incel manifesto. Also featuring the popular
+       segments "The Set-Up", "Fashion News", "Decision Desk 2008", and "The
+       Ending Segment"
+     datetime: '2022-09-26T12:00:00'
+     record_datetime: '2021-06-19T16:50:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_23.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_23.jpg
+     audio size: 115183616
+     cocktail:
+       name: Probable Italian Ice
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_23.jpg
+
