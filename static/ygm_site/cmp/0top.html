@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><!-- Copyright 1998 Warner Bros. --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script language="Javascript">
+function WBOL_drawNetscapeNav()
+{
+	var oldhatvalue = ("<table width=\"780\" height=\"25\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><TR><td bgcolor=\"006699\" align=\"left\">\n" +
+		"<FONT FACE=\"Arial, Helvetica, sans-serif\" SIZE=1 COLOR=#FFFFFF> &nbsp;&nbsp;Welcome!</font></TD>\n" +
+		"<TD bgcolor=\"#003366\" align=\"right\" width=\"373\"><a href=\"http://toolbar.netscape.com/nojs.twhat\" TARGET=\"_top\">\n" +
+		"<img src=\"http://toolbar.netscape.com/tw_hat/chaos.gif\" height=\"24\" width=\"373\" align=\"right\" border=\"0\" hspace=\"0\" vspace=\"0\" ALT=\"Netscape Products and Services\" ismap>\n" +
+		"</a></TD></TR></TABLE>\n");
+	document.write('<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="780" BGCOLOR="#000000"><TR><TD>');
+	if (document.layers){
+		document.write('<SCR' + 'IPT LANGUAGE="JavaScript" src="http://toolbar.netscape.com/toobar.twhat?dom=wrb">');
+		document.write(oldhatvalue);
+		document.write('</SCR' + 'IPT>');
+	}else if (document.all || document.getElementById){
+		document.write('<IFRAME SRC="http://toolbar.netscape.com/tw_hat/iframe/wrb.html" WIDTH="780" FRAMEBORDER="0" HEIGHT="25" MARGINHEIGHT="0" MARGINWIDTH="0" SCROLLING="no">');
+		document.write('</IFRAME>');
+	}
+	document.write('</TD></TR></TABLE>');
+}
+
+function WBOL_drawAOLNav()
+{
+	document.write("<!-- BEGIN AOL HAT -->");
+	document.write("<style type=\"text/css\">");
+	document.write(".aAOLText {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; color: #000000; text-decoration: none}");
+	document.write("</style>");
+	document.write('<SCR'+'IPT LANGUAGE="JavaScript">');
+	document.write('function JumpToAOL(formName) {');
+	document.write('var listIndex=document.forms[formName].cboAOL.selectedIndex;');
+	document.write('var listValue = document.forms[formName].cboAOL.options[listIndex].value;');
+	document.write('if (listValue != "null" && listValue != "#") location.href = listValue;');
+	document.write('}');
+	document.write('</SCR'+'IPT>');
+	document.write("<table border=\"0\" width=\"780\" background=\"/all/aol/nav/etile.gif\" cellpadding=\"0\" cellspacing=\"0\">");
+	document.write("<form name=\"frmToolbar\">");
+	document.write("<tr>");
+	document.write("<td width=\"136\" align=\"left\"><A href=\"aol://1722:entertainment\"><img src=\"/all/aol/nav/aol_brand.gif\" width=\"136\" height=\"25\" vspace=\"0\" hspace=\"0\" border=\"0\" alt=\"AOL Entertainment\"></A></td>");
+	document.write("<td width=\"614\" align=\"right\" class=\"aAOLText\">");
+	document.write("<span class=\"aAOLText\"><select name=\"cboAOL\" style=\"font-size: 10px\">");
+	document.write("<option value=\"#\">Explore AOL Entertainment</option>");
+	document.write("<option value=\"#\">------------------------------</option>");
+	document.write("<option value=\"aol://1722:entertainment\">AOL Entertainment Main</option>");
+	document.write("<option value=\"#\">------------------------------</option>");
+	document.write("<option value=\"aol://1722:booksandthearts\">Books and the Arts</option>");
+	document.write("<option value=\"aol://1722:celebrities\">Celebrities</option>");
+	document.write("<option value=\"aol://1722:entertainmentnews\">Entertainment News</option>");
+	document.write("<option value=\"aol://1722:funandgames\">Fun and Games</option>");
+	document.write("<option value=\"aol://1722:movies\">Movies</option>");
+	document.write("<option value=\"aol://1722:music\">Music</option>");
+	document.write("<option value=\"aol://1722:television\">TV</option>");
+	document.write("<option value=\"aol://1722:video\">Video</option>");
+	document.write("<option value=\"#\">------------------------------</option>");
+	document.write("<option value=\"aol://1722:ecommunity\">AOL Entertainment Community</option>");
+	document.write("<option value=\"aol://1722:entertainmentsearch\">AOL Entertainment Search</option>");
+	document.write("<option value=\"#\">------------------------------</option>");
+	document.write("<option value=\"aol://1722:help\">AOL Member Services</option></select></span></td>");
+	document.write("<td width=\"30\" align=\"center\"><a href=\"javascript: JumpToAOL('frmToolbar');\"><img src=\"/all/aol/nav/go_button.gif\" width=\"24\" height=\"18\" border=\"0\"></a></td>");
+	document.write("</tr>");
+	document.write("</form>");
+	document.write("</table>");
+	document.write("<!-- END AOL HAT -->");
+}
+
+var WBOL_userAgent = navigator.userAgent.toLowerCase();
+var WBOL_isAol = WBOL_userAgent.indexOf("; aol") >=0;
+var WBOL_isCompuserve = (WBOL_userAgent.indexOf("cs2000") >= 0 || WBOL_userAgent.indexOf("cs 2000") >= 0);
+var WBOL_spoofAOL = location.search.indexOf("aol=yes") >= 0;
+
+if (!WBOL_isAol && !WBOL_isCompuserve && !WBOL_spoofAOL){
+	WBOL_drawNetscapeNav();
+}
+if (WBOL_isAol || WBOL_spoofAOL){
+	WBOL_drawAOLNav();
+}
+</script></head><body marginwidth="0" marginheight="0" bgcolor="#ffffff" text="#000000"><table cellpadding="0" cellspacing="0" border="0" width="780" bgcolor="#000000"><tbody><tr><td><iframe src="./wrb.html" width="780" frameborder="0" height="25" marginheight="0" marginwidth="0" scrolling="no"></iframe></td></tr></tbody></table>
+
+<embed src="/all/us/reducednav/img/wb_topnav_grey.swf" type="application/x-shockwave-flash" width="780" height="21" quality="high" menu="false">
+
+
+
+<title>You've Got Mail</title>
+
+<script language="JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v1.2
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+
+
+
+
+<table height="100%" width="100%" border="0">
+<tbody><tr>
+<td align="center" valign="top" colspan="2">
+<br>
+<a href="/www/flashintro.html"><img src="/www/files/ygmlogo.gif" width="240" height="178" alt="You&#39;ve Got Mail" border="0"></a><br>
+<table width="300">
+<tbody><tr>
+<td>
+&nbsp;&nbsp;
+</td>
+<td align="left">
+<font face="verdana, geneva, helvetica, arial" size="2">
+<br>
+<br>
+Welcome to the <b>You've Got Mail</b> website -- if you have Flash click the logo or <a href="/www/flashintro.html">here</a> to enter the site -- otherwise you can <a href="http://www.macromedia.com/shockwave/download/alternates/index.html" target="offsite">download the plugin</a> or just <a href="/www/cmp/0frameset.html">skip the Flash introduction</a>. Enjoy the site!<br>
+<br>
+<font size="1">
+<br>
+(Special note -- throughout the site you can click on any of the smaller photos from the film to see larger versions in our <b>You've Got Mail</b> <a href="javascript:MM_openBrWindow(&#39;cmp/photos/frontpage.html&#39;,&#39;photo&#39;,&#39;width=500,height=370&#39;)" onmouseover="window.status=&#39;View photo&#39;;return true" onmouseout="window.status=&#39;&#39;;return true">photo album</a>.)</font><br>
+<br>
+<br>
+<center><a href="http://www.wbstore.com/promos/ygm/ygm.asp?l=whv&amp;s=ygmw" target="offsite"><img src="/www/files/wsswhv.jpg" width="170" height="170" alt="Buy the video -- get five dollars off!" border="0"></a>&nbsp;&nbsp;</center><br>
+</font>
+</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<br>
+<center><img src="/www/files/pg.gif" width="189" height="40" alt="" border="0"><br></center>
+<br>
+<br>
+
+<font face="verdana, geneva, helvetica, arial" size="2">
+
+<a href="http://www.wbmovies.com/" target="offsite">© 1998 Warner Bros.</a><br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<font size="1"><a href="javascript:MM_openBrWindow(&#39;http://www.warnerbros.com/terms.html&#39;,&#39;legal&#39;,&#39;width=500,height=370,scrollbars=yes&#39;)" onmouseover="window.status=&#39;Legal/Privacy information&#39;;return true" onmouseout="window.status=&#39;&#39;;return true">Legal/Privacy information about this site</a>
+</font>
+</font>
+
+
+</td>
+</tr>
+</tbody></table>
+<!-- COMET CURSOR OBJECT -->
+<script language="JavaScript"><!--
+var rejectVal=0; var splashPop = "http://download.cometsystems.com/popupsplash.asp"; var popupURL= splashPop + "?RejectDuration=" + rejectVal + "&RefererUserCode=19&RefererSite=popup&Referer=" + escape(document.location); window.onerror=isError; function isError(){return true;} function Is () { var agt=navigator.userAgent.toLowerCase(); this.major = parseInt(navigator.appVersion);this.nav = ((agt.indexOf('mozilla')!=-1) && ((agt.indexOf('spoofer')==-1) && (agt.indexOf('compatible') == -1)));this.nav3 = (this.nav && (this.major == 3)); this.nav4 = (this.nav && (this.major >= 4)); this.win95 =((agt.indexOf("win95")!=-1) || (agt.indexOf("windows 95")!=-1)); this.ie = (agt.indexOf("msie") != -1); this.ie3 =(this.ie && (this.major == 2)); this.ie4 = (this.ie && (this.major >= 4)); this.win98 =((agt.indexOf("win98")!=-1)||(agt.indexOf("windows 98")!=-1)); this.winnt =((agt.indexOf("winnt")!=-1)||(agt.indexOf("windows nt")!=-1)); this.win32 = this.win95 || this.winnt || this.win98 ||((this.major >= 4) && (navigator.platform == "Win32")) || (agt.indexOf("win32")!=-1) || (agt.indexOf("32bit")!=-1);this.compatibleIE = ( this.win32 && (this.ie4 || this.ie3)); this.compatibleNS = ( this.win32 && (this.nav3||this.nav4));this.compatible = (this.compatibleIE || this.compatibleNS); } var is = new Is(); function NSEmbed(cursorTag, mode,script) { if (is.compatibleNS) { if (navigator.mimeTypes["application/x-comet"]) { document.write('<layer visibility="hide"><embed name="CurNS" type="application/x-comet"  width=2 height=1 ' + cursorTag + ' ></embed></layer>'); } else if((!GetCookie("RejectedCursor")) && (mode!='manual') ) showPopUp(); } } function showPopUp() {popupWin=window.open(popupURL,"popupwindow","resizable=yes,location=no,toolbar=no,scrollbars=no,height=300,width=300");} function GetCookie(name) { var arg = name+"="; var arglength=arg.length; var cookielength=document.cookie.length; var i=0; while(i<cookielength) { var valStart=i+arglength; if(document.cookie.substring(i,valStart)==arg) { var end=document.cookie.indexOf (";",valStart); if(end==-1) end=document.cookie.length; return unescape(document.cookie.substring(valStart,end)); } i=document.cookie.indexOf(" ",i)+1; if(i==0) break; } return null; }  function setReject(days) { if (days) { if (days < 0) return; else if (days > 0 ) { var expirationDate = new Date(); var expiry = 1000 * 60 * 60 * 24 * days; expirationDate.setTime(expirationDate.getTime() + expiry); } else days = false; } document.cookie = "RejectedCursor=true"+((days)?"; expires="+expirationDate.toGMTString():""); }  //-->
+</script>
+<object id="CurIE" width="1" height="1" classid="clsid:1678F7E1-C422-11D0-AD7D-00400515CAAA" codebase="http://files.cometsystems.com/cometcursor/warner/comet.cab#Version=1,1,2,127"> 
+<param name="Key" value="022001c128e3558def2d1c34bca540e621b316152b03ef-00024a-wbmovies.com;warnerbros.com;addictedtolove.com;almostheroes.com;analyzethis.com;the-avengers.com;batman-robin.com;butcherboy.com;catsdontdance.com;city-of-angels.com;conspiracytheory.com;contact-themovie.com;newregency.com;deepbluesea.net;glimmerman.com;209.133.35.239/goodbye;wb-homefries.com;wb-jackfrost.com;joesapt.com;thekingandi.com;lw4.com;wb-lostandfound.com;majorleague3.com;marsattacks.com;whatisthematrix.com;michaelcollins.com;goodandevil.com;murderat1600.com;fellowamericans.com;thepostman.com;practicalmagic.com;quest4camelot.com;selena-themovie.com;sleepers.com;wb-soldier.com;spacejam.com;sphere-themovie.com;tarzan-lostcity.com;timetokill.com;truecrimethemovie.com;usmarshals.com;vegasvacation.com;wildwildwest.net;foolsinlove.com;without-limits.com;thewizardofoz.com;youvegotmail.com"> 
+<param name="Normal" value="http://www.wbmovies.com/cursors/wb.cur">
+<param name="Hyperlink" value="http://www.wbmovies.com/cursors/wbh.ani">
+<param name="Ibeam" value="http://www.wbmovies.com/cursors/wb.cur">
+<param name="Wait" value="http://www.wbmovies.com/cursors/wbh.ani">
+<noscript><embed name="CurNS" type="application/x-comet"  width=1 height=1 pluginspage="http://download.cometsystems.com/getplugin.asp" key="022001c128e3558def2d1c34bca540e621b316152b03ef-00024a-wbmovies.com;warnerbros.com;addictedtolove.com;almostheroes.com;analyzethis.com;the-avengers.com;batman-robin.com;butcherboy.com;catsdontdance.com;city-of-angels.com;conspiracytheory.com;contact-themovie.com;newregency.com;deepbluesea.net;glimmerman.com;209.133.35.239/goodbye;wb-homefries.com;wb-jackfrost.com;joesapt.com;thekingandi.com;lw4.com;wb-lostandfound.com;majorleague3.com;marsattacks.com;whatisthematrix.com;michaelcollins.com;goodandevil.com;murderat1600.com;fellowamericans.com;thepostman.com;practicalmagic.com;quest4camelot.com;selena-themovie.com;sleepers.com;wb-soldier.com;spacejam.com;sphere-themovie.com;tarzan-lostcity.com;timetokill.com;truecrimethemovie.com;usmarshals.com;vegasvacation.com;wildwildwest.net;foolsinlove.com;without-limits.com;thewizardofoz.com;youvegotmail.com" 
+Normal="http://www.wbmovies.com/cursors/lostnfound.cur" 
+Hyperlink="http://www.wbmovies.com/cursors/wbh.ani" 
+Ibeam="http://www.wbmovies.com/cursors/wb.cur" 
+Wait="http://www.wbmovies.com/cursors/wbh.ani" ></embed></noscript> </object>
+<script language="JavaScript"><!--
+function goDownload() { if (is.ie3) window.location="http://download.cometsystems.com"; else showPopUp();}  
+NSEmbed('KEY="022001c128e3558def2d1c34bca540e621b316152b03ef-00024a-wbmovies.com;warnerbros.com;addictedtolove.com;almostheroes.com;analyzethis.com;the-avengers.com;batman-robin.com;butcherboy.com;catsdontdance.com;city-of-angels.com;conspiracytheory.com;contact-themovie.com;newregency.com;deepbluesea.net;glimmerman.com;209.133.35.239/goodbye;wb-homefries.com;wb-jackfrost.com;joesapt.com;thekingandi.com;lw4.com;wb-lostandfound.com;majorleague3.com;marsattacks.com;whatisthematrix.com;michaelcollins.com;goodandevil.com;murderat1600.com;fellowamericans.com;thepostman.com;practicalmagic.com;quest4camelot.com;selena-themovie.com;sleepers.com;wb-soldier.com;spacejam.com;sphere-themovie.com;tarzan-lostcity.com;timetokill.com;truecrimethemovie.com;usmarshals.com;vegasvacation.com;wildwildwest.net;foolsinlove.com;without-limits.com;thewizardofoz.com;youvegotmail.com" '+
+'Normal="http://www.wbmovies.com/cursors/wb.cur" '+
+'Hyperlink="http://www.wbmovies.com/cursors/wbh.ani" '+
+'Ibeam="http://www.wbmovies.com/cursors/wb.cur" '+
+'Wait="http://www.wbmovies.com/cursors/wbh.ani"  ' , 'auto' , 'region' ); 
+//-->
+</script>
+<!-- END COMET CURSOR OBJECT -->
+
+
+</body></html>

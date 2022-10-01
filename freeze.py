@@ -1,4 +1,5 @@
 import optparse
+import os
 
 from flask_frozen import Freezer
 import requests
@@ -46,6 +47,15 @@ def main():
     def episode():
         for ep in app.get_eps(info):
             yield {'num': ep}
+
+    if podcast == 'ygm':
+        # register every single file in classic site:
+        @freezer.register_generator
+        def ygm_classic_site():
+            for dirpath, _, filenames in os.walk('static/ygm_sites'):
+                for f in filenames:
+                    yield {'path': os.path.abspath(os.path.join(dirpath, f))}
+
 
     freezer.freeze()
 

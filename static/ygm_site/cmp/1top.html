@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><!-- Copyright 1998 Warner Bros. --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>You've Got Mail</title>
+</head>
+
+<body bgcolor="#FFFFFF" background="/www/files/1bgtop.gif" text="#000000" link="#2100c5" vlink="#2100c5" alink="#bd0031" marginwidth="0" marginheight="0">
+
+<script language="JavaScript">
+
+//<!-- hide this mama
+
+//make sure the browser can do this...
+js=((navigator.appName=="Netscape") && (parseInt(navigator.appVersion)>=3));
+//js is true iff it's netscape v. 3 or higher
+ms=((navigator.appName=="Microsoft Internet Explorer") && (parseInt(navigator.appVersion)>=4));
+//ms is true iff it's ie 4 (since ie 3 doesn't handle this)
+
+if ((js) || (ms)) {									//only if compatible browser
+   anchor='';
+   selection='8675309';								//therefore nothing is on
+   numbuts=3;										//number of buttons
+   gifs=new Object;									//creates set of gifs
+   height=8;
+   width=new Array(53,55,46);
+   for (gifnum=0;gifnum<numbuts;gifnum++) {							//fill up gifs
+      gifs["a"+gifnum] = new Image (width[gifnum],height);	//image off holders
+	  gifs["b"+gifnum] = new Image (width[gifnum],height);	//image on holders
+      gifs["a"+gifnum].src = "/www/files/1n-"+gifnum+".gif";					//image off sources
+      gifs["b"+gifnum].src = "/www/files/1n-"+gifnum+"on.gif";				//image on sources
+   }
+}
+
+function a(num) {			//mouseout function - variable passed is number of menu selection
+ if ((js) || (ms)) {
+  if (num!=selection) {		//only turns button off if it's not been clicked
+      document[num].src=gifs["a"+num].src;		//puts off version into image
+    }
+  }
+}
+
+function b(num) {			//mouseover function
+if ((js) || (ms)) {
+  if (num!=selection) {		//only does mouseover if the selection isn't already clicked
+    for (i=0;i<numbuts;i++) {		//loop through all buttons
+      if (i!=selection) {			//except for the clicked one
+        document[i].src=gifs["a"+i].src;	//fills images with off version
+        }
+      }
+    document[num].src=gifs["b"+num].src;	//fills selected image with on version
+    }
+  }
+}
+
+function c(num) {			//mouse click function
+if ((js) || (ms)) {			//only if browser is compatible
+  for (i=0;i<numbuts;i++) {				//runs through all buttons
+    document[i].src=gifs["a"+i].src;	//fills each image with off version
+    }
+  document[num].src=gifs["b"+num].src;	//replaces clicked button with on version
+  }
+  selection=num;						//converts "selection" into the current #
+}
+
+// stop this crazy hidden stuff -->
+
+</script>
+
+<center>
+<table border="0" width="95%" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td align="right" valign="top"><nobr><a href="/www/cmp/cast.html" target="main" onmouseover="b(0);window.status=&#39;&#39;;return true" onmouseout="a(0);window.status=&#39;&#39;;return true" onclick="c(0)"><img src="/www/files/1n-0.gif" width="53" height="8" border="0" name="0" vspace="8"></a><img src="/www/files/1bullet.gif" width="11" height="8" border="0" vspace="8"><a href="https://web.archive.org/web/20000303212119id_/http://www.youvegotmail.com/cmp/filmmakers.html" target="main" onmouseover="b(1);window.status=&#39;&#39;;return true" onmouseout="a(1);window.status=&#39;&#39;;return true" onclick="c(1)"><img src="/www/files/1n-1.gif" width="55" height="8" border="0" name="1" vspace="8"></a><img src="/www/files/1bullet.gif" width="11" height="8" border="0" vspace="8"><a href="https://web.archive.org/web/20000303212119id_/http://www.youvegotmail.com/cmp/n1-intro.html" target="main" onmouseover="b(2);window.status=&#39;&#39;;return true" onmouseout="a(2);window.status=&#39;&#39;;return true" onclick="c(2)"><img src="/www/files/1n-2.gif" width="46" height="8" border="0" name="2" vspace="8"></a><img src="/www/files/pixel.gif" width="5" height="1" vspace="8"></nobr></td>
+</tr>
+  <tr>
+    <td align="right" valign="top">
+<a href="/www/cmp/1main.html" target="main"><img src="/www/files/1b-meet.gif" width="168" height="12" align="right" border="0"></a>
+</td>
+</tr>
+  
+  
+</tbody></table>
+</center>
+
+
+
+<!-- COMET CURSOR OBJECT -->
+<script language="JavaScript"><!--
+var rejectVal=0; var splashPop = "http://download.cometsystems.com/popupsplash.asp"; var popupURL= splashPop + "?RejectDuration=" + rejectVal + "&RefererUserCode=19&RefererSite=popup&Referer=" + escape(document.location); window.onerror=isError; function isError(){return true;} function Is () { var agt=navigator.userAgent.toLowerCase(); this.major = parseInt(navigator.appVersion);this.nav = ((agt.indexOf('mozilla')!=-1) && ((agt.indexOf('spoofer')==-1) && (agt.indexOf('compatible') == -1)));this.nav3 = (this.nav && (this.major == 3)); this.nav4 = (this.nav && (this.major >= 4)); this.win95 =((agt.indexOf("win95")!=-1) || (agt.indexOf("windows 95")!=-1)); this.ie = (agt.indexOf("msie") != -1); this.ie3 =(this.ie && (this.major == 2)); this.ie4 = (this.ie && (this.major >= 4)); this.win98 =((agt.indexOf("win98")!=-1)||(agt.indexOf("windows 98")!=-1)); this.winnt =((agt.indexOf("winnt")!=-1)||(agt.indexOf("windows nt")!=-1)); this.win32 = this.win95 || this.winnt || this.win98 ||((this.major >= 4) && (navigator.platform == "Win32")) || (agt.indexOf("win32")!=-1) || (agt.indexOf("32bit")!=-1);this.compatibleIE = ( this.win32 && (this.ie4 || this.ie3)); this.compatibleNS = ( this.win32 && (this.nav3||this.nav4));this.compatible = (this.compatibleIE || this.compatibleNS); } var is = new Is(); function NSEmbed(cursorTag, mode,script) { if (is.compatibleNS) { if (navigator.mimeTypes["application/x-comet"]) { document.write('<layer visibility="hide"><embed name="CurNS" type="application/x-comet"  width=2 height=1 ' + cursorTag + ' ></embed></layer>'); } else if((!GetCookie("RejectedCursor")) && (mode!='manual') ) showPopUp(); } } function showPopUp() {popupWin=window.open(popupURL,"popupwindow","resizable=yes,location=no,toolbar=no,scrollbars=no,height=300,width=300");} function GetCookie(name) { var arg = name+"="; var arglength=arg.length; var cookielength=document.cookie.length; var i=0; while(i<cookielength) { var valStart=i+arglength; if(document.cookie.substring(i,valStart)==arg) { var end=document.cookie.indexOf (";",valStart); if(end==-1) end=document.cookie.length; return unescape(document.cookie.substring(valStart,end)); } i=document.cookie.indexOf(" ",i)+1; if(i==0) break; } return null; }  function setReject(days) { if (days) { if (days < 0) return; else if (days > 0 ) { var expirationDate = new Date(); var expiry = 1000 * 60 * 60 * 24 * days; expirationDate.setTime(expirationDate.getTime() + expiry); } else days = false; } document.cookie = "RejectedCursor=true"+((days)?"; expires="+expirationDate.toGMTString():""); }  //-->
+</script>
+<object id="CurIE" width="1" height="1" classid="clsid:1678F7E1-C422-11D0-AD7D-00400515CAAA" codebase="http://files.cometsystems.com/cometcursor/warner/comet.cab#Version=1,1,2,127"> 
+<param name="Key" value="022001c128e3558def2d1c34bca540e621b316152b03ef-00024a-wbmovies.com;warnerbros.com;addictedtolove.com;almostheroes.com;analyzethis.com;the-avengers.com;batman-robin.com;butcherboy.com;catsdontdance.com;city-of-angels.com;conspiracytheory.com;contact-themovie.com;newregency.com;deepbluesea.net;glimmerman.com;209.133.35.239/goodbye;wb-homefries.com;wb-jackfrost.com;joesapt.com;thekingandi.com;lw4.com;wb-lostandfound.com;majorleague3.com;marsattacks.com;whatisthematrix.com;michaelcollins.com;goodandevil.com;murderat1600.com;fellowamericans.com;thepostman.com;practicalmagic.com;quest4camelot.com;selena-themovie.com;sleepers.com;wb-soldier.com;spacejam.com;sphere-themovie.com;tarzan-lostcity.com;timetokill.com;truecrimethemovie.com;usmarshals.com;vegasvacation.com;wildwildwest.net;foolsinlove.com;without-limits.com;thewizardofoz.com;youvegotmail.com"> 
+<param name="Normal" value="http://www.wbmovies.com/cursors/wb.cur">
+<param name="Hyperlink" value="http://www.wbmovies.com/cursors/wbh.ani">
+<param name="Ibeam" value="http://www.wbmovies.com/cursors/wb.cur">
+<param name="Wait" value="http://www.wbmovies.com/cursors/wbh.ani">
+<noscript><embed name="CurNS" type="application/x-comet"  width=1 height=1 pluginspage="http://download.cometsystems.com/getplugin.asp" key="022001c128e3558def2d1c34bca540e621b316152b03ef-00024a-wbmovies.com;warnerbros.com;addictedtolove.com;almostheroes.com;analyzethis.com;the-avengers.com;batman-robin.com;butcherboy.com;catsdontdance.com;city-of-angels.com;conspiracytheory.com;contact-themovie.com;newregency.com;deepbluesea.net;glimmerman.com;209.133.35.239/goodbye;wb-homefries.com;wb-jackfrost.com;joesapt.com;thekingandi.com;lw4.com;wb-lostandfound.com;majorleague3.com;marsattacks.com;whatisthematrix.com;michaelcollins.com;goodandevil.com;murderat1600.com;fellowamericans.com;thepostman.com;practicalmagic.com;quest4camelot.com;selena-themovie.com;sleepers.com;wb-soldier.com;spacejam.com;sphere-themovie.com;tarzan-lostcity.com;timetokill.com;truecrimethemovie.com;usmarshals.com;vegasvacation.com;wildwildwest.net;foolsinlove.com;without-limits.com;thewizardofoz.com;youvegotmail.com" 
+Normal="http://www.wbmovies.com/cursors/lostnfound.cur" 
+Hyperlink="http://www.wbmovies.com/cursors/wbh.ani" 
+Ibeam="http://www.wbmovies.com/cursors/wb.cur" 
+Wait="http://www.wbmovies.com/cursors/wbh.ani" ></embed></noscript> </object>
+<script language="JavaScript"><!--
+function goDownload() { if (is.ie3) window.location="http://download.cometsystems.com"; else showPopUp();}  
+NSEmbed('KEY="022001c128e3558def2d1c34bca540e621b316152b03ef-00024a-wbmovies.com;warnerbros.com;addictedtolove.com;almostheroes.com;analyzethis.com;the-avengers.com;batman-robin.com;butcherboy.com;catsdontdance.com;city-of-angels.com;conspiracytheory.com;contact-themovie.com;newregency.com;deepbluesea.net;glimmerman.com;209.133.35.239/goodbye;wb-homefries.com;wb-jackfrost.com;joesapt.com;thekingandi.com;lw4.com;wb-lostandfound.com;majorleague3.com;marsattacks.com;whatisthematrix.com;michaelcollins.com;goodandevil.com;murderat1600.com;fellowamericans.com;thepostman.com;practicalmagic.com;quest4camelot.com;selena-themovie.com;sleepers.com;wb-soldier.com;spacejam.com;sphere-themovie.com;tarzan-lostcity.com;timetokill.com;truecrimethemovie.com;usmarshals.com;vegasvacation.com;wildwildwest.net;foolsinlove.com;without-limits.com;thewizardofoz.com;youvegotmail.com" '+
+'Normal="http://www.wbmovies.com/cursors/wb.cur" '+
+'Hyperlink="http://www.wbmovies.com/cursors/wbh.ani" '+
+'Ibeam="http://www.wbmovies.com/cursors/wb.cur" '+
+'Wait="http://www.wbmovies.com/cursors/wbh.ani"  ' , 'auto' , 'region' ); 
+//-->
+</script>
+<!-- END COMET CURSOR OBJECT -->
+
+
+
+</body></html>

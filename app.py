@@ -1,5 +1,6 @@
 import copy
 import datetime
+import os
 import re
 import sys
 
@@ -311,6 +312,7 @@ def kvothe():
 
 @convoy_app.route('/humans.txt')
 @cocktail_app.route('/humans.txt')
+@ygm_app.route('/humans.txt')
 def humans_txt():
     return flask.send_from_directory(convoy_app.static_folder, 'humans.txt')
 
@@ -319,6 +321,12 @@ def humans_txt():
 def page_not_found(e):
     return flask.render_template('404.html'), 404
 
+
+@ygm_app.route('/www/', defaults={'path': 'index.html'})
+@ygm_app.route('/www/<path:path>')
+def ygm_classic_site(path):
+    return flask.send_from_directory(ygm_app.static_folder,
+                                     os.path.join('ygm_site', path))
 
 def print_calendar():
     all_podcast = [get_yaml(x) for x in ('master', 'convoy', 'cocktail', 'ygm')]
