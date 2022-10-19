@@ -391,4 +391,15 @@ episodes:
      cocktail:
        name: Probable Italian Ice
        image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_23.jpg
-
+   - title: "Earful of You've Got Mail: Episode 24 (1:55:00 - 1:59:26)"
+     description: >
+       Party ep. Features popular segments "The Set-Up", "An Earful of News",
+       "Guess the Stunt", and "Keepin' it Social".
+     datetime: '2022-10-18T09:00:00'
+     record_datetime: '2021-10-01T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_ygm_ep_24.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/ygm_ep_24.jpg
+     audio size: 115183616
+     cocktail:
+       name: Probable Italian Ice (It's Lower Now)
+       image: https://media.earfulofconvoy.com/earful/drink_img/ygm_drink_24.jpg

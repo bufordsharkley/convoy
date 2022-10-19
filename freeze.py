@@ -1,3 +1,4 @@
+import pathlib
 import optparse
 import os
 
@@ -52,10 +53,11 @@ def main():
         # register every single file in classic site:
         @freezer.register_generator
         def ygm_classic_site():
-            for dirpath, _, filenames in os.walk('static/ygm_sites'):
-                for f in filenames:
-                    yield {'path': os.path.abspath(os.path.join(dirpath, f))}
-
+            for dirpath, _, filenames in os.walk('static/ygm_site'):
+                for fname in filenames:
+                    path = pathlib.Path(dirpath, fname)
+                    path = pathlib.Path(*path.parts[2:])
+                    yield {'path': path}
 
     freezer.freeze()
 
