@@ -1,4 +1,4 @@
-import pathlib
+#import pathlib
 import optparse
 import os
 
@@ -55,8 +55,15 @@ def main():
         def ygm_classic_site():
             for dirpath, _, filenames in os.walk('static/ygm_site'):
                 for fname in filenames:
-                    path = pathlib.Path(dirpath, fname)
-                    path = pathlib.Path(*path.parts[2:])
+                    # Uhhh, we're stuck with 2.7... ?
+                    # The correct way we'll avoid for now:
+                    #path = pathlib.Path(dirpath, fname)
+                    #path = pathlib.Path(*path.parts[2:])
+                    try:
+                        ddirpath = dirpath.split('/', 2)[2]
+                    except IndexError:
+                        ddirpath = ''
+                    path = os.path.join(ddirpath, fname)
                     yield {'path': path}
 
     freezer.freeze()
