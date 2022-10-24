@@ -1,88 +1,104 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-<!-- saved from url=(0014)about:internet -->
 <html><!-- Copyright 1998 Warner Bros. --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 <title>You've Got Mail</title>
-</head>
-
-<body bgcolor="#FFFFFF" background="./2bgtop.gif" text="#000000" link="#f71000" vlink="#f71000" alink="#218c8c" marginwidth="0" marginheight="0">
-
 <script language="JavaScript">
-
-//<!-- hide this mama
-
-//make sure the browser can do this...
-js=((navigator.appName=="Netscape") && (parseInt(navigator.appVersion)>=3));
-//js is true iff it's netscape v. 3 or higher
-ms=((navigator.appName=="Microsoft Internet Explorer") && (parseInt(navigator.appVersion)>=4));
-//ms is true iff it's ie 4 (since ie 3 doesn't handle this)
-
-if ((js) || (ms)) {									//only if compatible browser
-   anchor='';
-   selection='8675309';								//therefore nothing is on
-   numbuts=2;										//number of buttons
-   gifs=new Object;									//creates set of gifs
-   height=8;
-   width=new Array(118,88);
-   for (gifnum=0;gifnum<numbuts;gifnum++) {							//fill up gifs
-      gifs["a"+gifnum] = new Image (width[gifnum],height);	//image off holders
-	  gifs["b"+gifnum] = new Image (width[gifnum],height);	//image on holders
-      gifs["a"+gifnum].src = "../img/2n-"+gifnum+".gif";					//image off sources
-      gifs["b"+gifnum].src = "../img/2n-"+gifnum+"on.gif";				//image on sources
-   }
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v1.2
+  window.open(theURL,winName,features);
 }
+//-->
+</script></head>
 
-function a(num) {			//mouseout function - variable passed is number of menu selection
- if ((js) || (ms)) {
-  if (num!=selection) {		//only turns button off if it's not been clicked
-      document[num].src=gifs["a"+num].src;		//puts off version into image
-    }
-  }
-}
 
-function b(num) {			//mouseover function
-if ((js) || (ms)) {
-  if (num!=selection) {		//only does mouseover if the selection isn't already clicked
-    for (i=0;i<numbuts;i++) {		//loop through all buttons
-      if (i!=selection) {			//except for the clicked one
-        document[i].src=gifs["a"+i].src;	//fills images with off version
-        }
-      }
-    document[num].src=gifs["b"+num].src;	//fills selected image with on version
-    }
-  }
-}
 
-function c(num) {			//mouse click function
-if ((js) || (ms)) {			//only if browser is compatible
-  for (i=0;i<numbuts;i++) {				//runs through all buttons
-    document[i].src=gifs["a"+i].src;	//fills each image with off version
-    }
-  document[num].src=gifs["b"+num].src;	//replaces clicked button with on version
-  }
-  selection=num;						//converts "selection" into the current #
-}
 
-// stop this crazy hidden stuff -->
-
-</script>
-
+<body bgcolor="#FFFFFF" text="#000000" link="#2100c5" vlink="#2100c5" alink="#bd0031">
+  
 <center>
-<table border="0" width="95%" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td align="right" valign="top"> <nobr><a href="/www/cmp/upperwest.html" target="main" onmouseover="b(0);window.status=&#39;&#39;;return true" onmouseout="a(0);window.status=&#39;&#39;;return true" onclick="c(0)"><img src="./2n-0.gif" width="118" height="8" border="0" name="0" vspace="8"></a><img src="./2bullet.gif" width="11" height="8" border="0" vspace="8"><a href="/www/cmp/sounds.html" target="main" onmouseover="b(1);window.status=&#39;&#39;;return true" onmouseout="a(1);window.status=&#39;&#39;;return true" onclick="c(1)"><img src="./2n-1.gif" width="88" height="8" border="0" name="1" vspace="8"></a><img src="./pixel.gif" width="5" height="1" vspace="8"></nobr> 
-    </td>
-  </tr>
-  <tr>
-    <td align="right" valign="top">
-<a href="/www/cmp/2main.html" target="main"><img src="./2b-nyinfall.gif" width="199" height="12" align="right" border="0"></a> 
+ <table border="0" width="100%" height="100%" cellspacing="0" cellpadding="0">
+    <tbody><tr> 
+      <td align="left" width="35%" valign="top"><a href="/www/cmp/0frameset.html" target="_top"><img src="/www/files/logo.gif" width="112" height="80" border="0" hspace="12"></a><br>
+        <br>
+        
+<br>
+<br>
+<a href="/www/cmp/c-hanks.html"><img src="/www/files/cs-tom.gif" width="43" height="8" alt="Tom Hanks" border="0" hspace="12"></a>
+<br>
+<a href="/www/cmp/c-ryan.html"><img src="/www/files/cs-meg.gif" width="39" height="8" alt="Meg Ryan" border="0" hspace="12"></a>
+<br>
+<a href="/www/cmp/c-kinnear.html"><img src="/www/files/cs-greg.gif" width="56" height="8" alt="Greg Kinnear" border="0" hspace="12"></a>
+<br>
+<a href="/www/cmp/c-posey.html"><img src="/www/files/cs-parker.gif" width="56" height="8" alt="Parker Posey" border="0" hspace="12"></a>
+<br>
+<a href="/www/cmp/c-stapleton.html"><img src="/www/files/cs-jean.gif" width="63" height="8" alt="Jean Stapleton" border="0" hspace="12"></a>
+<br>
+<a href="/www/cmp/c-zahn.html"><img src="/www/files/cs-steve.gif" width="46" height="8" alt="Steve Zahn" border="0" hspace="12"></a>
+<br>
+<a href="/www/cmp/c-chappelle.html"><img src="/www/files/cs-david.gif" width="68" height="8" alt="David Chappelle" border="0" hspace="12"></a>
+
+<br>
+
+      </td>
+      <td width="65%" valign="middle">
+
+<table width="400">
+<tbody><tr>
+<td>
+
+
+<font face="verdana, arial, helvetica" size="2">
+<img src="/www/files/chn-birdie.gif" width="400" height="32" alt="Birdie" border="0" align="right" hspace="20"><br clear="all">
+
+<table align="right">
+<tbody><tr>
+<td valign="middle" align="right">
+<font face="verdana, arial, helvetica" size="2">
+"I tried to have cybersex once, but I kept getting a busy signal."
+</font></td>
+<td>
+<a href="javascript:MM_openBrWindow(&#39;/www/cmp/photos/photo-23.html&#39;,&#39;photo&#39;,&#39;width=500,height=370&#39;)" onmouseover="window.status=&#39;View photo&#39;;return true" onmouseout="window.status=&#39;&#39;;return true"><img src="/www/files/photo23.gif" width="120" height="75" alt="" border="2" align="right" hspace="20"></a><br clear="all">
 </td>
 </tr>
-  
-  
 </tbody></table>
+
+<br clear="all">
+<br>
+
+<img src="/www/files/ch-jean.gif" width="87" height="121" alt="" border="0" align="left" hspace="8"><br>
+<img src="/www/files/cn-jean.gif" width="313" height="20" alt="" border="0" align="left"><br>
+
+<br>
+
+JEAN STAPLETON (Birdie) most recently starred in Nora Ephron's angelic comedy, <b>Michael</b>.  Best known for her long-<wbr>running role as Edith Bunker on the acclaimed TV series "All in the Family," for which she won three Emmys and three Golden Globes, Stapleton divides her time among theater, television and film.  <br>
+<br>
+Her recent stage work includes Thornton Wilder's "The Matchmaker" and Chekov's "The Cherry Orchard" in San Francisco; the role of the stepmother in Rodgers and Hammerstein's "Cinderella" at the New York City Opera; a production of Noel Coward's "Blithe Spirit" in California; and "Night Seasons" at the Signature Theatre in New York.  Earlier,  Stapleton appeared on Broadway in "In the Summer House," "Damn Yankees," "Bells Are Ringing," "Rhinoceros," "Funny Girl" and "Arsenic and Old Lace."  She also won an Obie Award for her work in two plays by Harold Pinter at New York's Classic Stage Company.  She subsequently appeared in the film versions of "Damn Yankees" and "Bells Are Ringing."<br>
+<br>
+Stapleton makes frequent appearances on television, and earned Emmy nominations for a guest role on "Grace Under Fire," for her portrayal of Eleanor Roosevelt in the telefilm "Eleanor: First Lady of the World" and for a critically acclaimed performance in Horton Foote's "Lily Dale" for Showtime.  Other television appearances include "Caroline in the City," Murphy Brown" and "Everybody Loves Raymond."<br>
+
+</font>
+
+</td>
+<td>
+&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</tbody></table>
+
+ </td>
+    </tr>
+    <tr> 
+      <td align="left" valign="bottom"><a href="http://www.atlantic-records.com/frames/mainframe.html?page=http%3A//store.atlantic-records.com/store/product.asp?upc=075678315329" target="offsite"><img src="/www/files/ad.gif" width="125" height="125" hspace="12" vspace="2" border="0"></a> 
+      </td>
+      <td align="right" valign="bottom"><a href="/www/cmp/2frameset.html" target="_top"><img src="/www/files/1b-nyinfall.gif" width="199" height="12" border="0"></a>
+<br>
+<a href="/www/cmp/3frameset.html" target="_top"><img src="/www/files/1b-westciv.gif" width="172" height="12" border="0" hspace="3"></a> 
+<br>
+<a href="/www/cmp/4frameset.html" target="_top"><img src="/www/files/1b-gotmail.gif" width="85" height="12" border="0" hspace="3"></a> 
+<br>
+<a href="/www/cmp/5frameset.html" target="_top"><img src="/www/files/1b-storybook.gif" width="85" height="12" border="0" hspace="3"></a> 
+      </td>
+    </tr>
+  </tbody></table>
 </center>
-
-
 
 <!-- COMET CURSOR OBJECT -->
 <script language="JavaScript"><!--
