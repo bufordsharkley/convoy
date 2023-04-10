@@ -13,6 +13,12 @@
     {% elif podcast.title == "An Earful of You've Got Mail" %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='ygm_favicon.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ygm_style.css') }}">
+    {% elif podcast.title == "An Earful of Jumper" %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='jumper_favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jumper_style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@1,800&display=swap" rel="stylesheet">
     {% else %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% endif %}
@@ -30,11 +36,13 @@
     <nav>
       <div class="crossnav">
         {% if podcast.title == "An Earful of You've Got Mail" %}
-        <a href="http://earfulofconvoy.com"><img src="/static/convoy.png" alt="Earful of Convoy" height="50"><p>next podcast</p></a>
+        <a href="http://earfulofjumper.com"><img src="/static/jumper.png" alt="Earful of Jumper" height="50"><p>next podcast</p></a>
         {% elif podcast.title == 'An Earful of Cocktail' %}
         <a href="http://earfulofyouvegotmail.com"><img src="/static/ygm.png" alt="Earful of You've Got Mail" height="50"><p>next podcast</p></a>
         {% elif podcast.title == 'An Earful of Convoy' %}
         <a href="http://earfulofcocktail.com"><img src="/static/cocktail.png" alt="Earful of Cocktail" height="50"><p>next podcast</p></a>
+        {% elif podcast.title == 'An Earful of Jumper' %}
+        <a href="http://earfulofconvoy.com"><img src="/static/convoy.png" alt="Earful of Convoy" height="50"><p>next podcast</p></a>
         {% endif %}
       </div>
       <div class="banner">

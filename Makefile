@@ -1,11 +1,17 @@
 freeze_ygm_local:
-	    python freeze.py ygm
+	    python3 freeze.py jumper 
+
+freeze_jumper_local:
+	    python3 freeze.py ygm
 
 freeze_cocktail_local:
-	    python freeze.py cocktail
+	    python3 freeze.py cocktail
 
 freeze_convoy_local:
-	    python freeze.py convoy
+	    python3 freeze.py convoy
+
+server_jumper_local: freeze_jumper_local
+	    cd jumper_build && python -m SimpleHTTPServer
 
 server_ygm_local: freeze_ygm_local
 	    cd ygm_build && python -m SimpleHTTPServer
@@ -17,6 +23,9 @@ server_convoy_local: freeze_convoy_local
 	    cd convoy_build && python -m SimpleHTTPServer
 
 
+freeze_jumper:
+	    env/bin/python freeze.py jumper
+
 freeze_ygm:
 	    env/bin/python freeze.py ygm
 
@@ -25,6 +34,9 @@ freeze_cocktail:
 
 freeze_convoy:
 	    env/bin/python freeze.py convoy
+
+server_jumper: freeze_jumper
+	    cd jumper_build && python -m SimpleHTTPServer
 
 server_ygm: freeze_ygm
 	    cd ygm_build && python -m SimpleHTTPServer

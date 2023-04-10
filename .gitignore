@@ -12,6 +12,7 @@ build
 convoy_build
 cocktail_build
 ygm_build
+jumper_build
 dist
 sdist
 eggs

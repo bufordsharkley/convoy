@@ -37,6 +37,10 @@ def main():
         freezer = Freezer(app.ygm_app)
         info = app.get_yaml('ygm')
         app.ygm_app.config['FREEZER_DESTINATION'] = 'ygm_build'
+    elif podcast == 'jumper':
+        freezer = Freezer(app.jumper_app)
+        info = app.get_yaml('jumper')
+        app.jumper_app.config['FREEZER_DESTINATION'] = 'jumper_build'
     else:
         freezer = Freezer(app.convoy_app)
         info = app.get_yaml('convoy')

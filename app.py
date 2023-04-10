@@ -12,6 +12,7 @@ import jinja2
 convoy_app = flask.Flask(__name__)
 cocktail_app = flask.Flask(__name__)
 ygm_app = flask.Flask(__name__)
+jumper_app = flask.Flask(__name__)
 
 
 def get_yaml(podcast):
@@ -23,6 +24,8 @@ def get_yaml(podcast):
         resource = convoy_app.open_resource('static/cocktail.yaml')
     elif podcast == 'ygm':
         resource = convoy_app.open_resource('static/ygm.yaml')
+    elif podcast == 'jumper':
+        resource = convoy_app.open_resource('static/jumper.yaml')
     elif podcast == 'kvothe':
         resource = convoy_app.open_resource('static/earless/kvothe.yaml')
     else:
@@ -67,12 +70,22 @@ def get_ygm_data():
     return podcast
 
 
+def get_jumper_data():
+    podcast = get_yaml('jumper')
+    """
+    years = [x['datetime'][:4] for x in podcast['episodes']]
+    podcast['years'] = (min(years), max(years))
+    """
+    podcast['years'] = (2023, 2023)
+    return podcast
+
+
 def get_feud_data():
     feuds = {'current': [
                 {'img': 'dogbrothers/terry.png',
-                 'pods': ['convoy',  'ygm']},
+                 'pods': ['convoy',  'ygm', 'jumper']},
                 {'img': 'dogbrothers/pitt.png',
-                 'pods': ['cocktail', 'ygm']},
+                 'pods': ['cocktail', 'ygm', 'jumper']},
                 {'img': 'dogbrothers/meagan.png',
                  'pods': ['ygm']},
                          ],
@@ -96,7 +109,7 @@ def get_feud_data():
                         ],
             }
     resp = {x: {'current': [], 'previous': []}
-            for x in ('convoy', 'cocktail', 'ygm')}
+            for x in ('convoy', 'cocktail', 'ygm', 'jumper')}
     for k, v in feuds.items():
         for feud in v:
             for pod in feud['pods']:
@@ -122,6 +135,13 @@ def index():
 def index():
     podcast = get_ygm_data()
     feuds = get_feud_data()['ygm']
+    return flask.render_template('index.html', podcast=podcast, feuds=feuds)
+
+
+@jumper_app.route('/')
+def index():
+    podcast = get_jumper_data()
+    feuds = get_feud_data()['jumper']
     return flask.render_template('index.html', podcast=podcast, feuds=feuds)
 
 
@@ -274,6 +294,7 @@ def podcast_feed_legacy():
 @convoy_app.route('/feed.xml')
 @cocktail_app.route('/feed.xml')
 @ygm_app.route('/feed.xml')
+@jumper_app.route('/feed.xml')
 def podcast_feed():
     all_podcast = [get_yaml(x) for x in ('master', 'convoy', 'cocktail', 'ygm')]
     podcast = merge_podcast_info(all_podcast)
@@ -289,6 +310,7 @@ def podcast_feed():
 @convoy_app.route('/kvothe.xml')
 @cocktail_app.route('/kvothe.xml')
 @ygm_app.route('/kvothe.xml')
+@jumper_app.route('/kvothe.xml')
 def kvothe_feed():
     kvothe_info = get_yaml('kvothe')
     podcast = parse_podcast_years(kvothe_info)
@@ -303,6 +325,7 @@ def kvothe_feed():
 @convoy_app.route('/kvothe/index.html')
 @cocktail_app.route('/kvothe/index.html')
 @ygm_app.route('/kvothe/index.html')
+@jumper_app.route('/kvothe/index.html')
 def kvothe():
     podcast = get_yaml('kvothe')
     years = [x['datetime'][:4] for x in podcast['episodes']]
@@ -313,6 +336,7 @@ def kvothe():
 @convoy_app.route('/humans.txt')
 @cocktail_app.route('/humans.txt')
 @ygm_app.route('/humans.txt')
+@jumper_app.route('/humans.txt')
 def humans_txt():
     return flask.send_from_directory(convoy_app.static_folder, 'humans.txt')
 
@@ -369,9 +393,11 @@ if __name__ == '__main__':
             convoy_app.run(debug=True)
         elif arg.startswith('ygm'):
             ygm_app.run(debug=True)
+        elif arg.startswith('jump'):
+            jumper_app.run(debug=True)
         elif arg.startswith('cal'):
             print_calendar()
         else:
-            raise Exception("Pass argument cocktail|convoy|ygm|calendar")
+            raise Exception("Pass argument cocktail|convoy|ygm|jumper|calendar")
     if len(sys.argv) == 1:
-        raise Exception("Pass argument cocktail|convoy|ygm|calendar")
+        raise Exception("Pass argument cocktail|convoy|ygm|jumper|calendar")
