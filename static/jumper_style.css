@@ -3,8 +3,19 @@ body {
   color: #db4f58;*/
   /*background: linear-gradient(-40deg, #4378bf 18%,#3689ce 48%,#428fd0 59%,#8fb3da 100%);*/
   /*background: linear-gradient(-40deg, #fcfdfb 18%, #a4bab9 100%);*/
-  background: linear-gradient(-40deg, #a4bab9 18%, #fcfdfb 100%);
+  /* background: linear-gradient(-40deg, #a4bab9 18%, #fcfdfb 100%);*/
   color: #606060;
+    background: 
+    url("/static/splash.png")  left top repeat-y,
+  linear-gradient(-40deg, #a4bab9 18%, #fcfdfb 100%) top/100%;
+}
+
+@media (max-width: 1100px) {
+  body {
+   background: 
+    linear-gradient(-40deg, #a4bab9 18%, #fcfdfb 100%) top/100%;
+  }
+
 }
 
 div.subscribe {
@@ -15,6 +26,18 @@ div.subscribe {
     border-radius: 100px;
     margin-top: 30px;
     padding-bottom: 20px;
+    box-shadow: 10px 5px 50px slategray;
+}
+
+@media (max-width: 850px) {
+  div.subscribe {
+    width: 360px;
+  }
+
+}
+
+div.subscribe h3 {
+    margin-top: 20px;
 }
 
 marquee {
@@ -29,8 +52,6 @@ h2 {
 
 div.promo h2 {
   color: darkslategray
-
-
 }
 
 a {
