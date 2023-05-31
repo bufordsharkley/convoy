@@ -13,4 +13,22 @@ marquee: PALADIN | JUMPER WORLD TRACKING MONITOR
 rss_feed: '/feed.xml'
 itunes_url: https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668
 promo_file: jumper_promo.mp3
-episodes: []
+episodes:
+   - title: "Earful of Jumper: Episode 1 (0:00:00 - 0:05:00)"
+     description: >
+       Jump into a new season of Earful with the first five minutes of our
+       new movie, "Jumper" (2008)! Let us tell you about our day so far:
+       we analyze Mr. Jumper's surfboard and cooler (jumper toting logistics),
+       international time zones, cool movie studio logos, Jumper bedtimes and
+       wakeup timeas, young Jumper (has a different face), all the ways that
+       Young Jumper's snowglobe is bad, sister cities, and the Nokia N93.
+       Featuring new segments, "Jump of the Ep," "One More Jump", and "Jumper
+       in the Air".
+     datetime: '2023-05-30T17:00:00'
+     record_datetime: '2023-05-27T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_01.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_01.jpg
+     audio size: 112381952
+     cocktail:
+       name: Huron River
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_01.jpg

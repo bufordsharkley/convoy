@@ -43,7 +43,8 @@ def get_eps(podcast):
                 ep['record_datetime'], "%Y-%m-%dT%H:%M:%S" )
         except KeyError:
             ep['record_datetime'] = ep['datetime']
-    eps = {x['url'].split('_ep_')[1].split('.mp3')[0]: x for x in eps}
+    # Pretty janky way to coerce 01 -> 1, etc
+    eps = {str(int(x['url'].split('_ep_')[1].split('.mp3')[0])): x for x in eps}
     for k, v in eps.items():
         v['key'] = k
     return eps
@@ -72,11 +73,8 @@ def get_ygm_data():
 
 def get_jumper_data():
     podcast = get_yaml('jumper')
-    """
     years = [x['datetime'][:4] for x in podcast['episodes']]
     podcast['years'] = (min(years), max(years))
-    """
-    podcast['years'] = (2023, 2023)
     return podcast
 
 
@@ -163,6 +161,12 @@ def episodes():
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
+@jumper_app.route('/eps/')
+def episodes():
+    podcast = get_jumper_data()
+    return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
+
+
 @convoy_app.route('/gallery/')
 def meditative_gallery():
     podcast = get_convoy_data()
@@ -180,6 +184,11 @@ def meditative_gallery():
     podcast = get_ygm_data()
     return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
 
+
+@jumper_app.route('/gallery/')
+def meditative_gallery():
+    podcast = get_jumper_data()
+    return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
 
 #@cocktail_app.route('/kvothe/eps/')
 #@convoy_app.route('/kvothe/eps/')
@@ -206,6 +215,12 @@ def playlist():
     return flask.render_template('playlist.html', podcast=podcast)
 
 
+@jumper_app.route('/playlist.html')
+def playlist():
+    podcast = get_jumper_data()
+    return flask.render_template('playlist.html', podcast=podcast)
+
+
 @convoy_app.route('/cocktails/')
 def cocktails():
     podcast = get_convoy_data()
@@ -221,6 +236,12 @@ def cocktails():
 @ygm_app.route('/cocktails/')
 def cocktails():
     podcast = get_ygm_data()
+    return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
+
+
+@jumper_app.route('/cocktails/')
+def cocktails():
+    podcast = get_jumper_data()
     return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
 
 
@@ -244,6 +265,12 @@ def episode(num):
     eps = get_eps(podcast)
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
+
+@jumper_app.route('/ep/<num>/index.html')
+def episode(num):
+    podcast = get_jumper_data()
+    eps = get_eps(podcast)
+    return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
 
 def extract_copyright_years(podcast):
