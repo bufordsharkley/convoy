@@ -33,6 +33,16 @@ def get_yaml(podcast):
     return yaml.load(resource, Loader=yaml.FullLoader)
 
 
+def make_ep_key(ep_data):
+    key = ep_data['url'].split('_ep_')[1].split('.mp3')[0]
+    try:
+        # Pretty janky way to coerce 01 -> 1, etc
+        return str(int(key))
+    except ValueError:
+        # some eps are of form '12-2', etc:
+        return key
+
+
 def get_eps(podcast):
     eps = podcast['episodes']
     for ep in eps:
@@ -43,8 +53,7 @@ def get_eps(podcast):
                 ep['record_datetime'], "%Y-%m-%dT%H:%M:%S" )
         except KeyError:
             ep['record_datetime'] = ep['datetime']
-    # Pretty janky way to coerce 01 -> 1, etc
-    eps = {str(int(x['url'].split('_ep_')[1].split('.mp3')[0])): x for x in eps}
+    eps = {make_ep_key(x): x for x in eps}
     for k, v in eps.items():
         v['key'] = k
     return eps
