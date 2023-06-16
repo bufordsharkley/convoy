@@ -332,7 +332,7 @@ def podcast_feed_legacy():
 @ygm_app.route('/feed.xml')
 @jumper_app.route('/feed.xml')
 def podcast_feed():
-    all_podcast = [get_yaml(x) for x in ('master', 'convoy', 'cocktail', 'ygm')]
+    all_podcast = [get_yaml(x) for x in ('master', 'convoy', 'cocktail', 'ygm', 'jumper')]
     podcast = merge_podcast_info(all_podcast)
     podcast = parse_podcast_years(podcast)
     copyright_years = extract_copyright_years(podcast)
