@@ -32,3 +32,19 @@ episodes:
      cocktail:
        name: Huron River
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_01.jpg
+   - title: "Earful of Jumper: Episode 2 (0:05:00 - 0:10:00)"
+     description: >
+       In episode 2 of Earful, get ready for less bumps, more jumps, as we answer all the
+       big questions, such as: "Did I just teleport?" As long Mr Jumper hones his craft,
+       we analyze David Rice's dad's police call, mopping logistics, a bunch of really cool
+       posters, and the 2007 menu of Texas Chicken & Grill. We crack the case of the photograph
+       of David Jumper-Rice and his mom.  Featuring new segments, "Extra Screw
+       Time," "Jump Into Spoilers", and "Pageful of Jumper".
+     datetime: '2023-06-27T19:00:00'
+     record_datetime: '2023-06-24T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_02.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_02.jpg
+     audio size: 113264640
+     cocktail:
+       name: Coffee machine (???) coffee
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_02.jpg

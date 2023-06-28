@@ -36,7 +36,7 @@ freeze_convoy:
 	    env/bin/python freeze.py convoy
 
 server_jumper: freeze_jumper
-	    cd jumper_build && python -m SimpleHTTPServer
+	    cd jumper_build && python2.7 -m SimpleHTTPServer
 
 server_ygm: freeze_ygm
 	    cd ygm_build && python -m SimpleHTTPServer
