@@ -29,6 +29,7 @@ episodes:
      url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_01.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_01.jpg
      audio size: 112381952
+     jump_count: 1
      cocktail:
        name: Huron River
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_01.jpg
@@ -45,6 +46,25 @@ episodes:
      url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_02.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_02.jpg
      audio size: 113264640
+     jump_count: 4
      cocktail:
        name: Coffee machine (???) coffee
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_02.jpg
+   - title: "Earful of Jumper: Episode 3 (0:10:00 - 0:15:00)"
+     description: >
+       In a "nightmare of an episode", we're recording unusually early, to catastrophic consequences! As the cock crows,
+       we toil in the studio, bringing you sparkling analysis about the Jumper saga,
+       in particular the third five minutes. In this episode, David Jumper asks to
+       use the bathroom, acquires used tools, and eventually puts together a sick
+       jumper pad. But wait... here comes the mysterious Roland! Also updates on the
+       Cubecast project, crucial information about the Empire State Building observation
+       decks, and plenty of content from The Good Book (aka "Jumper", by Steven Gould).
+     datetime: '2023-08-01T21:00:00'
+     record_datetime: '2023-07-05T10:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_03.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_03.jpg
+     audio size: 113264640
+     jump_count: 14
+     cocktail:
+       name: Tropicana Orange Juice
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_03.jpg
