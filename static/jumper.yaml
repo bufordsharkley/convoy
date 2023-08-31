@@ -63,8 +63,28 @@ episodes:
      record_datetime: '2023-07-05T10:00:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_03.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_03.jpg
-     audio size: 113264640
+     audio size: 114649088
      jump_count: 14
      cocktail:
        name: Tropicana Orange Juice
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_03.jpg
+   - title: "Earful of Jumper: Episode 4 (0:15:00 - 0:20:00)"
+     description: >
+       The earful gang is back from their own globetrotting, bringing you a new
+       episode of Jumper: in the fourth five, we bring you our award-winning
+       investigative journalism, re-opening the Gregg Baker cold case, and blowing
+       the lid off of alleged used tool stores in NYC. In our analysis, we're having
+       flashbacks to Our Day So Far: we return to the Sphinx, hang ten in Fiji, dangle
+       from large clocks, and namecheck Tanqueray at the Irish Embassy. Discussion on
+       "what are scenes", more time zone talk, and thoughts on probable Paladin financing.
+       Re-introducing popular segment "We Read te Tweets", and featuring new segments
+       "The Extra News Section" and "Jump List".
+     datetime: '2023-08-31T21:00:00'
+     record_datetime: '2023-08-12T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_04.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_04.jpg
+     audio size: 113240064
+     jump_count: 10*
+     cocktail:
+       name: Tanqueray and Tonic
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_04.jpg

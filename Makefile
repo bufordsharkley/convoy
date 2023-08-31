@@ -39,7 +39,7 @@ server_jumper: freeze_jumper
 	    cd jumper_build && python2.7 -m SimpleHTTPServer
 
 server_ygm: freeze_ygm
-	    cd ygm_build && python -m SimpleHTTPServer
+	    cd ygm_build && python2.7 -m SimpleHTTPServer
 
 server_cocktail: freeze_cocktail
 	    cd cocktail_build && python -m SimpleHTTPServer

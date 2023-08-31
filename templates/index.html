@@ -138,6 +138,21 @@
     <h3>OUR OFFICIAL PRESIDENTIAL ENDORSEMENT</h3>
     <img src="{{ url_for('static', filename='rubber_duck_for_prez.png')}}" class="cool_img">
   </div>
+  {% elif podcast.title == 'An Earful of Jumper' %}
+  <div class="promo">
+    <h2>JUMP COUNTER</h2>
+    <table style="border: 2px solid darkslategray; margin-left: auto; margin-right: auto">
+    {% for ep in podcast.episodes %}
+    <tr>
+      <td style="border: 2px solid darkslategray"></td>
+      <td style="border: 2px solid darkslategray; padding: 0px 50px;">ep {{ loop.index }}</td>
+      <td style="border: 2px solid darkslategray; padding: 0px 20px;">{{ ep.jump_count }}</td>
+      <td style="border: 2px solid darkslategray"></td>
+      <td style="border: 2px solid darkslategray"></td>
+    </tr>
+    {% endfor %}
+    </table>
+  </div>
   {% else %}
   {% endif %}
   <hr/>
