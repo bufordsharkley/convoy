@@ -88,3 +88,20 @@ episodes:
      cocktail:
        name: Tanqueray and Tonic
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_04.jpg
+   - title: "Earful of Jumper: Episode 5 (0:20:00 - 0:25:00)"
+     description: >
+       The earful gang is back, caffeinated, ready with an episode that will
+       hit your brain like 1000 volts of electricity! In this ep, David
+       Jumper-Rice has forgotten how to use doors, Toby is anticipating his
+       birthday, and Roland is embracing his hatred for jumpers. Join us as we
+       overcome some VLC woes, and break upon the riddle of the cryptic "burrito"
+       wrapper. Also featuring popular segment, "Continued updates".
+     datetime: '2023-09-25T15:00:00'
+     record_datetime: '2023-09-02T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_05.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_05.jpg
+     audio size: 113240064
+     jump_count: 9
+     cocktail:
+       name: Belvedere Vodka
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_05.jpg
