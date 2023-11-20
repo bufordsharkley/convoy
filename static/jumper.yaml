@@ -100,8 +100,27 @@ episodes:
      record_datetime: '2023-09-02T17:00:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_05.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_05.jpg
-     audio size: 113240064
+     audio size: 113055744
      jump_count: 9
      cocktail:
        name: Belvedere Vodka
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_05.jpg
+   - title: "Earful of Jumper: Episode 6 (0:25:00 - 0:30:00)"
+     description: >
+       The earful gang is back, in what many are calling "the perfect fall ep!"
+       In these five minutes, we skip the boring parts, as David Rice-Jumper
+       hugs Millie's mom after a momentous knock-and-announce, Millie is living
+       it up on Morton Street, and Mark Kobold (aka Mark Goblin) announces the
+       resurrection of the Rice Cake. If we move fast, we can make it to Rome
+       before this episode is up! (We do not make it to Rome). Also featuring
+       popular segments "Don't Press Play", "Cast Notes", "Elephant in the Room",
+       "Evolution of a Scene", and "We Weed the Tweets".
+     datetime: '2023-11-20T15:00:00'
+     record_datetime: '2023-10-14T12:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_06.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_06.jpg
+     audio size: 114941952
+     jump_count: 2
+     cocktail:
+       name: Budweiser American-Style Lager
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_06.jpg

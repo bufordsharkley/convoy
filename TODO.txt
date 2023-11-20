@@ -1,6 +1,12 @@
 Reminder
-1920x817
+1920x817 -- hint: upscale width of grab to about 1931
 ---------------------
+SCREW: timestamps in ID3 tag for episodes 4 and 5 are off
+We didn't do drink of ep
+scoring: no words match: 15 vs 100
+garbage can entrance
+
+------------------
 Gosling rum
 ===========
 FIX: the three-logo still in place in discord
