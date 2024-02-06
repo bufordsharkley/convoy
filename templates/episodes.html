@@ -19,7 +19,11 @@
   </a>
   <div class="eppagedescription">
     <hr/>
+    {% if episode.full_description %}
+    <p>{{episode.full_description | safe}}</p>
+    {% else %}
     <p>{{episode.description}}</p>
+    {% endif %}
     {% if episode.cocktail %}
     <p>Drink of the Ep &mdash; <a href="/cocktails#cocktail{{episode.key}}">{{episode.cocktail.name | safe}}</a></p>
     {% endif %}
