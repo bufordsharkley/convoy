@@ -95,6 +95,8 @@ def get_feud_data():
                  'pods': ['cocktail', 'ygm', 'jumper']},
                 {'img': 'dogbrothers/meagan.png',
                  'pods': ['ygm']},
+                {'img': 'dogbrothers/michelle.png',
+                 'pods': ['jumper']},
                          ],
              'previous': [
                 {'title': 'The Dog Brothers',
