@@ -239,3 +239,24 @@ episodes:
      cocktail:
        name: Sierra Mist
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_11.jpg
+   - title: "Earful of Jumper: Episode 12 (0:55:00 - 1:00:00)"
+     description: >
+       Here's a proposal for us (that is, us and the listeners): in the manner
+       of the famous "Marvel Team-Up" comic, how about we all "team up", by
+       listening to this, the 12th five minutes of "Jumper"! We acknowledge
+       those we lost since the last ep, do some mpv diagnostics, explore some
+       tasty track names from "Jumper (Original Motion Picture Soundtrack)",
+       puzzle over a long-lived jump scar, and check out some cool cars in
+       Tokyo (both honking and non-)! Some key updates on Griffin's cool jumper
+       lair gamer library. Also featuring the famous segments "thisisalan.com:
+       Let's Check the Text", "Catching Up on Script Departures", "Let's Talk
+       Timeline", and "We Check the Times"
+     datetime: '2025-02-15T23:00:00'
+     record_datetime: '2024-11-16T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_12.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_12b.jpg
+     audio size: 114974720
+     jump_count: 3
+     cocktail:
+       name: Hot Bev Pitcher
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_12.jpg
