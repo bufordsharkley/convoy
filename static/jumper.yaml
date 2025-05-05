@@ -260,3 +260,22 @@ episodes:
      cocktail:
        name: Hot Bev Pitcher
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_12.jpg
+   - title: "Earful of Jumper: Episode 13 (1:00:00 - 1:05:00)"
+     description: >
+       Earful enters 2025 with an exciting special guest (Trevor Adamo), and an
+       exciting new medium (videogames, as we cover "Jumper: Griffin's Story"
+       (2008)).  And in a stroke of luck, our special guest is in fact an expert
+       in jumper-based videogames. Analysis of the movie also takes place, as we
+       anticipate airports, inspect the Big Board, track Roland's race (?)
+       against the clock, and debate whether David or Griffin is the hero of the
+       movie. Featuring an exciting mpv vs VLC update, and also the famous
+       segments "With Fresh Eyes" and "How Does It End?"
+     datetime: '2025-05-04T19:00:00'
+     record_datetime: '2025-01-02T18:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_13.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_13a.jpg
+     audio size: 114995200
+     jump_count: 7
+     cocktail:
+       name: Six-Bottle Countertop Wine Collection (Crate)
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_13.jpg
