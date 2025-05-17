@@ -122,6 +122,10 @@ div.promo h2 {
   font-size: 2em;
 }
 
+h2.big {
+  font-size: 4em;
+}
+
 img.dogbro {
   height: 120px;
   box-shadow: 10px 10px 5px #888;
@@ -180,4 +184,19 @@ img.episode_img_large {
   width: 800px;
   display: inline-block;
   white-space-collapsing:discard;
+}
+
+div.prescreen_post {
+    border-radius: 1em;
+    width: 600px;
+    outline-color: black;
+    outline: 10px;
+    outline-width: 3px;
+    outline-style: auto;
+    box-shadow: 25px 10px;
+    align: center;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #d0dddb;
 }

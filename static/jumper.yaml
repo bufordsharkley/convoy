@@ -13,6 +13,7 @@ marquee: PALADIN | JUMPER WORLD TRACKING MONITOR
 rss_feed: '/feed.xml'
 itunes_url: https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668
 promo_file: jumper_promo.mp3
+the_year: 2008
 episodes:
    - title: "Earful of Jumper: Episode 1 (0:00:00 - 0:05:00)"
      description: >

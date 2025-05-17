@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="mainpage">
+<div class="mainpage">
+  <div class="blurb">
+    {{ podcast.description }}
+  </div>
+  <div class="subscribe">
+    <h3>SUBSCRIBE TO THE SHOW</h3>
+    <a href="/feed.xml"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
+    <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on Apple Podcasts</a>
+  </div>
+  <h2 class="big">{{prescreen.movie}}</h2>
+  <a target="_blank" href="https://media.earfulofconvoy.com/earful/prescreen/{{prescreen.hashtag}}.jpg">
+  <img src="https://media.earfulofconvoy.com/earful/prescreen/{{prescreen.hashtag}}_small.jpg" style="width:1000px;margin-bottom:20px"/>
+  </a>
+  <hr/>
+  {% for post in prescreen.thread %}
+  <div class="prescreen_post">
+    <p>
+    <span style="float:left;margin-left:35px">{{post.handle}}</span>
+    <span style="float:right;margin-right:35px">{{post.date}}</span>
+    </p>
+    <div style="margin-top:30px;text-align:left">
+    {% for line in post.content %}
+    <p style="margin-top:20px">{{line}}</p>
+    {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

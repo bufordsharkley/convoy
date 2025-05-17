@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="mainpage">
+<div class="mainpage">
+  <div class="blurb">
+    {{ podcast.description }}
+  </div>
+  <div class="subscribe">
+    <h3>SUBSCRIBE TO THE SHOW</h3>
+    <a href="/feed.xml"><img src="{{ url_for('static', filename = 'rss.png')}}" />RSS feed</a><br />
+    <a href="https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668"><img src="{{ url_for('static', filename = 'itunes.png')}}" />Subscribe on Apple Podcasts</a>
+  </div>
+
+  <h2 style="font-size:4em">PRESCREENINGS for {{podcast.the_year}}</h2>
+  <p>As part of process for ensuring we select only the ideal Earful movie, we hold a rigorous system of prescreening, involving writing about the film as we watch.</p>
+  <p>Below you can find links to our {{podcast.the_year}} prescreenings.</p>
+  {% for movie, hashtag in movies %}
+  <hr/>
+  <div class="prescreen_info">
+    <p>{{movie}}</p>
+    <p><a href="/prescreen/{{hashtag}}">#{{hashtag}}</a></p>
+    <a href="/prescreen/{{hashtag}}">
+    <img src="https://media.earfulofconvoy.com/earful/prescreen/{{hashtag}}_tiny.jpg"/>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

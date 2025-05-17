@@ -422,6 +422,35 @@ def print_calendar():
     #print(sorted(gaps))
 
 
+@jumper_app.route('/prescreen/')
+def prescreens():
+    podcast = get_jumper_data()
+    movies = [
+              ("Nick and Norah's Infinite Playlist (2008)", 'NandN21'),
+              ("21 (2008)", 'watchin2121'),
+              ("Quantum of Solace (2008)", 'qos21'),
+              ("Fool's Gold (2008)", 'pyrite21'),
+              ("Swing Vote (2008)", 'swingvote21'),
+              ("Jumper (2008)", 'jump08'),
+              ("Yes Man (2008)", 'yesyes2008'),
+              ("What Just Happened (2008)", 'wjh21'),
+              ("Speed Racer (2008)", 'earspeed08'),
+              ("Vantage Point (2008)", 'vanpoint08'),
+              ("Choke (2008)", 'choketime08'),
+             ]
+    return flask.render_template('prescreens.html', movies=movies, podcast=podcast)
+
+
+@jumper_app.route('/prescreen/<hashtag>')
+def prescreen(hashtag):
+    podcast = get_jumper_data()
+    json_url = os.path.join(jumper_app.root_path, "static/prescreen", "{hashtag}.json".format(hashtag=hashtag))
+    prescreen = flask.json.load(open(json_url))
+    for post in prescreen['thread']:
+        post['content'] = post['content'].split('\n')
+    return flask.render_template('prescreen.html', prescreen=prescreen, podcast=podcast)
+
+
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         arg = sys.argv[1]
