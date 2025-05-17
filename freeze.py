@@ -53,6 +53,11 @@ def main():
         for ep in app.get_eps(info):
             yield {'num': ep}
 
+    @freezer.register_generator
+    def prescreen():
+        for title, hashtag in app.get_prescreens(info):
+            yield {'hashtag': hashtag}
+
     if podcast == 'ygm':
         # register every single file in classic site:
         @freezer.register_generator

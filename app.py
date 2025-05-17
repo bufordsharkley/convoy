@@ -42,7 +42,6 @@ def make_ep_key(ep_data):
         # some eps are of form '12-2', etc:
         return key
 
-
 def get_eps(podcast):
     eps = podcast['episodes']
     for ep in eps:
@@ -57,6 +56,25 @@ def get_eps(podcast):
     for k, v in eps.items():
         v['key'] = k
     return eps
+
+
+def get_prescreens(podcast):
+    if podcast['title'] == 'An Earful of Jumper':
+        return [
+              ("Nick and Norah's Infinite Playlist (2008)", 'NandN21'),
+              ("21 (2008)", 'watchin2121'),
+              ("Quantum of Solace (2008)", 'qos21'),
+              ("Fool's Gold (2008)", 'pyrite21'),
+              ("Swing Vote (2008)", 'swingvote21'),
+              ("Jumper (2008)", 'jump08'),
+              ("Yes Man (2008)", 'yesyes2008'),
+              ("What Just Happened (2008)", 'wjh21'),
+              ("Speed Racer (2008)", 'earspeed08'),
+              ("Vantage Point (2008)", 'vanpoint08'),
+              ("Choke (2008)", 'choketime08'),
+             ]
+    else:
+        return []
 
 
 def get_convoy_data():
@@ -425,20 +443,7 @@ def print_calendar():
 @jumper_app.route('/prescreen/')
 def prescreens():
     podcast = get_jumper_data()
-    movies = [
-              ("Nick and Norah's Infinite Playlist (2008)", 'NandN21'),
-              ("21 (2008)", 'watchin2121'),
-              ("Quantum of Solace (2008)", 'qos21'),
-              ("Fool's Gold (2008)", 'pyrite21'),
-              ("Swing Vote (2008)", 'swingvote21'),
-              ("Jumper (2008)", 'jump08'),
-              ("Yes Man (2008)", 'yesyes2008'),
-              ("What Just Happened (2008)", 'wjh21'),
-              ("Speed Racer (2008)", 'earspeed08'),
-              ("Vantage Point (2008)", 'vanpoint08'),
-              ("Choke (2008)", 'choketime08'),
-             ]
-    return flask.render_template('prescreens.html', movies=movies, podcast=podcast)
+    return flask.render_template('prescreens.html', movies=get_prescreens(podcast), podcast=podcast)
 
 
 @jumper_app.route('/prescreen/<hashtag>')
