@@ -446,7 +446,7 @@ def prescreens():
     return flask.render_template('prescreens.html', movies=get_prescreens(podcast), podcast=podcast)
 
 
-@jumper_app.route('/prescreen/<hashtag>/')
+@jumper_app.route('/prescreen/<hashtag>.html')
 def prescreen(hashtag):
     podcast = get_jumper_data()
     json_url = os.path.join(jumper_app.root_path, "static/prescreen", "{hashtag}.json".format(hashtag=hashtag))
