@@ -42,6 +42,7 @@ def make_ep_key(ep_data):
         # some eps are of form '12-2', etc:
         return key
 
+
 def get_eps(podcast):
     eps = podcast['episodes']
     for ep in eps:
@@ -59,7 +60,17 @@ def get_eps(podcast):
 
 
 def get_prescreens(podcast):
-    if podcast['title'] == 'An Earful of Jumper':
+    if podcast['title'] == "An Earful of You've Got Mail":
+        return [
+              ("Antz (1998)", 'Antz2019'),
+              ("You've Got Mail (1998)", 'YGM2019'),
+              ("Babe: Pig in the City (1998)", 'BPIC2019'),
+              ("Rounders (1998)", 'Oers19'),
+              ("Bulworth (1998)", 'Bulworth2019'),
+              ("Deep Impact (1998)", 'Dimpact19'),
+              ("Welcome to Woop Woop (1997)", 'woopwoop2019'),
+             ]
+    elif podcast['title'] == 'An Earful of Jumper':
         return [
               ("Nick and Norah's Infinite Playlist (2008)", 'NandN21'),
               ("21 (2008)", 'watchin2121'),
@@ -440,15 +451,31 @@ def print_calendar():
     #print(sorted(gaps))
 
 
+@ygm_app.route('/prescreen/')
+def prescreens():
+    podcast = get_ygm_data()
+    return flask.render_template('prescreens.html', movies=get_prescreens(podcast), podcast=podcast)
+
+
 @jumper_app.route('/prescreen/')
 def prescreens():
     podcast = get_jumper_data()
     return flask.render_template('prescreens.html', movies=get_prescreens(podcast), podcast=podcast)
 
 
+@ygm_app.route('/prescreen/<hashtag>.html')
+def prescreen(hashtag):
+    podcast = get_ygm_data()
+    return _prescreen_renderer(podcast, hashtag)
+
+
 @jumper_app.route('/prescreen/<hashtag>.html')
 def prescreen(hashtag):
     podcast = get_jumper_data()
+    return _prescreen_renderer(podcast, hashtag)
+
+
+def _prescreen_renderer(podcast, hashtag):
     json_url = os.path.join(jumper_app.root_path, "static/prescreen", "{hashtag}.json".format(hashtag=hashtag))
     prescreen = flask.json.load(open(json_url))
     for post in prescreen['thread']:

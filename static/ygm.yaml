@@ -13,6 +13,7 @@ marquee: ON THE WORLD WIDE WEB
 rss_feed: '/feed.xml'
 itunes_url: https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668
 promo_file: ygm_promo.mp3
+the_year: 1998
 episodes:
    - title: "Earful of You've Got Mail: Episode 1 (0:00:00 - 0:05:00)"
      description: >
