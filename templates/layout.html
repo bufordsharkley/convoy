@@ -7,7 +7,9 @@
     {% block head %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reset.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    {% if podcast.title == 'An Earful of Cocktail' %}
+    {% if podcast is not defined %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    {% elif podcast.title == 'An Earful of Cocktail' %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='cocktail_favicon.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cocktail_style.css') }}">
     {% elif podcast.title == "An Earful of You've Got Mail" %}
@@ -26,16 +28,20 @@
     <meta property="og:site_name" content="Earful of"/>
     {% endblock %}
     {% block metainfo %}
+    {% if podcast is defined %}
     <title>{{podcast.title}}</title>
     <meta name="title" property="og:title" content="{{podcast.title}}"/>
     <meta name="description" property="og:description" content="{{podcast.description}} (Earful is a podcast. Podcasts are audio files you can listen to on your podcast devices.)"/>
     <meta property="og:image" content="{{podcast.logo}}"/>
+    {% endif %}
     {% endblock %}
   </head>
   <body>
     <nav>
       <div class="crossnav">
-        {% if podcast.title == "An Earful of You've Got Mail" %}
+        {% if podcast is not defined %}
+        <a href="http://earfulofconvoy.com"><img src="/static/convoy.png" alt="Earful of Convoy" height="50"><p>next podcast</p></a>
+        {% elif podcast.title == "An Earful of You've Got Mail" %}
         <a href="http://earfulofjumper.com"><img src="/static/jumper.png" alt="Earful of Jumper" height="50"><p>next podcast</p></a>
         {% elif podcast.title == 'An Earful of Cocktail' %}
         <a href="http://earfulofyouvegotmail.com"><img src="/static/ygm.png" alt="Earful of You've Got Mail" height="50"><p>next podcast</p></a>
@@ -45,13 +51,15 @@
         <a href="http://earfulofconvoy.com"><img src="/static/convoy.png" alt="Earful of Convoy" height="50"><p>next podcast</p></a>
         {% endif %}
       </div>
+      {% if podcast is defined %}
       <div class="banner">
         <a href="{{url_for('index')}}">
           <img src="{{ url_for('static', filename = podcast.layout_image)}}" alt="{{podcast.title}}"/>
         </a>
       </div>
+      {% endif %}
     </nav>
-    {% if podcast.title == "An Earful of You've Got Mail" %}
+    {% if podcast is defined and podcast.title == "An Earful of You've Got Mail" %}
     {% for ii in range(20) %}
       <img src="{{ url_for('static', filename='under_construction.gif')}}" alt="Under construction"/>
     {% endfor %}
@@ -62,10 +70,12 @@
     </div>
     {% block footer %}
     <footer>
-      {% if podcast.title == "An Earful of You've Got Mail" %}
+      {% if podcast is defined and podcast.title == "An Earful of You've Got Mail" %}
         <img src="{{ url_for('static', filename='ygmfoot1.gif')}}" alt="You've Got Mail"/>
       {% endif %}
+      {% if podcast is defined %}
       &copy; {{podcast.years[0]}}-{{podcast.years[1]}} <a href="http://thisisalan.com/">Alan Joyce</a> &amp; <a href="http://www.markmollineaux.com/">Mark Mollineaux</a><br/>
+      {% endif %}
     </footer>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

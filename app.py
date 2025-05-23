@@ -60,7 +60,13 @@ def get_eps(podcast):
 
 
 def get_prescreens(podcast):
-    if podcast['title'] == "An Earful of You've Got Mail":
+    if podcast['title'] == "An Earful of Convoy":
+        return [
+              ("Welcome to Marwen (2018)", 'MARNOW25'),
+              ("Overboard (2018)", 'goverboard18'),
+              ("Skyscraper (2018)", 'getscraped25'),
+              ]
+    elif podcast['title'] == "An Earful of You've Got Mail":
         return [
               ("Antz (1998)", 'Antz2019'),
               ("You've Got Mail (1998)", 'YGM2019'),
@@ -451,6 +457,12 @@ def print_calendar():
     #print(sorted(gaps))
 
 
+@convoy_app.route('/prescreen/')
+def prescreens():
+    podcast = get_convoy_data()
+    return flask.render_template('prescreens.html', movies=get_prescreens(podcast), podcast=podcast)
+
+
 @ygm_app.route('/prescreen/')
 def prescreens():
     podcast = get_ygm_data()
@@ -461,6 +473,11 @@ def prescreens():
 def prescreens():
     podcast = get_jumper_data()
     return flask.render_template('prescreens.html', movies=get_prescreens(podcast), podcast=podcast)
+
+@convoy_app.route('/prescreen/<hashtag>.html')
+def prescreen(hashtag):
+    podcast = get_convoy_data()
+    return _prescreen_renderer(podcast, hashtag)
 
 
 @ygm_app.route('/prescreen/<hashtag>.html')
