@@ -300,3 +300,23 @@ episodes:
      cocktail:
        name: Red Bull Energy Drink
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_14.jpg
+   - title: "Earful of Jumper: Episode 15 (1:10:00 - 1:15:00)"
+     description: >
+       In yet another episode demonstrating the majesty of live radio, we're
+       back with another five minutes of "Jumper" (2008), this time with the
+       esteemed company of O.G.G.: everybody's favorite tireless public servant,
+       George Lu!  Much is happening today: Roland is making a D.D. (daring
+       dive), jumpers are facing off against jumpers, both butterknives and
+       wireless nuclear bombs are being unsheathed, and the Charmin Bears
+       welcome David to NYC.  Featuring popular segments "With Fresh Eyes",
+       "Back to Bombs", a very special early edition of "the Set-Up", and a
+       live attempt to jump on-air.
+     datetime: '2025-05-23T17:00:00'
+     record_datetime: '2025-05-17T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_15.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_15.jpg
+     audio size: 115189760
+     jump_count: 12
+     cocktail:
+       name: Diet Coke
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_15.jpg
