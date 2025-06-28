@@ -189,8 +189,19 @@
     </ul>
     {% endif %}
   </div>
-  <hr/>
+  {% if podcast.title == "An Earful of You've Got Mail" %}
+    <hr/>
+    <h2>RESTORED YGM ORIGINAL WEBSITE</h2>
+    <div style="text-align:center">
+    <a href="/www">
+      <img src="/www/files/mac-pcallmail.gif"/>
+      <br/>
+      See our restored website for YGM, as unveiled on the final episode
+    </a>
+    </div>
+  {% endif %}
   {% if podcast.title == 'An Earful of Jumper' or podcast.title == "An Earful of You've Got Mail" %}
+  <hr/>
   <div class="promo">
     <h2>PRESCREEN ARCHIVE</h2>
     <p>See <a href="/prescreen">our original prescreening logs</a>.</p>
@@ -201,5 +212,6 @@
     <p>See <a href="/prescreen">our latest prescreening logs for our next series of Earful</a>.</p>
   </div>
   {% endif %}
+  <hr/>
 </div>
 {% endblock %}
