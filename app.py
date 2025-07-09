@@ -336,7 +336,7 @@ def parse_datetime(datetime_string):
     if isinstance(datetime_string, datetime.datetime):
         return datetime_string
     return datetime.datetime(*map(int,
-                                  re.split('[^\d]',
+                                  re.split(r'[^\d]',
                                   datetime_string)[:-1]))
 
 
