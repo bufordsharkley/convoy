@@ -320,3 +320,24 @@ episodes:
      cocktail:
        name: Diet Coke
        image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_15.jpg
+   - title: "Earful of Jumper: Episode 16 (1:15:00 - 1:20:00)"
+     description: >
+       When you listen to the award-winning podcast 'An Earful of Jumper',
+       you're a winner, baby (just listen to Ty Franzel!) Our latest ep features
+       special returning guest Diego, who regales us with information about which
+       specific pizzeria made him vomit, and lists his grievances with the movie
+       "Jumper" (namely, that it doesn't explicitly show David Rice setting up a
+        checking account). We also discuss a possible sequel (working title:
+       "Jumpers"), discuss physics (everything from momentum to wormholes),
+       discuss the geographic distribution of Ramirezes, and introduce our
+       slowcore remix of our Famous Theme Song. Featuring the popular new
+       segment, "With Partial Eyes".
+     datetime: '2025-05-23T17:00:00'
+     record_datetime: '2025-05-17T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_16.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_16b.jpg
+     audio size: 114749440
+     jump_count: 18
+     cocktail:
+       name: Coconuts
+       image: https://media.earfulofconvoy.com/earful/drink_img/jumper_drink_16.jpg
