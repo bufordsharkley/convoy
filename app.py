@@ -65,6 +65,12 @@ def get_prescreens(podcast):
               ("Welcome to Marwen (2018)", 'MARNOW25'),
               ("Overboard (2018)", 'goverboard18'),
               ("Skyscraper (2018)", 'getscraped25'),
+              ("Tag (2018)", 'TagTime2018'),
+              ("Chappaquiddick (2018)", 'Chappy18'),
+              ("Red Sparrow (2018)", 'WatchTheBird18'),
+              ("Rampage (2018)", 'ramp2018'),
+              ("The Old Man and the Gun (2018)", 'omg18'),
+              ("Ready Player One (2018)", 'rpo18'),
               ]
     elif podcast['title'] == "An Earful of You've Got Mail":
         return [
