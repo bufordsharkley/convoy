@@ -71,6 +71,7 @@ def get_prescreens(podcast):
               ("Rampage (2018)", 'ramp2018'),
               ("The Old Man and the Gun (2018)", 'omg18'),
               ("Ready Player One (2018)", 'rpo18'),
+              ("Bad Times at the El Royale (2018)", 'BTATER18'),
               ]
     elif podcast['title'] == "An Earful of You've Got Mail":
         return [

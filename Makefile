@@ -45,4 +45,4 @@ server_cocktail: freeze_cocktail
 	    cd cocktail_build && python -m SimpleHTTPServer
 
 server_convoy: freeze_convoy
-	    cd convoy_build && python -m SimpleHTTPServer
+	    cd convoy_build && python2.7 -m SimpleHTTPServer
