@@ -27,7 +27,15 @@
   </a>
   <hr/>
   {% for post in prescreen.thread %}
-  <div class="prescreen_post">
+  {% set handle = {'mgm.ink': 'mgm',
+                   '@bufordsharkley': 'mgm',
+                   'earfulof.com': 'earful',
+                   '@earfulof': 'earful',
+                   'earfulof.bsky.social': 'earful',
+                   'thisisalan.bsky.social': 'alan',
+                   '@AlanJoyce': 'alan',
+                   'thisisalan.com': 'alan'}[post.handle] %}
+  <div class="prescreen_post {{handle}}_prescreen">
     <p>
     <span style="float:left;margin-left:35px">{{post.handle}}</span>
     <span style="float:right;margin-right:35px">{{post.date}}</span>

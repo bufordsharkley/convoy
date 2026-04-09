@@ -198,5 +198,19 @@ div.prescreen_post {
     margin: 0 auto;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #d0dddb;
+    background-color: greenyellow;
+}
+
+
+div.earful_prescreen {
+  background-color: lightgoldenrodyellow;
+}
+
+
+div.mgm_prescreen {
+  background-color: pink;
+}
+
+div.alan_prescreen {
+  background-color: #d0dddb;
 }
