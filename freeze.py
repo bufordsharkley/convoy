@@ -41,6 +41,10 @@ def main():
         freezer = Freezer(app.jumper_app)
         info = app.get_yaml('jumper')
         app.jumper_app.config['FREEZER_DESTINATION'] = 'jumper_build'
+    elif podcast == 'skyscraper':
+        freezer = Freezer(app.skyscraper_app)
+        info = app.get_yaml('skyscraper')
+        app.skyscraper_app.config['FREEZER_DESTINATION'] = 'skyscraper_build'
     else:
         freezer = Freezer(app.convoy_app)
         info = app.get_yaml('convoy')

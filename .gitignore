@@ -13,6 +13,7 @@ convoy_build
 cocktail_build
 ygm_build
 jumper_build
+skyscraper_build
 dist
 sdist
 eggs

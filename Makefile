@@ -1,8 +1,11 @@
 freeze_ygm_local:
-	    uv run freeze.py jumper 
+	    uv run freeze.py ygm 
 
 freeze_jumper_local:
-	    uv run freeze.py ygm
+	    uv run freeze.py jumper
+
+freeze_skyscraper_local:
+	    uv run freeze.py skyscraper
 
 freeze_cocktail_local:
 	    uv run freeze.py cocktail
@@ -13,6 +16,9 @@ freeze_convoy_local:
 server_jumper_local: freeze_jumper_local
 	    cd jumper_build && python -m SimpleHTTPServer
 
+server_skyscraper_local: freeze_skyscraper_local
+	    cd skyscraper_build && python -m SimpleHTTPServer
+
 server_ygm_local: freeze_ygm_local
 	    cd ygm_build && python -m SimpleHTTPServer
 
@@ -22,6 +28,9 @@ server_cocktail_local: freeze_cocktail_local
 server_convoy_local: freeze_convoy_local
 	    cd convoy_build && python -m SimpleHTTPServer
 
+
+freeze_skyscraper:
+	    uv run freeze.py skyscraper
 
 freeze_jumper:
 	    uv run freeze.py jumper
@@ -34,6 +43,9 @@ freeze_cocktail:
 
 freeze_convoy:
 	    uv run freeze.py convoy
+
+server_skyscraper: freeze_skyscraper
+	    cd skyscraper_build && python2.7 -m SimpleHTTPServer
 
 server_jumper: freeze_jumper
 	    cd jumper_build && python2.7 -m SimpleHTTPServer
