@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@1,800&display=swap" rel="stylesheet">
+    {% elif podcast.title == "An Earful of Skyscraper" %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='skyscraper_style.css') }}">
     {% else %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% endif %}
@@ -48,6 +50,8 @@
         {% elif podcast.title == 'An Earful of Convoy' %}
         <a href="http://earfulofcocktail.com"><img src="/static/cocktail.png" alt="Earful of Cocktail" height="50"><p>next podcast</p></a>
         {% elif podcast.title == 'An Earful of Jumper' %}
+        <a href="http://earfulofskyscraper.com"><img src="/static/skyscraper.png" alt="Earful of Skyscraper" height="50"><p>next podcast</p></a>
+        {% elif podcast.title == 'An Earful of Skyscraper' %}
         <a href="http://earfulofconvoy.com"><img src="/static/convoy.png" alt="Earful of Convoy" height="50"><p>next podcast</p></a>
         {% endif %}
       </div>

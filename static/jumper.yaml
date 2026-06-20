@@ -3,8 +3,8 @@ description: "The only podcast that dares to jump."
 website: https://earfulofjumper.com
 host: Alan Joyce and Hervey Okkles
 email: staff@earfulof.com
-long description: "\"An Earful of Jumper\" is a podcast (2023-) with episodes typically two hours long. It analyzes five-minute segments of the 2008 film \"Jumper\" in extensive detail.  It is co-hosted by Alan Joyce and Hervey Okkles (a name used by Mark Mollineaux). The podcast features the slogan, \"The Only Podcast That Dares To Jump.\""
-frontpage description: "\"An Earful of Jumper\" is a podcast (2023-) with episodes typically two hours long. It analyzes five-minute segments of the 2008 film \"Jumper\" in extensive detail.  It is co-hosted by Alan Joyce and Hervey Okkles (a name used by Mark Mollineaux). The podcast features the slogan, \"The Only Podcast That Dares To Jump.\""
+long description: "\"An Earful of Jumper\" is a podcast (2023-2026) with episodes typically two hours long. It analyzes five-minute segments of the 2008 film \"Jumper\" in extensive detail.  It is co-hosted by Alan Joyce and Hervey Okkles (a name used by Mark Mollineaux). The podcast features the slogan, \"The Only Podcast That Dares To Jump.\""
+frontpage description: "\"An Earful of Jumper\" is a podcast (2023-2026) with episodes typically two hours long. It analyzes five-minute segments of the 2008 film \"Jumper\" in extensive detail.  It is co-hosted by Alan Joyce and Hervey Okkles (a name used by Mark Mollineaux). The podcast features the slogan, \"The Only Podcast That Dares To Jump.\""
 logo: https://earfulofconvoy.com/static/earful_album3.png
 itunes category: "TV &amp; Film"
 itunes explicit: clean
@@ -378,7 +378,7 @@ episodes:
      record_datetime: '2026-05-09T14:30:00'
      url: https://media.earfulofconvoy.com/earful/earful_of_jumper_ep_18.mp3
      image: https://media.earfulofconvoy.com/earful/ep_img/jumper_ep_18.jpg
-     audio size: 119457792
+     audio size: 140670976
      jump_count: 0
      cocktail:
        name: Liquid

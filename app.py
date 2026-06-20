@@ -13,6 +13,7 @@ convoy_app = flask.Flask(__name__)
 cocktail_app = flask.Flask(__name__)
 ygm_app = flask.Flask(__name__)
 jumper_app = flask.Flask(__name__)
+skyscraper_app = flask.Flask(__name__)
 
 
 def get_yaml(podcast):
@@ -26,6 +27,8 @@ def get_yaml(podcast):
         resource = convoy_app.open_resource('static/ygm.yaml')
     elif podcast == 'jumper':
         resource = convoy_app.open_resource('static/jumper.yaml')
+    elif podcast == 'skyscraper':
+        resource = convoy_app.open_resource('static/skyscraper.yaml')
     elif podcast == 'kvothe':
         resource = convoy_app.open_resource('static/earless/kvothe.yaml')
     else:
@@ -44,6 +47,8 @@ def make_ep_key(ep_data):
 
 
 def get_eps(podcast):
+    if podcast == 'skyscraper':
+        return []
     eps = podcast['episodes']
     for ep in eps:
         ep['datetime'] = datetime.datetime.strptime(
@@ -60,7 +65,7 @@ def get_eps(podcast):
 
 
 def get_prescreens(podcast):
-    if podcast['title'] == "An Earful of Convoy":
+    if podcast['title'] == "An Earful of Skyscraper":
         return [
               ("Welcome to Marwen (2018)", 'MARNOW25'),
               ("Overboard (2018)", 'goverboard18'),
@@ -129,6 +134,14 @@ def get_jumper_data():
     return podcast
 
 
+def get_skyscraper_data():
+    podcast = get_yaml('skyscraper')
+    #years = [x['datetime'][:4] for x in podcast['episodes']]
+    #podcast['years'] = (min(years), max(years))
+    podcast['years'] = (2026, 2026)
+    return podcast
+
+
 def get_feud_data():
     feuds = {'current': [
                 {'img': 'dogbrothers/terry.png',
@@ -139,6 +152,8 @@ def get_feud_data():
                  'pods': ['ygm']},
                 {'img': 'dogbrothers/michelle.png',
                  'pods': ['jumper']},
+                {'img': 'dogbrothers/terrymicheller.png',
+                 'pods': ['skyscraper']},
                          ],
              'previous': [
                 {'title': 'The Dog Brothers',
@@ -160,7 +175,7 @@ def get_feud_data():
                         ],
             }
     resp = {x: {'current': [], 'previous': []}
-            for x in ('convoy', 'cocktail', 'ygm', 'jumper')}
+            for x in ('convoy', 'cocktail', 'ygm', 'jumper', 'skyscraper')}
     for k, v in feuds.items():
         for feud in v:
             for pod in feud['pods']:
@@ -196,6 +211,13 @@ def index():
     return flask.render_template('index.html', podcast=podcast, feuds=feuds)
 
 
+@skyscraper_app.route('/')
+def index():
+    podcast = get_skyscraper_data()
+    feuds = get_feud_data()['skyscraper']
+    return flask.render_template('index.html', podcast=podcast, feuds=feuds)
+
+
 @convoy_app.route('/eps/')
 def episodes():
     podcast = get_convoy_data()
@@ -220,6 +242,13 @@ def episodes():
     return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
 
 
+@skyscraper_app.route('/eps/')
+def episodes():
+    podcast = get_skyscraper_data()
+    return flask.render_template('episodes.html', episodes=get_eps(podcast), podcast=podcast)
+
+
+
 @convoy_app.route('/gallery/')
 def meditative_gallery():
     podcast = get_convoy_data()
@@ -242,6 +271,13 @@ def meditative_gallery():
 def meditative_gallery():
     podcast = get_jumper_data()
     return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
+
+
+@skyscraper_app.route('/gallery/')
+def meditative_gallery():
+    podcast = get_skyscraper_data()
+    return flask.render_template('gallery.html', episodes=get_eps(podcast), podcast=podcast)
+
 
 #@cocktail_app.route('/kvothe/eps/')
 #@convoy_app.route('/kvothe/eps/')
@@ -274,6 +310,12 @@ def playlist():
     return flask.render_template('playlist.html', podcast=podcast)
 
 
+@skyscraper_app.route('/playlist.html')
+def playlist():
+    podcast = get_skyscraper_data()
+    return flask.render_template('playlist.html', podcast=podcast)
+
+
 @convoy_app.route('/cocktails/')
 def cocktails():
     podcast = get_convoy_data()
@@ -295,6 +337,12 @@ def cocktails():
 @jumper_app.route('/cocktails/')
 def cocktails():
     podcast = get_jumper_data()
+    return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
+
+
+@skyscraper_app.route('/cocktails/')
+def cocktails():
+    podcast = get_skyscraper_data()
     return flask.render_template('cocktails.html', episodes=get_eps(podcast), podcast=podcast)
 
 
@@ -322,6 +370,13 @@ def episode(num):
 @jumper_app.route('/ep/<num>/index.html')
 def episode(num):
     podcast = get_jumper_data()
+    eps = get_eps(podcast)
+    return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
+
+
+@skyscraper_app.route('/ep/<num>/index.html')
+def episode(num):
+    podcast = get_skyscraper_data()
     eps = get_eps(podcast)
     return flask.render_template('episode.html', episode=eps[num], podcast=podcast)
 
@@ -375,6 +430,7 @@ def podcast_feed_legacy():
 @cocktail_app.route('/feed.xml')
 @ygm_app.route('/feed.xml')
 @jumper_app.route('/feed.xml')
+@skyscraper_app.route('/feed.xml')
 def podcast_feed():
     all_podcast = [get_yaml(x) for x in ('master', 'convoy', 'cocktail', 'ygm', 'jumper')]
     podcast = merge_podcast_info(all_podcast)
@@ -391,6 +447,7 @@ def podcast_feed():
 @cocktail_app.route('/kvothe.xml')
 @ygm_app.route('/kvothe.xml')
 @jumper_app.route('/kvothe.xml')
+@skyscraper_app.route('/kvothe.xml')
 def kvothe_feed():
     kvothe_info = get_yaml('kvothe')
     podcast = parse_podcast_years(kvothe_info)
@@ -406,6 +463,7 @@ def kvothe_feed():
 @cocktail_app.route('/kvothe/index.html')
 @ygm_app.route('/kvothe/index.html')
 @jumper_app.route('/kvothe/index.html')
+@skyscraper_app.route('/kvothe/index.html')
 def kvothe():
     podcast = get_yaml('kvothe')
     years = [x['datetime'][:4] for x in podcast['episodes']]
@@ -417,6 +475,7 @@ def kvothe():
 @cocktail_app.route('/humans.txt')
 @ygm_app.route('/humans.txt')
 @jumper_app.route('/humans.txt')
+@skyscraper_app.route('/humans.txt')
 def humans_txt():
     return flask.send_from_directory(convoy_app.static_folder, 'humans.txt')
 
@@ -481,6 +540,13 @@ def prescreens():
     podcast = get_jumper_data()
     return flask.render_template('prescreens.html', movies=get_prescreens(podcast), podcast=podcast)
 
+
+@skyscraper_app.route('/prescreen/')
+def prescreens():
+    podcast = get_skyscraper_data()
+    return flask.render_template('prescreens.html', movies=get_prescreens(podcast), podcast=podcast)
+
+
 @convoy_app.route('/prescreen/<hashtag>.html')
 def prescreen(hashtag):
     podcast = get_convoy_data()
@@ -496,6 +562,12 @@ def prescreen(hashtag):
 @jumper_app.route('/prescreen/<hashtag>.html')
 def prescreen(hashtag):
     podcast = get_jumper_data()
+    return _prescreen_renderer(podcast, hashtag)
+
+
+@skyscraper_app.route('/prescreen/<hashtag>.html')
+def prescreen(hashtag):
+    podcast = get_skyscraper_data()
     return _prescreen_renderer(podcast, hashtag)
 
 
@@ -518,9 +590,11 @@ if __name__ == '__main__':
             ygm_app.run(debug=True)
         elif arg.startswith('jump'):
             jumper_app.run(debug=True)
+        elif arg.startswith('sky'):
+            skyscraper_app.run(debug=True)
         elif arg.startswith('cal'):
             print_calendar()
         else:
-            raise Exception("Pass argument cocktail|convoy|ygm|jumper|calendar")
+            raise Exception("Pass argument cocktail|convoy|ygm|jumper|skyscraper|calendar")
     if len(sys.argv) == 1:
         raise Exception("Pass argument cocktail|convoy|ygm|jumper|calendar")
