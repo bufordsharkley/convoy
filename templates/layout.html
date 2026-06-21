@@ -23,12 +23,9 @@
     <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@1,800&display=swap" rel="stylesheet">
     {% elif podcast.title == "An Earful of Skyscraper" %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='skyscraper_style.css') }}">
-    <!--
-    BACKGROUND IMAGE CREDIT:
-    Title: Stunning Hong Kong Night Skyline From Above
-    Author: Mudassir Ali (https://pexels.com)
-    Source: Pexels (https://pexels.com)
-    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
     {% else %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     {% endif %}
@@ -86,6 +83,9 @@
       {% if podcast is defined %}
       &copy; {{podcast.years[0]}}-{{podcast.years[1]}} <a href="http://thisisalan.com/">Alan Joyce</a> &amp; <a href="http://www.markmollineaux.com/">Mark Mollineaux</a><br/>
       {% endif %}
+      {% if podcast is defined and podcast.title == "An Earful of Skyscraper" %}
+      <br/>Background photograph by Ehsan Haque via <a href="https://www.pexels.com/photo/stunning-hong-kong-night-skyline-from-above-30944531/" target="_blank" rel="noopener">Pexels</a>.
+      {% endif %}
     </footer>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -97,6 +97,8 @@
     ga('send', 'pageview');
 
     </script>
+
+
     {% endblock %}
   </body>
 </html>

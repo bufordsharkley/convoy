@@ -5,7 +5,13 @@ body {
   min-height: 100vh;
   background-color: #050811; 
   color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
 }
+
+.crossnav {
+  text-shadow: none;
+}
+
 
 body::before {
   content: "";
@@ -13,53 +19,57 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: -1;
   pointer-events: none;
 
-  /* The layered image stack remains identical */
+  height: 110vh;
+  top: 0vh;
+
   background-image: 
     url('/static/firesparks.png'),
     radial-gradient(circle at center, rgba(5, 8, 17, 0) 20%, rgba(5, 8, 17, 0.8) 70%, rgba(5, 8, 17, 1) 95%),
     url('/static/hk.jpg');
 
-  /* CHANGES HERE: */
-  /* Layer 1 (Embers): Shrinks each individual tile width down to 400px (adjust this number to change size) */
-  /* Layer 2 & 3: Keep their full viewport screen coverage */
+  /* Keep your tiled ember width size configuration */
   background-size: 800px auto, cover, cover; 
-
-  /* CHANGES HERE: */
-  /* Layer 1 (Embers): Tiles infinitely from left-to-right ONLY along the bottom axis */
-  /* Layer 2 & 3: Stay strictly locked as single full-screen elements */
   background-repeat: repeat-x, no-repeat, no-repeat; 
 
-  /* CORRESPONDING ALIGNMENTS: */
-  /* Keeps the repeated ember strip locked cleanly to the bottom baseline edge */
-  background-position: bottom left, center center, center center; 
+  background-position: 0px 100%, center center, center center;
+
+  animation: ambient-wind 120s linear infinite;
+}
+
+/* THE SEAMLESS TRANSFORMATION LOOP */
+@keyframes ambient-wind {
+  0% {
+    /* Baseline starting position */
+    transform: translate3d(0, 0, 0);
+    background-position: 0px 100%, center center, center center;
+  }
+  50% {
+    /* Shifts the entire layer UPWARDS by 40px and RIGHT by 200px */
+    /* Because of our 110vh height, the hidden bottom buffer safely covers the gap */
+    transform: translate3d(0, -40px, 0);
+    background-position: 400px 100%, center center, center center;
+  }
+  100% {
+    /* Smoothly wraps the horizontal tile back to 400px while returning to the baseline height */
+    transform: translate3d(0, 0, 0);
+    background-position: 800px 100%, center center, center center;
+  }
 }
 
 
 div.subscribe {
-    /* Layer 1: Dark smoky charcoal inside base */
-    /* Layer 2: Glowing volcanic orange to crimson gradient slanted at 20deg */
-    /*background:
-      linear-gradient(rgba(18, 14, 14, 0.85), rgba(18, 14, 14, 0.85)),
-      linear-gradient(20deg, #ff4d00, #990000);*/
-
     background: #FFFFFF22;
     width: 800px;
     margin: 0 auto;
 
-    /* Replaced teal with a brilliant molten-orange border */
     border: 3px solid #ff7700;
     border-radius: 100px;
     margin-top: 30px;
     padding-bottom: 20px;
 
-    /* MULTI-LAYER GLOW EFFECT: */
-    /* Layer 1: Sharp, intense white-hot core shimmer */
-    /* Layer 2: Saturated fiery orange mid-glow */
-    /* Layer 3: Soft, massive deep red atmospheric expansion */
     box-shadow:
       0 0 15px rgba(255, 230, 150, 0.4),
       0 0 35px rgba(255, 77, 0, 0.6),
@@ -87,16 +97,20 @@ div.subscribe h3 {
 
 marquee {
     color: white;
-    /*font-family: 'K2D', 'sans-serif';*/
+  font-family: "Michroma", sans-serif;
 }
 
 h2 {
-    /*font-family: 'K2D', 'sans-serif';*/
+  font-family: "Michroma", sans-serif;
     color: white;
 }
 
 div.promo h2 {
   color: white;
+}
+
+div.promo {
+  margin-top: 0px;
 }
 
 a {
@@ -130,3 +144,17 @@ div.prescreen_post {
   color: black;
   box-shadow: 25px 10px darkslategrey;
 }
+
+
+hr {
+  border: none;
+  height: 20px;
+  background-color: rgb(255, 230, 150);
+  box-shadow:
+    0 0 15px rgba(255, 230, 150, 0.4),
+    0 0 35px rgba(255, 77, 0, 0.6),
+    0 10px 70px rgba(153, 0, 0, 0.5);
+    
+}
+
+div.
