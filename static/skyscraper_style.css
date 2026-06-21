@@ -13,6 +13,7 @@ body {
 }
 
 
+
 body::before {
   content: "";
   position: fixed;
@@ -143,6 +144,7 @@ div.blurb {
 div.prescreen_post {
   color: black;
   box-shadow: 25px 10px darkslategrey;
+  text-shadow: none;
 }
 
 
@@ -156,5 +158,3 @@ hr {
     0 10px 70px rgba(153, 0, 0, 0.5);
     
 }
-
-div.
