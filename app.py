@@ -147,7 +147,7 @@ def get_feud_data():
                 {'img': 'dogbrothers/terry.png',
                  'pods': ['convoy',  'ygm', 'jumper']},
                 {'img': 'dogbrothers/pitt.png',
-                 'pods': ['cocktail', 'ygm', 'jumper']},
+                 'pods': ['cocktail', 'ygm']},
                 {'img': 'dogbrothers/meagan.png',
                  'pods': ['ygm']},
                 {'img': 'dogbrothers/michelle.png',
@@ -172,6 +172,9 @@ def get_feud_data():
                 {'title': 'Doug',
                  'resolved_date': '8/28/21',
                  'pods': ['convoy', 'ygm']},
+                {'title': 'Pittsburgh Symphony Orchestra',
+                 'resolved_date': '5/09/26',
+                 'pods': ['jumper']},
                         ],
             }
     resp = {x: {'current': [], 'previous': []}
