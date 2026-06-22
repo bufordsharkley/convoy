@@ -37,7 +37,7 @@
     <title>{{podcast.title}}</title>
     <meta name="title" property="og:title" content="{{podcast.title}}"/>
     <meta name="description" property="og:description" content="{{podcast.description}} (Earful is a podcast. Podcasts are audio files you can listen to on your podcast devices.)"/>
-    <meta property="og:image" content="{{podcast.layout_image}}"/>
+    <meta property="og:image" content="{{ url_for('static', filename = podcast.layout_image)}}"/>
     {% endif %}
     {% endblock %}
   </head>
