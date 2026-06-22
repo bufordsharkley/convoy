@@ -10,6 +10,7 @@ itunes category: "TV &amp; Film"
 itunes explicit: clean
 marquee: RUBBER DUCK AND HIS TRUCK ARE ROARING ACROSS THE RADIOS AND PODCASTS OF THE COUNTRY
 layout_image: convoy.png
+avatar_image: convoy.png
 rss_feed: '/feed.xml'
 itunes_url: https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668
 promo_file: promo.mp3
