@@ -15,4 +15,24 @@ rss_feed: '/feed.xml'
 itunes_url: https://itunes.apple.com/us/podcast/an-earful-of-convoy/id1073039668
 promo_file: skyscraper_promo.mp3
 the_year: 2018
-episodes: []
+episodes:
+   - title: "Earful of Skyscraper: Episode 1 (0:00:00 - 0:05:00)"
+     description: >
+       Begin from orbit, then descend! The Earful Gang is back for its new
+       series, and it's a whale of a tale, all about a little building that
+       could. But we're not there yet‒in today's episode, we spend some in time
+       in Ash Lake, Minnesota, home of a sheer rock cliff and white
+       annihilation. The Rock is on HRT: will he stop the bloodshed? Or will his big
+       head get blown up? And will text loom improbably over a tower? Tune in to
+       find out! Featuring the popular new segments "Sky Spoilers", "One More
+       Floor", "Floor Check", and "Skyscraper in the Air"!
+     datetime: '2026-10-28T14:00:00'
+     record_datetime: '2026-08-15T17:00:00'
+     url: https://media.earfulofconvoy.com/earful/earful_of_skyscraper_ep_01.mp3
+     image: https://media.earfulofconvoy.com/earful/ep_img/skyscraper_ep_01b.jpg
+     audio size: 115372032
+     floor_pearl_count: 0
+     floor_nonpearl_count: 3
+     cocktail:
+       name: Tap Water (No Less Safe Than Bottled Water)
+       image: https://media.earfulofconvoy.com/earful/drink_img/skyscraper_drink_01.jpg

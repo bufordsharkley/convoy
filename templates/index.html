@@ -160,6 +160,30 @@
     {% endfor %}
     </table>
   </div>
+  {% elif podcast.title == 'An Earful of Skyscraper' %}
+  <div class="promo">
+    <h2>FLOOR TRACKER</h2>
+    <table style="color: black; background-color: rgb(255, 230, 150); border: 2px solid darkslategray; margin-left: auto; margin-right: auto">
+    <tr>
+      <td style="border: 2px solid darkslategray"></td>
+      <td style="border: 2px solid darkslategray; padding: 0px 50px;">ep</td>
+      <td style="border: 2px solid darkslategray; padding: 0px 20px;">Pearl floors</td>
+      <td style="border: 2px solid darkslategray; padding: 0px 20px;">non-Pearl floors</td>
+      <td style="border: 2px solid darkslategray"></td>
+      <td style="border: 2px solid darkslategray"></td>
+    </tr>
+    {% for ep in podcast.episodes %}
+    <tr>
+      <td style="border: 2px solid darkslategray"></td>
+      <td style="border: 2px solid darkslategray; padding: 0px 50px;">ep {{ loop.index }}</td>
+      <td style="border: 2px solid darkslategray; padding: 0px 20px;">{{ ep.floor_pearl_count }}</td>
+      <td style="border: 2px solid darkslategray; padding: 0px 20px;">{{ ep.floor_nonpearl_count }}</td>
+      <td style="border: 2px solid darkslategray"></td>
+      <td style="border: 2px solid darkslategray"></td>
+    </tr>
+    {% endfor %}
+    </table>
+  </div>
   {% else %}
   {% endif %}
   <hr/>
